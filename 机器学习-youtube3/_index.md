@@ -1,0 +1,209 @@
+# 机器学习-youtube3
+
+> 本笔记由视频播放列表自动转写生成
+> 播放列表: https://www.youtube.com/playlist?list=PLBPbUxsZM4SbFQL492aA7i0ZeFIXb6QPi
+> 生成时间: 2026-05-11
+
+## 视频列表
+
+| 序号 | 标题 | 状态 | 链接 |
+|------|------|------|------|
+| 01 | 投资与投资主体（1） | ❌ 失败 | [cfFBRjWpAuo](https://www.youtube.com/watch?v=cfFBRjWpAuo) |
+| 02 | 投资与投资主体（2） | ❌ 失败 | [mejd_9Q_msw](https://www.youtube.com/watch?v=mejd_9Q_msw) |
+| 03 | 投资与宏观经济运行的内部逻辑 | ❌ 失败 | [8F_3_1eWdT8](https://www.youtube.com/watch?v=8F_3_1eWdT8) |
+| 04 | 投资与短期经济增长 | ❌ 失败 | [_Zew3XRe1YY](https://www.youtube.com/watch?v=_Zew3XRe1YY) |
+| 05 | 政府投资与短期经济增长案例 | ❌ 失败 | [259l8LLU04g](https://www.youtube.com/watch?v=259l8LLU04g) |
+| 06 | 投资与长期经济增长和经济波动 | ❌ 失败 | [lBc51ZKMcEM](https://www.youtube.com/watch?v=lBc51ZKMcEM) |
+| 07 | 投资规模与投资效率 | ❌ 失败 | [mNf4y_-MrYo](https://www.youtube.com/watch?v=mNf4y_-MrYo) |
+| 08 | 行业的涵义与分类 | ❌ 失败 | [AxmtaWaEBeU](https://www.youtube.com/watch?v=AxmtaWaEBeU) |
+| 09 | 行业的生命周期（1） | ❌ 失败 | [6F3V0P09l8o](https://www.youtube.com/watch?v=6F3V0P09l8o) |
+| 10 | 行业的生命周期（2） | ❌ 失败 | [TdrIIWtgd-k](https://www.youtube.com/watch?v=TdrIIWtgd-k) |
+| 11 | 行业与经济周期 | ❌ 失败 | [GM0Sgcr-j00](https://www.youtube.com/watch?v=GM0Sgcr-j00) |
+| 12 | 行业结构及其分析 | ❌ 失败 | [BMey0ChibRM](https://www.youtube.com/watch?v=BMey0ChibRM) |
+| 13 | 房地产行业投资分析案例（1） | ❌ 失败 | [ehkfbm4sSaE](https://www.youtube.com/watch?v=ehkfbm4sSaE) |
+| 14 | 房地产行业投资分析案例（2） | ❌ 失败 | [2YMz4dEuhO8](https://www.youtube.com/watch?v=2YMz4dEuhO8) |
+| 15 | 投资与项目 视频 | ❌ 失败 | [hD1uwAmasyg](https://www.youtube.com/watch?v=hD1uwAmasyg) |
+| 16 | 财务效益评估 视频 | ❌ 失败 | [wyUKNMkbrhE](https://www.youtube.com/watch?v=wyUKNMkbrhE) |
+| 17 | 财务指标分类介绍 视频 | ❌ 失败 | [q3Muw0gWU3E](https://www.youtube.com/watch?v=q3Muw0gWU3E) |
+| 18 | 静态评价指标介绍 视频 | ❌ 失败 | [06cNJHZP-K0](https://www.youtube.com/watch?v=06cNJHZP-K0) |
+| 19 | 动态评价指标 财务净现值 视频 | ❌ 失败 | [Ls3gdIk8Edc](https://www.youtube.com/watch?v=Ls3gdIk8Edc) |
+| 20 | 财务内部收益率 视频 | ❌ 失败 | [HO7QizOzAhw](https://www.youtube.com/watch?v=HO7QizOzAhw) |
+| 21 | 盈利能力指数与动态回收期 视频 | ❌ 失败 | [MJmxRVyV8Wo](https://www.youtube.com/watch?v=MJmxRVyV8Wo) |
+| 22 | 项目比选介绍与差额净现值 视频 | ❌ 失败 | [a1ZLLdSlJIk](https://www.youtube.com/watch?v=a1ZLLdSlJIk) |
+| 23 | 差额内部收益率 视频 | ❌ 失败 | [4ZBW_oCScHs](https://www.youtube.com/watch?v=4ZBW_oCScHs) |
+| 24 | 最小公倍数与年值法 视频 | ❌ 失败 | [APqPalAqYLw](https://www.youtube.com/watch?v=APqPalAqYLw) |
+| 25 | 独立项目比选 视频 | ❌ 失败 | [JsJYEK4jUVY](https://www.youtube.com/watch?v=JsJYEK4jUVY) |
+| 26 | 优化选择模型 视频 | ❌ 失败 | [C0G_HoYd000](https://www.youtube.com/watch?v=C0G_HoYd000) |
+| 27 | 不确定性分析 盈亏平衡分析 视频 | ❌ 失败 | [b_Scylo53J0](https://www.youtube.com/watch?v=b_Scylo53J0) |
+| 28 | 不确定性分析 敏感性分析 视频 | ❌ 失败 | [1ZnZ_qeyTA0](https://www.youtube.com/watch?v=1ZnZ_qeyTA0) |
+| 29 | 小结 视频 | ❌ 失败 | [pi-flBBF8gc](https://www.youtube.com/watch?v=pi-flBBF8gc) |
+| 30 | 债券的概况 | ❌ 失败 | [kkBCQTQxSFY](https://www.youtube.com/watch?v=kkBCQTQxSFY) |
+| 31 | 政府机构债券分类 | ❌ 失败 | [r1YY0hvK3IU](https://www.youtube.com/watch?v=r1YY0hvK3IU) |
+| 32 | 公司债等其他债券分类 | ❌ 失败 | [Qf02MMP_bWI](https://www.youtube.com/watch?v=Qf02MMP_bWI) |
+| 33 | 资产证券化基本理论与概述 | ❌ 失败 | [6fyRwPoBRyo](https://www.youtube.com/watch?v=6fyRwPoBRyo) |
+| 34 | 资产证券化基本结构 | ❌ 失败 | [_xLNlUc0CnU](https://www.youtube.com/watch?v=_xLNlUc0CnU) |
+| 35 | 资产证券化基本过程 | ❌ 失败 | [HzcvZUUaIuM](https://www.youtube.com/watch?v=HzcvZUUaIuM) |
+| 36 | 中美资产证券化产品 | ❌ 失败 | [uGRsBnJV_sQ](https://www.youtube.com/watch?v=uGRsBnJV_sQ) |
+| 37 | 股权市场概况和分类 | ❌ 失败 | [nktHZnEoN9E](https://www.youtube.com/watch?v=nktHZnEoN9E) |
+| 38 | 股票指数的功能和种类 | ❌ 失败 | [8VQvKra-DbQ](https://www.youtube.com/watch?v=8VQvKra-DbQ) |
+| 39 | 股票指数的编制和计算 | ❌ 失败 | [sQWyPI_fbuE](https://www.youtube.com/watch?v=sQWyPI_fbuE) |
+| 40 | 中外股票指数介绍 | ❌ 失败 | [yk-xQvTHWlI](https://www.youtube.com/watch?v=yk-xQvTHWlI) |
+| 41 | 项目融资基本概况 | ❌ 失败 | [hA6aDNEls3w](https://www.youtube.com/watch?v=hA6aDNEls3w) |
+| 42 | 项目融资的方式分类 | ❌ 失败 | [3fi73QuoLAY](https://www.youtube.com/watch?v=3fi73QuoLAY) |
+| 43 | PPP项目融资内涵、运作和案例 | ❌ 失败 | [96Q6rc2PXFM](https://www.youtube.com/watch?v=96Q6rc2PXFM) |
+| 44 | PPP项目资产证券化的特点和模式 | ❌ 失败 | [cSM1ovyADpQ](https://www.youtube.com/watch?v=cSM1ovyADpQ) |
+| 45 | 证券发行市场概况 | ❌ 失败 | [c8NDiN-USAo](https://www.youtube.com/watch?v=c8NDiN-USAo) |
+| 46 | 证券发行方式和制度 | ❌ 失败 | [vVMQA8Pzy4s](https://www.youtube.com/watch?v=vVMQA8Pzy4s) |
+| 47 | 证券承销制度和股票发行 | ❌ 失败 | [fZW2CaKcyoo](https://www.youtube.com/watch?v=fZW2CaKcyoo) |
+| 48 | IPO流程和债券发行 | ❌ 失败 | [TGZbOsYwCGs](https://www.youtube.com/watch?v=TGZbOsYwCGs) |
+| 49 | 证券交易市场概况和场内市场介绍 | ❌ 失败 | [1lHb6iwloD8](https://www.youtube.com/watch?v=1lHb6iwloD8) |
+| 50 | 场外市场介绍 | ❌ 失败 | [LpFEe_ACw50](https://www.youtube.com/watch?v=LpFEe_ACw50) |
+| 51 | 证券交易制度分类和做市商制度介绍 | ❌ 失败 | [-Woix5XRZ8k](https://www.youtube.com/watch?v=-Woix5XRZ8k) |
+| 52 | 指令驱动制度完整过程介绍 | ❌ 失败 | [4h4sjLFpi6I](https://www.youtube.com/watch?v=4h4sjLFpi6I) |
+| 53 | 人工和电子化交易简介 | ❌ 失败 | [cAQ74v46zcc](https://www.youtube.com/watch?v=cAQ74v46zcc) |
+| 54 | 互联网交易简介 | ❌ 失败 | [0xQCSL88zIE](https://www.youtube.com/watch?v=0xQCSL88zIE) |
+| 55 | 全球主要证券交易市场简介 | ❌ 失败 | [ccxdxjp8Rrs](https://www.youtube.com/watch?v=ccxdxjp8Rrs) |
+| 56 | 算法交易含义和分类 | ❌ 失败 | [e_TJpPcRr9g](https://www.youtube.com/watch?v=e_TJpPcRr9g) |
+| 57 | 常用算法交易策略简介 | ❌ 失败 | [h8tuEqJyzNk](https://www.youtube.com/watch?v=h8tuEqJyzNk) |
+| 58 | VWAP策略原理介绍 | ❌ 失败 | [JE5Xc45fFvw](https://www.youtube.com/watch?v=JE5Xc45fFvw) |
+| 59 | 高频和暗池交易 | ❌ 失败 | [UkMvrmWBcFE](https://www.youtube.com/watch?v=UkMvrmWBcFE) |
+| 60 | 投资公司的含义和分类 | ❌ 失败 | [WP2jyuv2070](https://www.youtube.com/watch?v=WP2jyuv2070) |
+| 61 | 开放、封闭式基金和公司、契约制基金分类 | ❌ 失败 | [Er_fj7OzL7Q](https://www.youtube.com/watch?v=Er_fj7OzL7Q) |
+| 62 | 其他基金分类 | ❌ 失败 | [eCGU3Sy2vmY](https://www.youtube.com/watch?v=eCGU3Sy2vmY) |
+| 63 | 基金的发行 | ❌ 失败 | [oPjvW9GLnD0](https://www.youtube.com/watch?v=oPjvW9GLnD0) |
+| 64 | 基金的交易 | ❌ 失败 | [fQ_jOgXaauA](https://www.youtube.com/watch?v=fQ_jOgXaauA) |
+| 65 | 基金估值和收益 | ❌ 失败 | [nnIZBBxcrjc](https://www.youtube.com/watch?v=nnIZBBxcrjc) |
+| 66 | 基金的评级 | ❌ 失败 | [A7R4D-Be0Z8](https://www.youtube.com/watch?v=A7R4D-Be0Z8) |
+| 67 | 指数型基金介绍 | ❌ 失败 | [M8CQwlM3O_I](https://www.youtube.com/watch?v=M8CQwlM3O_I) |
+| 68 | ETF、LOF和QDII基金介绍 | ❌ 失败 | [11ABlqJvhRI](https://www.youtube.com/watch?v=11ABlqJvhRI) |
+| 69 | 其他基金介绍 | ❌ 失败 | [T8CofiBuNsE](https://www.youtube.com/watch?v=T8CofiBuNsE) |
+| 70 | 利率与利率水平的决定 | ❌ 失败 | [3buvSvY9yrk](https://www.youtube.com/watch?v=3buvSvY9yrk) |
+| 71 | 持有期收益率 | ❌ 失败 | [TZ6hm-H6Kbw](https://www.youtube.com/watch?v=TZ6hm-H6Kbw) |
+| 72 | 有效年利率与年化百分比利率 | ❌ 失败 | [Xn3m5OJH37M](https://www.youtube.com/watch?v=Xn3m5OJH37M) |
+| 73 | 风险与收益 | ❌ 失败 | [kYY9l1DwbYw](https://www.youtube.com/watch?v=kYY9l1DwbYw) |
+| 74 | 收益率的统计指标 | ❌ 失败 | [srs1Q_F0GTY](https://www.youtube.com/watch?v=srs1Q_F0GTY) |
+| 75 | 下侧风险 | ❌ 失败 | [pG7St4XYa3I](https://www.youtube.com/watch?v=pG7St4XYa3I) |
+| 76 | 风险资产组合的历史数据 | ❌ 失败 | [_zEYhr9hIfY](https://www.youtube.com/watch?v=_zEYhr9hIfY) |
+| 77 | 投资决策 | ❌ 失败 | [WNSmoa7kPsY](https://www.youtube.com/watch?v=WNSmoa7kPsY) |
+| 78 | 投资者效用 | ❌ 失败 | [KsXVuyBITyQ](https://www.youtube.com/watch?v=KsXVuyBITyQ) |
+| 79 | 投资者偏好与无差异曲线 | ❌ 失败 | [7uZpqpTDm04](https://www.youtube.com/watch?v=7uZpqpTDm04) |
+| 80 | 资本配置线 | ❌ 失败 | [kPiPescBqAA](https://www.youtube.com/watch?v=kPiPescBqAA) |
+| 81 | 资本市场线 | ❌ 失败 | [tEa8IYNY3uw](https://www.youtube.com/watch?v=tEa8IYNY3uw) |
+| 82 | 分散化与资产组合风险 | ❌ 失败 | [SzcCf6ko-FQ](https://www.youtube.com/watch?v=SzcCf6ko-FQ) |
+| 83 | 资产组合可行集与有效集 | ❌ 失败 | [qU8odw0a3jY](https://www.youtube.com/watch?v=qU8odw0a3jY) |
+| 84 | 两种风险资产构成的组合的风险与收益 | ❌ 失败 | [UBdFTCgKL54](https://www.youtube.com/watch?v=UBdFTCgKL54) |
+| 85 | 风险资产组合的有效集 | ❌ 失败 | [L3kmkUzSEoQ](https://www.youtube.com/watch?v=L3kmkUzSEoQ) |
+| 86 | 最优的资产组合 | ❌ 失败 | [7NNfkl_sL5U](https://www.youtube.com/watch?v=7NNfkl_sL5U) |
+| 87 | 资产组合选择模型和资本配置 | ❌ 失败 | [TgoHXWV6zcQ](https://www.youtube.com/watch?v=TgoHXWV6zcQ) |
+| 88 | CAPM假设与分离定理 | ❌ 失败 | [mWPbVi5UjQU](https://www.youtube.com/watch?v=mWPbVi5UjQU) |
+| 89 | 市场组合与市场均衡 | ❌ 失败 | [ei-jBKNAb7Y](https://www.youtube.com/watch?v=ei-jBKNAb7Y) |
+| 90 | 资本市场线 | ❌ 失败 | [0dyr9Tq9nC4](https://www.youtube.com/watch?v=0dyr9Tq9nC4) |
+| 91 | 证券市场线 | ❌ 失败 | [fACIaUV3ano](https://www.youtube.com/watch?v=fACIaUV3ano) |
+| 92 | 证券市场线与系统风险 | ❌ 失败 | [pAu2orNulsc](https://www.youtube.com/watch?v=pAu2orNulsc) |
+| 93 | 市场模型与系统性风险 | ❌ 失败 | [SOC6etsGZvg](https://www.youtube.com/watch?v=SOC6etsGZvg) |
+| 94 | CAPM的扩展 | ❌ 失败 | [K66L-PA7NKA](https://www.youtube.com/watch?v=K66L-PA7NKA) |
+| 95 | CAPM的应用：项目选择 | ❌ 失败 | [5QXbc3VXyL0](https://www.youtube.com/watch?v=5QXbc3VXyL0) |
+| 96 | CAPM的局限、APT产生的背景 | ❌ 失败 | [FoKEPCtWv7o](https://www.youtube.com/watch?v=FoKEPCtWv7o) |
+| 97 | 单因子模型 | ❌ 失败 | [idU9_cyNNkE](https://www.youtube.com/watch?v=idU9_cyNNkE) |
+| 98 | 多因子模型 | ❌ 失败 | [xn3VN8MwMc4](https://www.youtube.com/watch?v=xn3VN8MwMc4) |
+| 99 | 套利、无套利原则 | ❌ 失败 | [od7fM4HUXWo](https://www.youtube.com/watch?v=od7fM4HUXWo) |
+| 100 | 套利资产组合与套利定价 | ❌ 失败 | [cGH9Rx-50DI](https://www.youtube.com/watch?v=cGH9Rx-50DI) |
+| 101 | CAPM与APT的比较、因子选择 | ❌ 失败 | [iQYpmiPfCE8](https://www.youtube.com/watch?v=iQYpmiPfCE8) |
+| 102 | 市场有效性的本质 视频 | ❌ 失败 | [SY0CejShPFw](https://www.youtube.com/watch?v=SY0CejShPFw) |
+| 103 | 弱势有效市场 视频 | ❌ 失败 | [XjpXQt_gmEs](https://www.youtube.com/watch?v=XjpXQt_gmEs) |
+| 104 | 半强势有效市场 视频 | ❌ 失败 | [kRBFK8ZKD1A](https://www.youtube.com/watch?v=kRBFK8ZKD1A) |
+| 105 | 半强势与强势有效市场 视频 | ❌ 失败 | [lreeImCpLms](https://www.youtube.com/watch?v=lreeImCpLms) |
+| 106 | 与有效市场相关的问题 视频 | ❌ 失败 | [blHRoFhe1C0](https://www.youtube.com/watch?v=blHRoFhe1C0) |
+| 107 | 行为金融与投资 视频 | ❌ 失败 | [X-Fnc9Onu3k](https://www.youtube.com/watch?v=X-Fnc9Onu3k) |
+| 108 | 风险、风险溢价 视频 | ❌ 失败 | [66lAc6SY-Zs](https://www.youtube.com/watch?v=66lAc6SY-Zs) |
+| 109 | 估计CAPM 的beta 和 alpha 视频 | ❌ 失败 | [sWU7fqm2uaY](https://www.youtube.com/watch?v=sWU7fqm2uaY) |
+| 110 | 根据股票的不同特征形成资产组合 视频 | ❌ 失败 | [mpdJLfxIc7w](https://www.youtube.com/watch?v=mpdJLfxIc7w) |
+| 111 | Fama French 三因素模型 视频 | ❌ 失败 | [qeNBAKtAIHo](https://www.youtube.com/watch?v=qeNBAKtAIHo) |
+| 112 | 动量效应及四因素模型 视频 | ❌ 失败 | [THxmTDJoKig](https://www.youtube.com/watch?v=THxmTDJoKig) |
+| 113 | 主要“异象”及其解释 视频 | ❌ 失败 | [xCAPu2JC1DA](https://www.youtube.com/watch?v=xCAPu2JC1DA) |
+| 114 | 债券的特征 | ❌ 失败 | [DTLXug7A7Bs](https://www.youtube.com/watch?v=DTLXug7A7Bs) |
+| 115 | 债券的分类与创新 | ❌ 失败 | [gPC2sVFchIw](https://www.youtube.com/watch?v=gPC2sVFchIw) |
+| 116 | 息票日的债券定价 | ❌ 失败 | [RzIGqnydglM](https://www.youtube.com/watch?v=RzIGqnydglM) |
+| 117 | 付息日之间的债券定价 | ❌ 失败 | [3D8VdgKBDN4](https://www.youtube.com/watch?v=3D8VdgKBDN4) |
+| 118 | 债券收益的衡量方法 | ❌ 失败 | [JCzXs78JJoo](https://www.youtube.com/watch?v=JCzXs78JJoo) |
+| 119 | 债券的风险种类 | ❌ 失败 | [KtDKC7ILb_k](https://www.youtube.com/watch?v=KtDKC7ILb_k) |
+| 120 | 麦考利久期 | ❌ 失败 | [ZNujzU5Bfms](https://www.youtube.com/watch?v=ZNujzU5Bfms) |
+| 121 | 组合久期 | ❌ 失败 | [r8wlYpoEH-I](https://www.youtube.com/watch?v=r8wlYpoEH-I) |
+| 122 | 凸性 | ❌ 失败 | [98zQ2OHe30s](https://www.youtube.com/watch?v=98zQ2OHe30s) |
+| 123 | Malkiel定理 | ❌ 失败 | [MTwrUvdKFjQ](https://www.youtube.com/watch?v=MTwrUvdKFjQ) |
+| 124 | 收益率曲线 | ❌ 失败 | [-VmylpOwNtk](https://www.youtube.com/watch?v=-VmylpOwNtk) |
+| 125 | 远期利率 | ❌ 失败 | [dPRMhvHxVC4](https://www.youtube.com/watch?v=dPRMhvHxVC4) |
+| 126 | 期望假说理论 | ❌ 失败 | [gwifBAeZmq8](https://www.youtube.com/watch?v=gwifBAeZmq8) |
+| 127 | 流动性偏好理论 | ❌ 失败 | [c1rxdTmHG5I](https://www.youtube.com/watch?v=c1rxdTmHG5I) |
+| 128 | 市场分割理论 | ❌ 失败 | [lEloW911UKo](https://www.youtube.com/watch?v=lEloW911UKo) |
+| 129 | 消极管理策略概述 | ❌ 失败 | [9-jOKjyt-GU](https://www.youtube.com/watch?v=9-jOKjyt-GU) |
+| 130 | 消极管理策略 | ❌ 失败 | [3RGlw_OnYgQ](https://www.youtube.com/watch?v=3RGlw_OnYgQ) |
+| 131 | 积极管理策略 | ❌ 失败 | [4Erab5WwsgQ](https://www.youtube.com/watch?v=4Erab5WwsgQ) |
+| 132 | 估值方法简介 | ❌ 失败 | [8EwjkizN4Yo](https://www.youtube.com/watch?v=8EwjkizN4Yo) |
+| 133 | 贴现现金流（DCF）方法概括 | ❌ 失败 | [1sElsmmh6TQ](https://www.youtube.com/watch?v=1sElsmmh6TQ) |
+| 134 | 股权贴现率 无风险利率估算 | ❌ 失败 | [GIXYyo2OCO0](https://www.youtube.com/watch?v=GIXYyo2OCO0) |
+| 135 | 股权贴现率 股权风险溢价 | ❌ 失败 | [Wy8vezMXWqw](https://www.youtube.com/watch?v=Wy8vezMXWqw) |
+| 136 | 股权贴现率 隐含股权风险溢价 | ❌ 失败 | [CoDFFPB_098](https://www.youtube.com/watch?v=CoDFFPB_098) |
+| 137 | 股权贴现率 国家股权风险溢价 | ❌ 失败 | [-2b6I5KQ5Kk](https://www.youtube.com/watch?v=-2b6I5KQ5Kk) |
+| 138 | 股权贴现率 系统性风险系数（1） | ❌ 失败 | [Q-HnKUGQQz4](https://www.youtube.com/watch?v=Q-HnKUGQQz4) |
+| 139 | 股权贴现率 系统性风险系数（2） | ❌ 失败 | [H6UgLCcHLBE](https://www.youtube.com/watch?v=H6UgLCcHLBE) |
+| 140 | 股权贴现率 系统性风险系数（3） | ❌ 失败 | [1Wrtt9Lx4-8](https://www.youtube.com/watch?v=1Wrtt9Lx4-8) |
+| 141 | 股权贴现率 国家主权风险系数 | ❌ 失败 | [MBZuiG6ok8c](https://www.youtube.com/watch?v=MBZuiG6ok8c) |
+| 142 | 股权贴现率 实例分析 | ❌ 失败 | [BYpaUWb3FhE](https://www.youtube.com/watch?v=BYpaUWb3FhE) |
+| 143 | 资本成本 | ❌ 失败 | [8z8m5-77_-8](https://www.youtube.com/watch?v=8z8m5-77_-8) |
+| 144 | 贴现率 总结 | ❌ 失败 | [wMmHEO5j0po](https://www.youtube.com/watch?v=wMmHEO5j0po) |
+| 145 | 公司自由现金流 信息更新 | ❌ 失败 | [58ArzP1MY7k](https://www.youtube.com/watch?v=58ArzP1MY7k) |
+| 146 | 公司自由现金流 会计调整（1） | ❌ 失败 | [4PwzT6njMsA](https://www.youtube.com/watch?v=4PwzT6njMsA) |
+| 147 | 公司自由现金流 会计调整（2） | ❌ 失败 | [tRp1zSLOd8w](https://www.youtube.com/watch?v=tRp1zSLOd8w) |
+| 148 | 公司自由现金流 其他会计调整 | ❌ 失败 | [oPlTzCQ0aWk](https://www.youtube.com/watch?v=oPlTzCQ0aWk) |
+| 149 | 18公司自由现金流估算 | ❌ 失败 | [IbMSlQEHQs4](https://www.youtube.com/watch?v=IbMSlQEHQs4) |
+| 150 | 19股权自由现金流估算及练习 | ❌ 失败 | [N1TMOpoQpBA](https://www.youtube.com/watch?v=N1TMOpoQpBA) |
+| 151 | 20增长率估算 历史数据与分析师法 | ❌ 失败 | [r1PwnRWYTOc](https://www.youtube.com/watch?v=r1PwnRWYTOc) |
+| 152 | 增长率估算 基本面估算（1） | ❌ 失败 | [xXPJARvvnBQ](https://www.youtube.com/watch?v=xXPJARvvnBQ) |
+| 153 | 增长率估算 基本面估算（2） | ❌ 失败 | [omq3OpxvJFQ](https://www.youtube.com/watch?v=omq3OpxvJFQ) |
+| 154 | 终值估算 | ❌ 失败 | [87NMX8BX6BU](https://www.youtube.com/watch?v=87NMX8BX6BU) |
+| 155 | 估值模型选择（1） | ❌ 失败 | [JDiaVSxHETM](https://www.youtube.com/watch?v=JDiaVSxHETM) |
+| 156 | 估值模型选择（2） | ❌ 失败 | [hL04icBKQxU](https://www.youtube.com/watch?v=hL04icBKQxU) |
+| 157 | 其他注意的问题介绍 | ❌ 失败 | [jaRTkAdeTe8](https://www.youtube.com/watch?v=jaRTkAdeTe8) |
+| 158 | 相对定价法概述 | ❌ 失败 | [gwvrShFy_0U](https://www.youtube.com/watch?v=gwvrShFy_0U) |
+| 159 | PE指标（1） | ❌ 失败 | [PN8zd6XGQ3o](https://www.youtube.com/watch?v=PN8zd6XGQ3o) |
+| 160 | PE指标（2） | ❌ 失败 | [IXkF8ROdkrw](https://www.youtube.com/watch?v=IXkF8ROdkrw) |
+| 161 | PEG指标 | ❌ 失败 | [J6OkBt5lbwE](https://www.youtube.com/watch?v=J6OkBt5lbwE) |
+| 162 | PB指标 | ❌ 失败 | [NJaCm_xYoxc](https://www.youtube.com/watch?v=NJaCm_xYoxc) |
+| 163 | 公司乘数 | ❌ 失败 | [Qfz6ZtTyp6M](https://www.youtube.com/watch?v=Qfz6ZtTyp6M) |
+| 164 | 伴侣变量与可比样本选择 | ❌ 失败 | [RZR4rytHICw](https://www.youtube.com/watch?v=RZR4rytHICw) |
+| 165 | 相对定价法总结 | ❌ 失败 | [9Ufka7VeQS8](https://www.youtube.com/watch?v=9Ufka7VeQS8) |
+| 166 | 期权估价法与本章总结 | ❌ 失败 | [yZvEkresFT8](https://www.youtube.com/watch?v=yZvEkresFT8) |
+| 167 | 绩效评价与基金收益的衡量 视频 | ❌ 失败 | [cargJ_wRBjw](https://www.youtube.com/watch?v=cargJ_wRBjw) |
+| 168 | 时间加权收益率与资金加权收益率 视频 | ❌ 失败 | [4FqzgZpf8g4](https://www.youtube.com/watch?v=4FqzgZpf8g4) |
+| 169 | 资产组合风险的衡量 视频 | ❌ 失败 | [jZ5hnHmgxL0](https://www.youtube.com/watch?v=jZ5hnHmgxL0) |
+| 170 | 基金绩效评价方法（一） 视频 | ❌ 失败 | [V0isNTuf39I](https://www.youtube.com/watch?v=V0isNTuf39I) |
+| 171 | 基金绩效评价方法（二） 视频 | ❌ 失败 | [FXKnL-2xL9o](https://www.youtube.com/watch?v=FXKnL-2xL9o) |
+| 172 | 基金绩效评价方法（三） 视频 | ❌ 失败 | [XfL60eOCrqE](https://www.youtube.com/watch?v=XfL60eOCrqE) |
+| 173 | 市场择时 视频 | ❌ 失败 | [r4hf_TXbtBU](https://www.youtube.com/watch?v=r4hf_TXbtBU) |
+| 174 | 资产组合业绩贡献分析 视频 | ❌ 失败 | [p9v46Mt-DPk](https://www.youtube.com/watch?v=p9v46Mt-DPk) |
+| 175 | 国外期权市场发展历程 | ❌ 失败 | [tcXhLFY2TcI](https://www.youtube.com/watch?v=tcXhLFY2TcI) |
+| 176 | 期权的类型 | ❌ 失败 | [6fi9QAp60mY](https://www.youtube.com/watch?v=6fi9QAp60mY) |
+| 177 | 期权合约条款 | ❌ 失败 | [AwcqZBZ6QzA](https://www.youtube.com/watch?v=AwcqZBZ6QzA) |
+| 178 | 期权的价值 | ❌ 失败 | [9t10IldswIQ](https://www.youtube.com/watch?v=9t10IldswIQ) |
+| 179 | 买卖权平价关系 | ❌ 失败 | [Of4LSLWwGrY](https://www.youtube.com/watch?v=Of4LSLWwGrY) |
+| 180 | 动态复制 | ❌ 失败 | [b-BC5z1gEdg](https://www.youtube.com/watch?v=b-BC5z1gEdg) |
+| 181 | 风险中性定价 | ❌ 失败 | [w2rmtlfZ3vM](https://www.youtube.com/watch?v=w2rmtlfZ3vM) |
+| 182 | 数学准备 | ❌ 失败 | [ScHt-rWg2XI](https://www.youtube.com/watch?v=ScHt-rWg2XI) |
+| 183 | B S M期权定价模型假设条件 | ❌ 失败 | [NomhSgKvOm0](https://www.youtube.com/watch?v=NomhSgKvOm0) |
+| 184 | 股票价格对期权价格的影响 | ❌ 失败 | [yDiKWesklrU](https://www.youtube.com/watch?v=yDiKWesklrU) |
+| 185 | 股票价格S对Delta的影响 | ❌ 失败 | [vJ1VZcqLhpE](https://www.youtube.com/watch?v=vJ1VZcqLhpE) |
+| 186 | 波动率对期权价格的影响 | ❌ 失败 | [CbHnMwW5ORQ](https://www.youtube.com/watch?v=CbHnMwW5ORQ) |
+| 187 | 无风险利率对期权价格的影响 | ❌ 失败 | [ZAZuCBwST5c](https://www.youtube.com/watch?v=ZAZuCBwST5c) |
+| 188 | 时间对期权价格的影响 | ❌ 失败 | [KrrCB3RlCEA](https://www.youtube.com/watch?v=KrrCB3RlCEA) |
+
+
+## 统计
+
+- 总视频数: 188
+- 成功转写: 0
+- 失败: 188
+
+---
+
+*自动生成*

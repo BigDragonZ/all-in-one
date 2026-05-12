@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "c76d69a18ee35fb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "df9bf69b26150f12",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6388ff98c0086f52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "期货与期权/11_NDF和远期利率协议.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11_NDF和远期利率协议"
+            }
+          },
+          {
+            "id": "60f9575593851813",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "002期货与期权/002衍生品.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "002衍生品"
+            }
+          },
+          {
+            "id": "d75f19c858bf2be0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "af1b438ee494ea26",
+    "type": "split",
+    "children": [
+      {
+        "id": "d786644e3013d247",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0be2b4ffa006c94a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "61e999d11e3dbb0f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ad346985c0e97f5c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4a9237e907b76dce",
+    "type": "split",
+    "children": [
+      {
+        "id": "79e0c343ebd92d0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc88462dba6b100a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "期货与期权/02_衍生品的概念与功能.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "02_衍生品的概念与功能 的反向链接列表"
+            }
+          },
+          {
+            "id": "361c3e0e31c0b816",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "期货与期权/02_衍生品的概念与功能.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "02_衍生品的概念与功能 的出链列表"
+            }
+          },
+          {
+            "id": "b0d2265bb9155de0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "9ac4f9cdeb0e1617",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "fa0779f18c70fe41",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "期货与期权/11_NDF和远期利率协议.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "11_NDF和远期利率协议 的大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "6388ff98c0086f52",
+  "lastOpenFiles": [
+    "期货与期权/10_外汇远期.md",
+    "期货与期权/期货与期权_01-09_完整转写文本合并.md",
+    "002期货与期权/002衍生品.md",
+    "期货与期权/01-09_合并转写.txt",
+    "期货与期权/01-09_合并笔记.md",
+    "期货与期权/01-09_纯转写文本合并.md",
+    "期货与期权/01-09_合并转写文本.md",
+    "期货与期权/02_衍生品的概念与功能.md",
+    "处理进度.md",
+    "期货与期权/09_衍生品市场的显著事件.md",
+    "期货与期权/08_衍生品亏损案例.md",
+    "期货与期权/07_真实衍生品业务.md",
+    "期货与期权/06_衍生品蓬勃发展的原因.md",
+    "期货与期权/05_衍生品历史发展.md",
+    "期货与期权/04_衍生品市场.md",
+    "期货与期权/03_衍生品类型.md",
+    "期货与期权/01_期货与期权课程总体介绍.md",
+    "投资笔记/001.md",
+    "投资笔记",
+    "金融学（一）-李健（中央财经）/28_5.2 如何理解利率的本质.md",
+    "金融学（一）-李健（中央财经）/27_5.1 理解利率与各章之间的关系.md",
+    "002期货与期权/001课程概述.md",
+    "002期货与期权/000指令.md",
+    "金融学（一）-李健（中央财经）/25_4.7 消费信用与国际信用.md",
+    "金融学（一）-李健（中央财经）/24_4.6 国家信用.md",
+    "金融学（一）-李健（中央财经）/23_4.5 商业信用与银行信用.md",
+    "金融学（一）-李健（中央财经）/22_4.4 如何理解现代市场经济是信用经济.md",
+    "金融学（一）-李健（中央财经）/18_3.5 中国人民币汇率问题.md",
+    "投资学-刘志东（中央财经大学）",
+    "金融学（一）-李健（中央财经）",
+    "行为经济学-黄瑜琴（中央财经大学）",
+    "机器学习-youtube3",
+    "机器学习-youtube2",
+    "机器学习-youtube1",
+    "机器学习",
+    "期货与期权"
+  ]
+}
