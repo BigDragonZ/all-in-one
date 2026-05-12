@@ -1,1 +1,12 @@
+# Obsidian
+.obsidian/
+
+# Cache
+.cache/
+*.cache
+
+# Secrets
 999common/000key.md
+
+# System files
+.DS_Store
