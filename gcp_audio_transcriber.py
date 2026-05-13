@@ -101,10 +101,24 @@ class VideoTask:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def _run_cmd(cmd: list[str], timeout: int = 300) -> subprocess.CompletedProcess:
+def _get_ytdlp_path() -> str:
+    """Return absolute path to yt-dlp, preferring venv bin."""
+    venv_candidate = Path(sys.executable).parent / "yt-dlp"
+    if venv_candidate.exists():
+        return str(venv_candidate)
+    system = shutil.which("yt-dlp")
+    if system:
+        return system
+    raise FileNotFoundError("yt-dlp not found in venv or system PATH")
+
+
+def _run_cmd(cmd: list[str], timeout: int = 300, env: dict[str, str] | None = None) -> subprocess.CompletedProcess:
     """Run a shell command, raise on non-zero exit."""
     logger.debug("Running: %s", " ".join(cmd))
-    return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, check=True)
+    run_env = os.environ.copy()
+    if env:
+        run_env.update(env)
+    return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, check=True, env=run_env)
 
 
 def _slugify(text: str, max_len: int = 80) -> str:
@@ -119,9 +133,14 @@ def _video_id_from_url(url: str) -> str:
     parsed = urlparse(url)
     if "youtube" in parsed.netloc or "youtu.be" in parsed.netloc:
         # Try query param v= or path segment
-        if "v=" in parsed.query:
-            return re.search(r"[?&]v=([^&]+)", parsed.query).group(1)  # type: ignore[union-attr]
-        return parsed.path.strip("/").split("/")[-1]
+        if parsed.query:
+            m = re.search(r"[?&]v=([^&]+)", "?" + parsed.query)
+            if m:
+                return m.group(1)
+        # youtu.be/VIDEO_ID short link
+        path_id = parsed.path.strip("/").split("/")[-1]
+        if path_id:
+            return path_id
     # Fallback: hash the URL
     return hashlib.sha256(url.encode()).hexdigest()[:12]
 
@@ -129,7 +148,7 @@ def _video_id_from_url(url: str) -> str:
 def fetch_audio_metadata(url: str) -> dict[str, Any]:
     """Use yt-dlp JSON output to grab title, duration, etc."""
     cmd = [
-        "yt-dlp",
+        _get_ytdlp_path(),
         "--no-warnings",
         "--dump-single-json",
         "--skip-download",
@@ -154,7 +173,7 @@ def download_and_compress_audio(
 
     # 1) yt-dlp: best audio only
     ytdlp_cmd = [
-        "yt-dlp",
+        _get_ytdlp_path(),
         "--no-warnings",
         "-f", "bestaudio/best",
         "-o", str(temp_base) + ".%(ext)s",
@@ -574,8 +593,11 @@ Environment variables:
         return 1
 
     # Preflight checks
+    _venv_bin = Path(sys.executable).parent
+    _extra_paths = [str(_venv_bin)]
     for binary in ("yt-dlp", "ffmpeg"):
-        if not shutil.which(binary):
+        found = shutil.which(binary, path=os.pathsep.join(_extra_paths + [os.environ.get("PATH", "")]))
+        if not found:
             logger.error("Required binary not found in PATH: %s", binary)
             return 1
 
