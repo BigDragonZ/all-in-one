@@ -25,7 +25,7 @@ class TranscribeConfig:
         # GCP Vertex AI
         self.gcp_project_id = _env("GCP_PROJECT_ID", "gen-lang-client-0385617544")
         self.gcp_location = _env("GCP_LOCATION", "us-central1")
-        self.gcp_model = _env("GCP_MODEL", "gemini-2.5-flash-lite")
+        self.gcp_model = _env("GCP_MODEL", "gemini-2.5-pro")
         self.gcs_bucket = _env("GCS_BUCKET", "hermes_brain")
         self.gcs_prefix = _env("GCS_PREFIX", "audio_jobs/")
         self.api_version = _env("API_VERSION", "v1")

@@ -47,10 +47,7 @@ def main() -> int:
             body = content
 
         refined_body = refine_markdown(body)
-        
         output_path.write_text(header + refined_body, encoding="utf-8")
-
-        print(f"[SUCCESS] Refined content saved to: {output_path}")
         print(f"[INFO] Input chars:  {len(body)}")
         print(f"[INFO] Output chars: {len(refined_body)}")
         return 0

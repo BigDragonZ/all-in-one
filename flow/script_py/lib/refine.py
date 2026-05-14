@@ -1,9 +1,13 @@
 """
 Markdown content refinement via Gemini.
 
+Fault-tolerant chain:
+  1. GCP Vertex AI (gemini-2.5-pro) - project credits
+  2. Gemini Standard API (gemini-2.5-flash-lite) - fallback
+
 Tasks:
-  1. Text cleaning & restructuring: remove filler words, add punctuation, segment by logic
-  2. Terminology & math correction: fix finance/tech terms, rewrite math in LaTeX
+  1. Text cleaning & restructuring
+  2. Terminology & math correction (LaTeX)
   3. Key concept bolding
 """
 
@@ -27,7 +31,7 @@ REFINE_PROMPT = """你是一位专业的学术编辑。请对以下文本进行�
 2. **术语与数理修正**：
    - 精准识别金融/经济/技术术语，确保使用标准译法
    - 识别所有数学推导和公式，使用标准 LaTeX 格式重写
-   - 例如：$E[R] = R_f + \beta(E[R_m] - R_f)$
+   - 例如：$E[R] = R_f + \\beta(E[R_m] - R_f)$
    - 变量定义使用 $...$ 包裹
 
 3. **关键加粗**：
@@ -44,21 +48,65 @@ REFINE_PROMPT = """你是一位专业的学术编辑。请对以下文本进行�
 """
 
 
-def _build_refine_script(content: str, api_key: str, model: str = "gemini-3.1-pro-preview") -> str:
+def _build_vertex_script(content: str, cfg) -> str:
+    """Build Python script for Vertex AI REST API call."""
     return f'''
 import urllib.request
 import json
 
-api_key = {json.dumps(api_key)}
-model = {json.dumps(model)}
+api_key = {json.dumps(cfg.gcp_api_key)}
+audio_path = {json.dumps(content)}
 
 url = (
-    "https://generativelanguage.googleapis.com/v1beta/"
-    f"models/{{model}}:generateContent?key={{api_key}}"
+    f"https://{cfg.gcp_location}-aiplatform.googleapis.com/v1/"
+    f"projects/{cfg.gcp_project_id}/locations/{cfg.gcp_location}/"
+    f"publishers/google/models/{cfg.gcp_model}:generateContent"
+    f"?key={{api_key}}"
 )
 
 system_prompt = {json.dumps(REFINE_PROMPT)}
+
+data = {{
+    "contents": [{{
+        "role": "user",
+        "parts": [
+            {{"text": system_prompt + audio_path}}
+        ]
+    }}],
+    "generationConfig": {{
+        "temperature": 0.2,
+        "maxOutputTokens": 8192,
+        "topP": 0.95
+    }}
+}}
+
+req = urllib.request.Request(
+    url,
+    data=json.dumps(data).encode(),
+    headers={{"Content-Type": "application/json"}}
+)
+resp = urllib.request.urlopen(req)
+result = json.loads(resp.read())
+text = result["candidates"][0]["content"]["parts"][0]["text"]
+print(text)
+'''
+
+
+def _build_gemini_script(content: str, cfg) -> str:
+    """Build Python script for Gemini Standard API REST call."""
+    return f'''
+import urllib.request
+import json
+
+api_key = {json.dumps(cfg.google_api_key)}
 content = {json.dumps(content)}
+
+url = (
+    "https://generativelanguage.googleapis.com/v1beta/"
+    f"models/{cfg.gemini_std_model}:generateContent?key={{api_key}}"
+)
+
+system_prompt = {json.dumps(REFINE_PROMPT)}
 
 data = {{
     "contents": [{{
@@ -86,6 +134,7 @@ print(text)
 
 
 def _run_python(script: str) -> str:
+    """Run Python script via subprocess."""
     import subprocess
     result = subprocess.run(
         [PYTHON, "-c", script],
@@ -98,20 +147,45 @@ def _run_python(script: str) -> str:
     return result.stdout.strip()
 
 
-def refine_markdown(content: str, model: str = "gemini-2.5-pro") -> str:
+def refine_markdown(content: str) -> str:
     """
     Refine markdown content using Gemini.
-    Returns cleaned, structured text with LaTeX math and bolded key terms.
+    Fault-tolerant: Vertex AI (gemini-2.5-pro) -> Gemini API (gemini-2.5-flash-lite).
     """
     cfg = load_config()
-    
-    # Prefer GEMINI_API_KEY for standard API; fallback to gcp-vertex-key
-    api_key = cfg.google_api_key or cfg.gcp_api_key
-    if not api_key:
-        raise RuntimeError("No API key available for refinement")
 
-    print(f"[INFO] Refining content ({len(content)} chars)...")
-    script = _build_refine_script(content, api_key, model)
-    refined = _run_python(script)
-    print(f"[INFO] Refined to {len(refined)} chars")
-    return refined
+    # Determine backend order
+    backends: list[str] = []
+    if cfg.gcp_api_key:
+        backends.append("gcp-vertex")
+    if cfg.google_api_key:
+        backends.append("gemini")
+
+    if not backends:
+        raise RuntimeError(
+            "No API key available for refinement. "
+            "Set gcp-vertex-key or GEMINI_API_KEY environment variable."
+        )
+
+    errors: list[str] = []
+
+    for backend in backends:
+        try:
+            if backend == "gcp-vertex":
+                print(f"[INFO] Trying GCP Vertex AI ({cfg.gcp_model})...")
+                script = _build_vertex_script(content, cfg)
+                refined = _run_python(script)
+                print(f"[INFO] Refined to {len(refined)} chars")
+                return refined
+            else:
+                print(f"[INFO] Trying Gemini API ({cfg.gemini_std_model})...")
+                script = _build_gemini_script(content, cfg)
+                refined = _run_python(script)
+                print(f"[INFO] Refined to {len(refined)} chars")
+                return refined
+        except Exception as e:
+            msg = f"{backend} failed: {str(e)[:200]}"
+            print(f"[WARN] {msg}")
+            errors.append(msg)
+
+    raise RuntimeError(f"All refinement backends failed:\n" + "\n".join(errors))
