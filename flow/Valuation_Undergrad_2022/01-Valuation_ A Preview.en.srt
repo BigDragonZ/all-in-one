@@ -1,0 +1,1435 @@
+1
+00:00:01,439 --> 00:00:02,310
+
+hi
+
+2
+00:00:02,310 --> 00:00:02,320
+hi
+ 
+
+3
+00:00:02,320 --> 00:00:04,309
+hi
+welcome to valuation
+
+4
+00:00:04,309 --> 00:00:04,319
+welcome to valuation
+ 
+
+5
+00:00:04,319 --> 00:00:06,190
+welcome to valuation
+i know many of you come in with
+
+6
+00:00:06,190 --> 00:00:06,200
+i know many of you come in with
+ 
+
+7
+00:00:06,200 --> 00:00:08,629
+i know many of you come in with
+preconceptions about what this class is
+
+8
+00:00:08,629 --> 00:00:08,639
+preconceptions about what this class is
+ 
+
+9
+00:00:08,639 --> 00:00:09,669
+preconceptions about what this class is
+about
+
+10
+00:00:09,669 --> 00:00:09,679
+about
+ 
+
+11
+00:00:09,679 --> 00:00:11,350
+about
+and rather than feed into those
+
+12
+00:00:11,350 --> 00:00:11,360
+and rather than feed into those
+ 
+
+13
+00:00:11,360 --> 00:00:12,789
+and rather than feed into those
+preconceptions
+
+14
+00:00:12,789 --> 00:00:12,799
+preconceptions
+ 
+
+15
+00:00:12,799 --> 00:00:14,789
+preconceptions
+i'd like to talk about what this class
+
+16
+00:00:14,789 --> 00:00:14,799
+i'd like to talk about what this class
+ 
+
+17
+00:00:14,799 --> 00:00:17,269
+i'd like to talk about what this class
+is not about and in the process perhaps
+
+18
+00:00:17,269 --> 00:00:17,279
+is not about and in the process perhaps
+ 
+
+19
+00:00:17,279 --> 00:00:19,189
+is not about and in the process perhaps
+perhaps you will get a sense of what
+
+20
+00:00:19,189 --> 00:00:19,199
+perhaps you will get a sense of what
+ 
+
+21
+00:00:19,199 --> 00:00:20,870
+perhaps you will get a sense of what
+this class is about
+
+22
+00:00:20,870 --> 00:00:20,880
+this class is about
+ 
+
+23
+00:00:20,880 --> 00:00:22,950
+this class is about
+i know for many of you valuation is a
+
+24
+00:00:22,950 --> 00:00:22,960
+i know for many of you valuation is a
+ 
+
+25
+00:00:22,960 --> 00:00:25,429
+i know for many of you valuation is a
+set of equations and formula and models
+
+26
+00:00:25,429 --> 00:00:25,439
+set of equations and formula and models
+ 
+
+27
+00:00:25,439 --> 00:00:26,790
+set of equations and formula and models
+and perhaps that is what you're
+
+28
+00:00:26,790 --> 00:00:26,800
+and perhaps that is what you're
+ 
+
+29
+00:00:26,800 --> 00:00:29,509
+and perhaps that is what you're
+expecting to get as science
+
+30
+00:00:29,509 --> 00:00:29,519
+expecting to get as science
+ 
+
+31
+00:00:29,519 --> 00:00:31,429
+expecting to get as science
+i'm sorry to disappoint you but
+
+32
+00:00:31,429 --> 00:00:31,439
+i'm sorry to disappoint you but
+ 
+
+33
+00:00:31,439 --> 00:00:34,630
+i'm sorry to disappoint you but
+valuation is not a science it is a craft
+
+34
+00:00:34,630 --> 00:00:34,640
+valuation is not a science it is a craft
+ 
+
+35
+00:00:34,640 --> 00:00:37,110
+valuation is not a science it is a craft
+and the essence of a craft is you learn
+
+36
+00:00:37,110 --> 00:00:37,120
+and the essence of a craft is you learn
+ 
+
+37
+00:00:37,120 --> 00:00:39,430
+and the essence of a craft is you learn
+through trial and error there is no
+
+38
+00:00:39,430 --> 00:00:39,440
+through trial and error there is no
+ 
+
+39
+00:00:39,440 --> 00:00:41,350
+through trial and error there is no
+perfect way of doing things there's a
+
+40
+00:00:41,350 --> 00:00:41,360
+perfect way of doing things there's a
+ 
+
+41
+00:00:41,360 --> 00:00:43,350
+perfect way of doing things there's a
+better way of doing things
+
+42
+00:00:43,350 --> 00:00:43,360
+better way of doing things
+ 
+
+43
+00:00:43,360 --> 00:00:45,750
+better way of doing things
+put simply you don't learn valuation by
+
+44
+00:00:45,750 --> 00:00:45,760
+put simply you don't learn valuation by
+ 
+
+45
+00:00:45,760 --> 00:00:47,590
+put simply you don't learn valuation by
+talking about it or watching other
+
+46
+00:00:47,590 --> 00:00:47,600
+talking about it or watching other
+ 
+
+47
+00:00:47,600 --> 00:00:49,590
+talking about it or watching other
+people talk about it
+
+48
+00:00:49,590 --> 00:00:49,600
+people talk about it
+ 
+
+49
+00:00:49,600 --> 00:00:52,630
+people talk about it
+so i hope that this class will help you
+
+50
+00:00:52,630 --> 00:00:52,640
+so i hope that this class will help you
+ 
+
+51
+00:00:52,640 --> 00:00:55,350
+so i hope that this class will help you
+learn valuation as a craft by doing it
+
+52
+00:00:55,350 --> 00:00:55,360
+learn valuation as a craft by doing it
+ 
+
+53
+00:00:55,360 --> 00:00:57,029
+learn valuation as a craft by doing it
+you will find that as you work through
+
+54
+00:00:57,029 --> 00:00:57,039
+you will find that as you work through
+ 
+
+55
+00:00:57,039 --> 00:00:59,189
+you will find that as you work through
+this class it will get easier when you
+
+56
+00:00:59,189 --> 00:00:59,199
+this class it will get easier when you
+ 
+
+57
+00:00:59,199 --> 00:01:00,630
+this class it will get easier when you
+start it's going to be difficult that's
+
+58
+00:01:00,630 --> 00:01:00,640
+start it's going to be difficult that's
+ 
+
+59
+00:01:00,640 --> 00:01:02,869
+start it's going to be difficult that's
+the nature of a craft and as you get
+
+60
+00:01:02,869 --> 00:01:02,879
+the nature of a craft and as you get
+ 
+
+61
+00:01:02,879 --> 00:01:05,030
+the nature of a craft and as you get
+more comfortable you'll start to get
+
+62
+00:01:05,030 --> 00:01:05,040
+more comfortable you'll start to get
+ 
+
+63
+00:01:05,040 --> 00:01:07,270
+more comfortable you'll start to get
+more comfortable also deviating from a
+
+64
+00:01:07,270 --> 00:01:07,280
+more comfortable also deviating from a
+ 
+
+65
+00:01:07,280 --> 00:01:08,230
+more comfortable also deviating from a
+script
+
+66
+00:01:08,230 --> 00:01:08,240
+script
+ 
+
+67
+00:01:08,240 --> 00:01:10,390
+script
+rather than cook from a recipe you'll be
+
+68
+00:01:10,390 --> 00:01:10,400
+rather than cook from a recipe you'll be
+ 
+
+69
+00:01:10,400 --> 00:01:12,710
+rather than cook from a recipe you'll be
+able to cook on your own
+
+70
+00:01:12,710 --> 00:01:12,720
+able to cook on your own
+ 
+
+71
+00:01:12,720 --> 00:01:13,990
+able to cook on your own
+second
+
+72
+00:01:13,990 --> 00:01:14,000
+second
+ 
+
+73
+00:01:14,000 --> 00:01:16,149
+second
+i know for many of you you're expecting
+
+74
+00:01:16,149 --> 00:01:16,159
+i know for many of you you're expecting
+ 
+
+75
+00:01:16,159 --> 00:01:18,550
+i know for many of you you're expecting
+a class built around valuing publicly
+
+76
+00:01:18,550 --> 00:01:18,560
+a class built around valuing publicly
+ 
+
+77
+00:01:18,560 --> 00:01:20,230
+a class built around valuing publicly
+traded companies
+
+78
+00:01:20,230 --> 00:01:20,240
+traded companies
+ 
+
+79
+00:01:20,240 --> 00:01:22,469
+traded companies
+you want to value the coca-colas the
+
+80
+00:01:22,469 --> 00:01:22,479
+you want to value the coca-colas the
+ 
+
+81
+00:01:22,479 --> 00:01:25,270
+you want to value the coca-colas the
+airbnbs the ubers the facebooks of the
+
+82
+00:01:25,270 --> 00:01:25,280
+airbnbs the ubers the facebooks of the
+ 
+
+83
+00:01:25,280 --> 00:01:27,670
+airbnbs the ubers the facebooks of the
+world and that's okay that's pretty much
+
+84
+00:01:27,670 --> 00:01:27,680
+world and that's okay that's pretty much
+ 
+
+85
+00:01:27,680 --> 00:01:30,149
+world and that's okay that's pretty much
+what many people think about valuation
+
+86
+00:01:30,149 --> 00:01:30,159
+what many people think about valuation
+ 
+
+87
+00:01:30,159 --> 00:01:32,230
+what many people think about valuation
+but i hope to make this class much more
+
+88
+00:01:32,230 --> 00:01:32,240
+but i hope to make this class much more
+ 
+
+89
+00:01:32,240 --> 00:01:34,710
+but i hope to make this class much more
+than valuing just public companies i
+
+90
+00:01:34,710 --> 00:01:34,720
+than valuing just public companies i
+ 
+
+91
+00:01:34,720 --> 00:01:36,310
+than valuing just public companies i
+want to talk about valuing private
+
+92
+00:01:36,310 --> 00:01:36,320
+want to talk about valuing private
+ 
+
+93
+00:01:36,320 --> 00:01:37,910
+want to talk about valuing private
+companies i want to talk about buying
+
+94
+00:01:37,910 --> 00:01:37,920
+companies i want to talk about buying
+ 
+
+95
+00:01:37,920 --> 00:01:40,069
+companies i want to talk about buying
+small companies and large companies
+
+96
+00:01:40,069 --> 00:01:40,079
+small companies and large companies
+ 
+
+97
+00:01:40,079 --> 00:01:41,830
+small companies and large companies
+develop market companies in emerging
+
+98
+00:01:41,830 --> 00:01:41,840
+develop market companies in emerging
+ 
+
+99
+00:01:41,840 --> 00:01:44,230
+develop market companies in emerging
+market companies and along the way what
+
+100
+00:01:44,230 --> 00:01:44,240
+market companies and along the way what
+ 
+
+101
+00:01:44,240 --> 00:01:46,230
+market companies and along the way what
+i hope you will see in this class is the
+
+102
+00:01:46,230 --> 00:01:46,240
+i hope you will see in this class is the
+ 
+
+103
+00:01:46,240 --> 00:01:49,030
+i hope you will see in this class is the
+principles of valuation are universal
+
+104
+00:01:49,030 --> 00:01:49,040
+principles of valuation are universal
+ 
+
+105
+00:01:49,040 --> 00:01:50,870
+principles of valuation are universal
+you don't really need to relearn
+
+106
+00:01:50,870 --> 00:01:50,880
+you don't really need to relearn
+ 
+
+107
+00:01:50,880 --> 00:01:53,270
+you don't really need to relearn
+valuation to value a specific group of
+
+108
+00:01:53,270 --> 00:01:53,280
+valuation to value a specific group of
+ 
+
+109
+00:01:53,280 --> 00:01:55,190
+valuation to value a specific group of
+companies you just need to take the
+
+110
+00:01:55,190 --> 00:01:55,200
+companies you just need to take the
+ 
+
+111
+00:01:55,200 --> 00:01:57,910
+companies you just need to take the
+existing principles evaluation and apply
+
+112
+00:01:57,910 --> 00:01:57,920
+existing principles evaluation and apply
+ 
+
+113
+00:01:57,920 --> 00:01:59,670
+existing principles evaluation and apply
+them differently
+
+114
+00:01:59,670 --> 00:01:59,680
+them differently
+ 
+
+115
+00:01:59,680 --> 00:02:01,510
+them differently
+along the way we'll talk about how value
+
+116
+00:02:01,510 --> 00:02:01,520
+along the way we'll talk about how value
+ 
+
+117
+00:02:01,520 --> 00:02:03,350
+along the way we'll talk about how value
+can be different from the inside when
+
+118
+00:02:03,350 --> 00:02:03,360
+can be different from the inside when
+ 
+
+119
+00:02:03,360 --> 00:02:05,510
+can be different from the inside when
+managers look at a company i suppose
+
+120
+00:02:05,510 --> 00:02:05,520
+managers look at a company i suppose
+ 
+
+121
+00:02:05,520 --> 00:02:07,270
+managers look at a company i suppose
+from the outside as investors looking at
+
+122
+00:02:07,270 --> 00:02:07,280
+from the outside as investors looking at
+ 
+
+123
+00:02:07,280 --> 00:02:09,510
+from the outside as investors looking at
+a company not because the principles
+
+124
+00:02:09,510 --> 00:02:09,520
+a company not because the principles
+ 
+
+125
+00:02:09,520 --> 00:02:11,750
+a company not because the principles
+change but because managers control more
+
+126
+00:02:11,750 --> 00:02:11,760
+change but because managers control more
+ 
+
+127
+00:02:11,760 --> 00:02:13,510
+change but because managers control more
+of the levers they can change the way a
+
+128
+00:02:13,510 --> 00:02:13,520
+of the levers they can change the way a
+ 
+
+129
+00:02:13,520 --> 00:02:14,949
+of the levers they can change the way a
+companies run
+
+130
+00:02:14,949 --> 00:02:14,959
+companies run
+ 
+
+131
+00:02:14,959 --> 00:02:17,190
+companies run
+by the end of this class i hope you can
+
+132
+00:02:17,190 --> 00:02:17,200
+by the end of this class i hope you can
+ 
+
+133
+00:02:17,200 --> 00:02:19,990
+by the end of this class i hope you can
+value just about any kind of business
+
+134
+00:02:19,990 --> 00:02:20,000
+value just about any kind of business
+ 
+
+135
+00:02:20,000 --> 00:02:22,710
+value just about any kind of business
+small or large in whatever sector in
+
+136
+00:02:22,710 --> 00:02:22,720
+small or large in whatever sector in
+ 
+
+137
+00:02:22,720 --> 00:02:24,710
+small or large in whatever sector in
+whatever market
+
+138
+00:02:24,710 --> 00:02:24,720
+whatever market
+ 
+
+139
+00:02:24,720 --> 00:02:26,790
+whatever market
+third i want to draw a contrast between
+
+140
+00:02:26,790 --> 00:02:26,800
+third i want to draw a contrast between
+ 
+
+141
+00:02:26,800 --> 00:02:29,110
+third i want to draw a contrast between
+two words we use interchangeably in
+
+142
+00:02:29,110 --> 00:02:29,120
+two words we use interchangeably in
+ 
+
+143
+00:02:29,120 --> 00:02:31,350
+two words we use interchangeably in
+investing value and price
+
+144
+00:02:31,350 --> 00:02:31,360
+investing value and price
+ 
+
+145
+00:02:31,360 --> 00:02:33,589
+investing value and price
+let me set this on the table if i
+
+146
+00:02:33,589 --> 00:02:33,599
+let me set this on the table if i
+ 
+
+147
+00:02:33,599 --> 00:02:35,589
+let me set this on the table if i
+believe that markets were efficient what
+
+148
+00:02:35,589 --> 00:02:35,599
+believe that markets were efficient what
+ 
+
+149
+00:02:35,599 --> 00:02:37,350
+believe that markets were efficient what
+i'm effectively saying the value and the
+
+150
+00:02:37,350 --> 00:02:37,360
+i'm effectively saying the value and the
+ 
+
+151
+00:02:37,360 --> 00:02:39,430
+i'm effectively saying the value and the
+price are pretty much the same thing and
+
+152
+00:02:39,430 --> 00:02:39,440
+price are pretty much the same thing and
+ 
+
+153
+00:02:39,440 --> 00:02:40,869
+price are pretty much the same thing and
+if you believe that there's really no
+
+154
+00:02:40,869 --> 00:02:40,879
+if you believe that there's really no
+ 
+
+155
+00:02:40,879 --> 00:02:42,790
+if you believe that there's really no
+point taking this class
+
+156
+00:02:42,790 --> 00:02:42,800
+point taking this class
+ 
+
+157
+00:02:42,800 --> 00:02:45,430
+point taking this class
+i believe that the value of an asset is
+
+158
+00:02:45,430 --> 00:02:45,440
+i believe that the value of an asset is
+ 
+
+159
+00:02:45,440 --> 00:02:47,589
+i believe that the value of an asset is
+driven by cash flows growth and risk and
+
+160
+00:02:47,589 --> 00:02:47,599
+driven by cash flows growth and risk and
+ 
+
+161
+00:02:47,599 --> 00:02:49,430
+driven by cash flows growth and risk and
+we're going to talk a lot about how to
+
+162
+00:02:49,430 --> 00:02:49,440
+we're going to talk a lot about how to
+ 
+
+163
+00:02:49,440 --> 00:02:51,830
+we're going to talk a lot about how to
+value an asset in this class
+
+164
+00:02:51,830 --> 00:02:51,840
+value an asset in this class
+ 
+
+165
+00:02:51,840 --> 00:02:53,110
+value an asset in this class
+but we're also going to talk about how
+
+166
+00:02:53,110 --> 00:02:53,120
+but we're also going to talk about how
+ 
+
+167
+00:02:53,120 --> 00:02:55,430
+but we're also going to talk about how
+to price that same asset what does that
+
+168
+00:02:55,430 --> 00:02:55,440
+to price that same asset what does that
+ 
+
+169
+00:02:55,440 --> 00:02:57,670
+to price that same asset what does that
+mean to price an asset you look at what
+
+170
+00:02:57,670 --> 00:02:57,680
+mean to price an asset you look at what
+ 
+
+171
+00:02:57,680 --> 00:02:59,990
+mean to price an asset you look at what
+other assets just like it are being
+
+172
+00:02:59,990 --> 00:03:00,000
+other assets just like it are being
+ 
+
+173
+00:03:00,000 --> 00:03:02,070
+other assets just like it are being
+priced at in the market and i'm going to
+
+174
+00:03:02,070 --> 00:03:02,080
+priced at in the market and i'm going to
+ 
+
+175
+00:03:02,080 --> 00:03:04,070
+priced at in the market and i'm going to
+argue that the pricing process can give
+
+176
+00:03:04,070 --> 00:03:04,080
+argue that the pricing process can give
+ 
+
+177
+00:03:04,080 --> 00:03:06,070
+argue that the pricing process can give
+your number very different than the
+
+178
+00:03:06,070 --> 00:03:06,080
+your number very different than the
+ 
+
+179
+00:03:06,080 --> 00:03:07,750
+your number very different than the
+value process
+
+180
+00:03:07,750 --> 00:03:07,760
+value process
+ 
+
+181
+00:03:07,760 --> 00:03:09,430
+value process
+we're going to go through both valuing
+
+182
+00:03:09,430 --> 00:03:09,440
+we're going to go through both valuing
+ 
+
+183
+00:03:09,440 --> 00:03:11,190
+we're going to go through both valuing
+and pricing assets along the way and
+
+184
+00:03:11,190 --> 00:03:11,200
+and pricing assets along the way and
+ 
+
+185
+00:03:11,200 --> 00:03:12,790
+and pricing assets along the way and
+we're going to look at some investments
+
+186
+00:03:12,790 --> 00:03:12,800
+we're going to look at some investments
+ 
+
+187
+00:03:12,800 --> 00:03:15,430
+we're going to look at some investments
+that cannot be valued currencies for
+
+188
+00:03:15,430 --> 00:03:15,440
+that cannot be valued currencies for
+ 
+
+189
+00:03:15,440 --> 00:03:17,270
+that cannot be valued currencies for
+instance cannot be valued they can only
+
+190
+00:03:17,270 --> 00:03:17,280
+instance cannot be valued they can only
+ 
+
+191
+00:03:17,280 --> 00:03:20,070
+instance cannot be valued they can only
+be priced a collectible cannot be valid
+
+192
+00:03:20,070 --> 00:03:20,080
+be priced a collectible cannot be valid
+ 
+
+193
+00:03:20,080 --> 00:03:22,390
+be priced a collectible cannot be valid
+it can only be priced
+
+194
+00:03:22,390 --> 00:03:22,400
+it can only be priced
+ 
+
+195
+00:03:22,400 --> 00:03:24,309
+it can only be priced
+fourth i'm going to surprise you i know
+
+196
+00:03:24,309 --> 00:03:24,319
+fourth i'm going to surprise you i know
+ 
+
+197
+00:03:24,319 --> 00:03:26,070
+fourth i'm going to surprise you i know
+many of you are going to come into this
+
+198
+00:03:26,070 --> 00:03:26,080
+many of you are going to come into this
+ 
+
+199
+00:03:26,080 --> 00:03:27,670
+many of you are going to come into this
+class expecting to see excel
+
+200
+00:03:27,670 --> 00:03:27,680
+class expecting to see excel
+ 
+
+201
+00:03:27,680 --> 00:03:28,949
+class expecting to see excel
+spreadsheets
+
+202
+00:03:28,949 --> 00:03:28,959
+spreadsheets
+ 
+
+203
+00:03:28,959 --> 00:03:31,190
+spreadsheets
+and i'll make a confession i've never
+
+204
+00:03:31,190 --> 00:03:31,200
+and i'll make a confession i've never
+ 
+
+205
+00:03:31,200 --> 00:03:32,869
+and i'll make a confession i've never
+opened an excel spreadsheet in the
+
+206
+00:03:32,869 --> 00:03:32,879
+opened an excel spreadsheet in the
+ 
+
+207
+00:03:32,879 --> 00:03:34,789
+opened an excel spreadsheet in the
+context of a class
+
+208
+00:03:34,789 --> 00:03:34,799
+context of a class
+ 
+
+209
+00:03:34,799 --> 00:03:37,430
+context of a class
+to me the essence of evaluation is not
+
+210
+00:03:37,430 --> 00:03:37,440
+to me the essence of evaluation is not
+ 
+
+211
+00:03:37,440 --> 00:03:39,430
+to me the essence of evaluation is not
+the collection of numbers that make it
+
+212
+00:03:39,430 --> 00:03:39,440
+the collection of numbers that make it
+ 
+
+213
+00:03:39,440 --> 00:03:41,750
+the collection of numbers that make it
+but the story behind the numbers
+
+214
+00:03:41,750 --> 00:03:41,760
+but the story behind the numbers
+ 
+
+215
+00:03:41,760 --> 00:03:43,509
+but the story behind the numbers
+you can hear a lot of storytelling in
+
+216
+00:03:43,509 --> 00:03:43,519
+you can hear a lot of storytelling in
+ 
+
+217
+00:03:43,519 --> 00:03:45,509
+you can hear a lot of storytelling in
+this class but storytelling with a
+
+218
+00:03:45,509 --> 00:03:45,519
+this class but storytelling with a
+ 
+
+219
+00:03:45,519 --> 00:03:46,470
+this class but storytelling with a
+purpose
+
+220
+00:03:46,470 --> 00:03:46,480
+purpose
+ 
+
+221
+00:03:46,480 --> 00:03:48,789
+purpose
+where every number in my evaluation is
+
+222
+00:03:48,789 --> 00:03:48,799
+where every number in my evaluation is
+ 
+
+223
+00:03:48,799 --> 00:03:51,110
+where every number in my evaluation is
+connected to a story and every story i
+
+224
+00:03:51,110 --> 00:03:51,120
+connected to a story and every story i
+ 
+
+225
+00:03:51,120 --> 00:03:53,190
+connected to a story and every story i
+tell you about a company is connected to
+
+226
+00:03:53,190 --> 00:03:53,200
+tell you about a company is connected to
+ 
+
+227
+00:03:53,200 --> 00:03:54,949
+tell you about a company is connected to
+numbers
+
+228
+00:03:54,949 --> 00:03:54,959
+numbers
+ 
+
+229
+00:03:54,959 --> 00:03:56,149
+numbers
+finally
+
+230
+00:03:56,149 --> 00:03:56,159
+finally
+ 
+
+231
+00:03:56,159 --> 00:03:57,990
+finally
+i don't believe in valuing things just
+
+232
+00:03:57,990 --> 00:03:58,000
+i don't believe in valuing things just
+ 
+
+233
+00:03:58,000 --> 00:03:59,990
+i don't believe in valuing things just
+for the sake of valuing them i'm a
+
+234
+00:03:59,990 --> 00:04:00,000
+for the sake of valuing them i'm a
+ 
+
+235
+00:04:00,000 --> 00:04:01,270
+for the sake of valuing them i'm a
+pragmatist
+
+236
+00:04:01,270 --> 00:04:01,280
+pragmatist
+ 
+
+237
+00:04:01,280 --> 00:04:03,589
+pragmatist
+i believe that if you value something
+
+238
+00:04:03,589 --> 00:04:03,599
+i believe that if you value something
+ 
+
+239
+00:04:03,599 --> 00:04:05,429
+i believe that if you value something
+you need to be willing to act on it what
+
+240
+00:04:05,429 --> 00:04:05,439
+you need to be willing to act on it what
+ 
+
+241
+00:04:05,439 --> 00:04:07,670
+you need to be willing to act on it what
+does that mean if you find something to
+
+242
+00:04:07,670 --> 00:04:07,680
+does that mean if you find something to
+ 
+
+243
+00:04:07,680 --> 00:04:09,750
+does that mean if you find something to
+be undervalued you have to be willing to
+
+244
+00:04:09,750 --> 00:04:09,760
+be undervalued you have to be willing to
+ 
+
+245
+00:04:09,760 --> 00:04:11,750
+be undervalued you have to be willing to
+buy it you're saying so what's so
+
+246
+00:04:11,750 --> 00:04:11,760
+buy it you're saying so what's so
+ 
+
+247
+00:04:11,760 --> 00:04:13,429
+buy it you're saying so what's so
+difficult about doing that
+
+248
+00:04:13,429 --> 00:04:13,439
+difficult about doing that
+ 
+
+249
+00:04:13,439 --> 00:04:15,110
+difficult about doing that
+you're going to recognize that there's a
+
+250
+00:04:15,110 --> 00:04:15,120
+you're going to recognize that there's a
+ 
+
+251
+00:04:15,120 --> 00:04:17,110
+you're going to recognize that there's a
+difference between figuring out that
+
+252
+00:04:17,110 --> 00:04:17,120
+difference between figuring out that
+ 
+
+253
+00:04:17,120 --> 00:04:20,069
+difference between figuring out that
+something is misvalued and acting on it
+
+254
+00:04:20,069 --> 00:04:20,079
+something is misvalued and acting on it
+ 
+
+255
+00:04:20,079 --> 00:04:22,230
+something is misvalued and acting on it
+and that difference can be bridged only
+
+256
+00:04:22,230 --> 00:04:22,240
+and that difference can be bridged only
+ 
+
+257
+00:04:22,240 --> 00:04:24,950
+and that difference can be bridged only
+with faith faith in what faith in your
+
+258
+00:04:24,950 --> 00:04:24,960
+with faith faith in what faith in your
+ 
+
+259
+00:04:24,960 --> 00:04:27,110
+with faith faith in what faith in your
+own value and faith that markets will
+
+260
+00:04:27,110 --> 00:04:27,120
+own value and faith that markets will
+ 
+
+261
+00:04:27,120 --> 00:04:30,150
+own value and faith that markets will
+correct that price will move to value
+
+262
+00:04:30,150 --> 00:04:30,160
+correct that price will move to value
+ 
+
+263
+00:04:30,160 --> 00:04:32,310
+correct that price will move to value
+much more difficult than it sounds on
+
+264
+00:04:32,310 --> 00:04:32,320
+much more difficult than it sounds on
+ 
+
+265
+00:04:32,320 --> 00:04:34,150
+much more difficult than it sounds on
+the outside
+
+266
+00:04:34,150 --> 00:04:34,160
+the outside
+ 
+
+267
+00:04:34,160 --> 00:04:36,230
+the outside
+so what i hope to during this do during
+
+268
+00:04:36,230 --> 00:04:36,240
+so what i hope to during this do during
+ 
+
+269
+00:04:36,240 --> 00:04:38,790
+so what i hope to during this do during
+this class is not just deliver the
+
+270
+00:04:38,790 --> 00:04:38,800
+this class is not just deliver the
+ 
+
+271
+00:04:38,800 --> 00:04:41,189
+this class is not just deliver the
+techniques and the tools evaluation but
+
+272
+00:04:41,189 --> 00:04:41,199
+techniques and the tools evaluation but
+ 
+
+273
+00:04:41,199 --> 00:04:43,510
+techniques and the tools evaluation but
+give you some insight into how you can
+
+274
+00:04:43,510 --> 00:04:43,520
+give you some insight into how you can
+ 
+
+275
+00:04:43,520 --> 00:04:45,749
+give you some insight into how you can
+connect stories to value the difference
+
+276
+00:04:45,749 --> 00:04:45,759
+connect stories to value the difference
+ 
+
+277
+00:04:45,759 --> 00:04:48,230
+connect stories to value the difference
+between value and price and how you go
+
+278
+00:04:48,230 --> 00:04:48,240
+between value and price and how you go
+ 
+
+279
+00:04:48,240 --> 00:04:50,469
+between value and price and how you go
+about acquiring the faith to be able to
+
+280
+00:04:50,469 --> 00:04:50,479
+about acquiring the faith to be able to
+ 
+
+281
+00:04:50,479 --> 00:04:52,629
+about acquiring the faith to be able to
+act on evaluations
+
+282
+00:04:52,629 --> 00:04:52,639
+act on evaluations
+ 
+
+283
+00:04:52,639 --> 00:04:54,950
+act on evaluations
+i hope you will find this class useful
+
+284
+00:04:54,950 --> 00:04:54,960
+i hope you will find this class useful
+ 
+
+285
+00:04:54,960 --> 00:04:56,469
+i hope you will find this class useful
+no matter what perspective
+
+286
+00:04:56,469 --> 00:04:56,479
+no matter what perspective
+ 
+
+287
+00:04:56,479 --> 00:05:00,199
+no matter what perspective
+you bring into the class
+
