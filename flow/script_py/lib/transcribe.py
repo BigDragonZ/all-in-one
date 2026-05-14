@@ -16,6 +16,11 @@ from typing import Optional
 from config.paths import BINARIES
 from config.transcribe import TranscribeConfig, load_config
 
+PROMPT = (
+    "请仔细转写这段音频的内容。保持原文语言，添加标点，"
+    "按语义分段，去除语气词和广告词，输出纯文本。"
+)
+
 PYTHON = BINARIES["python"]
 
 
@@ -42,7 +47,7 @@ data = {{
     "contents": [{{
         "role": "user",
         "parts": [
-            {{"text": "Transcribe this audio accurately."}},
+            {{"text": "请仔细转写这段音频的内容。保持原文语言，添加标点，按语义分段，去除语气词和广告词，输出纯文本。"}},
             {{"inline_data": {{"mime_type": "audio/mpeg", "data": audio_b64}}}}
         ]
     }}],
@@ -81,7 +86,7 @@ url = (
 data = {{
     "contents": [{{
         "parts": [
-            {{"text": "Transcribe this audio accurately."}},
+            {{"text": "请仔细转写这段音频的内容。保持原文语言，添加标点，按语义分段，去除语气词和广告词，输出纯文本。"}},
             {{"inline_data": {{"mime_type": "audio/mpeg", "data": audio_b64}}}}
         ]
     }}],
