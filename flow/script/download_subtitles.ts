@@ -1,6 +1,6 @@
 #!/usr/bin/env -S deno run --allow-net --allow-read --allow-write --allow-run --allow-env
 /**
- * Download YouTube video subtitles using yt-dlp.
+ * Download YouTube video subtitles and convert to Markdown.
  *
  * Usage:
  *   deno run --allow-net --allow-read --allow-write --allow-run --allow-env \
@@ -12,7 +12,7 @@
  *     "Valuation_Undergrad_2022" 1
  *
  * Output:
- *   all-in-one/flow/Valuation_Undergrad_2022/01-Valuation A Preview.srt
+ *   all-in-one/flow/Valuation_Undergrad_2022/01-Valuation A Preview.md
  */
 
 import { dirname, join } from "https://deno.land/std@0.224.0/path/mod.ts";
@@ -37,7 +37,7 @@ async function fetchVideoTitle(url: string): Promise<string> {
   return new TextDecoder().decode(stdout).trim();
 }
 
-async function downloadSubtitle(url: string, outputPath: string): Promise<void> {
+async function downloadSubtitle(url: string, basePath: string): Promise<string> {
   const cmd = new Deno.Command(YTDLP_PATH, {
     args: [
       "--cookies-from-browser", "chrome",
@@ -46,7 +46,7 @@ async function downloadSubtitle(url: string, outputPath: string): Promise<void> 
       "--skip-download",
       "--sub-langs", "en",
       "--convert-subs", "srt",
-      "--output", outputPath,
+      "--output", basePath,
       url,
     ],
     stdout: "piped",
@@ -59,6 +59,84 @@ async function downloadSubtitle(url: string, outputPath: string): Promise<void> 
   if (code !== 0 && !err.includes("Downloading")) {
     throw new Error(`yt-dlp exited ${code}: ${err}`);
   }
+
+  // yt-dlp appends .en.srt automatically
+  const srtFile = `${basePath}.en.srt`;
+  try {
+    await Deno.stat(srtFile);
+    return srtFile;
+  } catch {
+    const altFile = `${basePath}.srt`;
+    await Deno.stat(altFile);
+    return altFile;
+  }
+}
+
+function parseSrt(content: string): Array<{ index: number; start: string; end: string; text: string }> {
+  const blocks = content.trim().split(/\n\s*\n/);
+  const entries: Array<{ index: number; start: string; end: string; text: string }> = [];
+
+  for (const block of blocks) {
+    const lines = block.trim().split("\n");
+    if (lines.length < 3) continue;
+
+    const idx = parseInt(lines[0].trim(), 10);
+    if (isNaN(idx)) continue;
+
+    const timeMatch = lines[1].match(/(\d{2}:\d{2}:\d{2},\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2},\d{3})/);
+    if (!timeMatch) continue;
+
+    const text = lines
+      .slice(2)
+      .join(" ")
+      .replace(/\r/g, "")
+      .replace(/<[^>]+>/g, "")
+      .replace(/\[music\]|\[Music\]|\[音楽\]|♪/gi, "")
+      .trim();
+
+    if (!text) continue;
+
+    entries.push({
+      index: idx,
+      start: timeMatch[1],
+      end: timeMatch[2],
+      text,
+    });
+  }
+
+  return entries;
+}
+
+function srtToMarkdown(
+  entries: Array<{ index: number; start: string; end: string; text: string }>,
+  title: string,
+  url: string,
+  courseName: string,
+  index: number
+): string {
+  const lines: string[] = [];
+
+  lines.push(`# ${title}`);
+  lines.push("");
+  lines.push("## 元信息");
+  lines.push("");
+  lines.push(`- **序号**: ${index}`);
+  lines.push(`- **课程**: ${courseName}`);
+  lines.push(`- **链接**: ${url}`);
+  lines.push(`- **处理时间**: ${new Date().toISOString().slice(0, 19).replace("T", " ")}`);
+  lines.push(`- **来源**: YouTube 自动生成字幕`);
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+  lines.push("## 字幕内容");
+  lines.push("");
+
+  for (const entry of entries) {
+    lines.push(`**[${entry.start} - ${entry.end}]** ${entry.text}`);
+    lines.push("");
+  }
+
+  return lines.join("\n");
 }
 
 // ── main ──────────────────────────────────────────────────────────────
@@ -91,35 +169,33 @@ console.log(`[INFO] Output dir: ${outDir}`);
 try {
   const title = await fetchVideoTitle(url);
   const safeTitle = sanitizeFilename(title);
-  const filename = `${String(index).padStart(2, "0")}-${safeTitle}.en.srt`;
+  const filename = `${String(index).padStart(2, "0")}-${safeTitle}.md`;
   const outputPath = join(outDir, filename);
 
-  // yt-dlp appends .en.srt automatically, so we use base path without extension
-  const basePath = join(outDir, `${String(index).padStart(2, "0")}-${safeTitle}`);
+  // Temporary base path for yt-dlp (it auto-adds .en.srt)
+  const tempBase = join(outDir, `_tmp_${Date.now()}`);
 
   console.log(`[INFO] Video title: ${title}`);
   console.log(`[INFO] Downloading subtitle...`);
 
-  await downloadSubtitle(url, basePath);
+  const srtFile = await downloadSubtitle(url, tempBase);
 
-  // Check if file was created (yt-dlp may add .en.srt)
-  const expectedFile = `${basePath}.en.srt`;
+  console.log(`[INFO] Converting SRT to Markdown...`);
+  const srtContent = await Deno.readTextFile(srtFile);
+  const entries = parseSrt(srtContent);
+  const markdown = srtToMarkdown(entries, title, url, courseName, index);
+
+  await Deno.writeTextFile(outputPath, markdown);
+
+  // Cleanup temp SRT file
+  await Deno.remove(srtFile);
+  // Also cleanup .srt if it was renamed
   try {
-    await Deno.stat(expectedFile);
-    console.log(`[SUCCESS] Subtitle saved to: ${expectedFile}`);
-  } catch {
-    // Try without .en
-    const altFile = `${basePath}.srt`;
-    try {
-      await Deno.stat(altFile);
-      // Rename to include .en
-      await Deno.rename(altFile, expectedFile);
-      console.log(`[SUCCESS] Subtitle saved to: ${expectedFile}`);
-    } catch {
-      console.error("[ERROR] Subtitle file not found after download");
-      Deno.exit(1);
-    }
-  }
+    await Deno.remove(`${tempBase}.en.srt`);
+  } catch { /* ignore */ }
+
+  console.log(`[SUCCESS] Markdown saved to: ${outputPath}`);
+  console.log(`[INFO] Total entries: ${entries.length}`);
 
   Deno.exit(0);
 } catch (e: any) {
