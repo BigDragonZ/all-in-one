@@ -4,10 +4,10 @@
 
 - **序号**: 1
 - **课程**: Valuation_Undergrad_2022
-- **音频**: flow/Valuation_Undergrad_2022/01-Valuation_ A Preview.mp3
+- **音频**: ../flow/Valuation_Undergrad_2022/01-audio-test.mp3
 - **后端**: gcp-vertex
 - **模型**: gemini-2.5-flash-lite
-- **处理时间**: 2026-05-14 23:04:08
+- **处理时间**: 2026-05-15 07:13:34
 
 ---
 
