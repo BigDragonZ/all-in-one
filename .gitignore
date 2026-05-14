@@ -1,12 +1,14 @@
-# Obsidian
-.obsidian/
 
-# Cache
+__pycache__/
 .cache/
-*.cache
-
-# Secrets
-999common/000key.md
-
-# System files
 .DS_Store
+.obsidian/
+.venv/
+*.cache
+# Cache
+# Obsidian
+# Secrets
+# System files
+# uv Python Environment
+999common/000key.md
+uv.lock
