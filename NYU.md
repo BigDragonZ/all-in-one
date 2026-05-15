@@ -8,18 +8,18 @@
 
 _不论什么专业，Stern 的学生大一到大二必须全部修完，这些是商业逻辑的“底座”。_
 
-|**英文课程名称 (用于 YouTube 搜索)**|**中文对应名称**|
-|---|---|
-|**Principles of Financial Accounting**|财务会计原理|
-|**Principles of Managerial Accounting**|管理会计原理|
-|**Principles of Microeconomics**|微观经济学原理|
-|**Principles of Macroeconomics**|宏观经济学原理|
-|**Foundations of Finance**|金融学基础|
-|**Management and Organizations**|管理与组织行为学|
-|**Introduction to Marketing**|市场营销导论|
-|**Information Technology in Business & Society**|商业与社会中的信息技术|
-|**Operations Management**|运营管理|
-|**Strategic Analysis**|战略分析|
+| **英文课程名称 (用于 YouTube 搜索)**                       | **中文对应名称**  |
+| ------------------------------------------------ | ----------- |
+| **Principles of Financial Accounting**           | 财务会计原理      |
+| **Principles of Managerial Accounting**          | 管理会计原理      |
+| **Principles of Microeconomics**                 | 微观经济学原理     |
+| **Principles of Macroeconomics**                 | 宏观经济学原理     |
+| **Foundations of Finance**                       | 金融学基础       |
+| **Management and Organizations**                 | 管理与组织行为学    |
+| **Introduction to Marketing**                    | 市场营销导论      |
+| **Information Technology in Business & Society** | 商业与社会中的信息技术 |
+| **Operations Management**                        | 运营管理        |
+| **Strategic Analysis**                           | 战略分析        |
 
 ---
 
@@ -93,3 +93,15 @@ _这是为了让你在 2026 年成为“顶级专家”准备的。_
         
 
 **这个清单现在够“重”了吗？如果你觉得还不够，我可以把 Stern 每一个学期（Semester）推荐的选课排期表（Sample Schedule）也提供给你。**
+
+
+https://www.youtube.com/playlist?list=PLUkh9m2BorqmKaLrNBjKtFDhpdFdi8f7C
+https://www.youtube.com/playlist?list=PLfGIgQ5MF87B_gFJ5t1ulFop6ZBx7mMbe
+https://www.youtube.com/playlist?list=PLUl4u3cNGP60V7HxLYRaJMbFzP77bzEjb
+https://www.youtube.com/playlist?list=PLUl4u3cNGP62EXoZ4B3_Ob7lRRwpGQxkb
+https://www.youtube.com/playlist?list=PLUkh9m2BorqnKWu0g5ZUps_CbQ-JGtbI9
+https://www.youtube.com/playlist?list=PL5_qO7P2XjBd86Pw0SQVTaA88nHTj1I3e
+https://www.youtube.com/playlist?list=PLesgViD0jhW-Ydpei3GnpoUwUGbLg50-G
+https://www.youtube.com/playlist?list=PLuAz-nxZVHKCgTMK9qJVoRnnx5D1EdmUj
+https://www.youtube.com/playlist?list=PL1vtGId5rAwVDTs-_FpwHNShhqI1i9Qm8
+https://www.youtube.com/playlist?list=PLDf5fbHBojiuz0vz_vkyoX5xPU_lc6FnY

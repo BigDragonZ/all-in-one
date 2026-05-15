@@ -1,213 +1,205 @@
 #!/usr/bin/env python3
 """
-Export Markdown notes to A4 PDF for printing.
-Usage: uv run flow/script/export_pdf.py <input_dir> [output_dir]
+Export course notes to PDF (A4 format) for printing.
+
+Usage:
+    uv run flow/script/export_pdf.py <course_name>
 """
+
+import argparse
 import sys
-import os
-import re
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
-
+import markdown
 from weasyprint import HTML, CSS
-from weasyprint.text.fonts import FontConfiguration
 
-A4_CSS = """
-@page {
+
+def build_html(course_name: str, perm_dir: Path) -> str:
+    """Build combined HTML from all markdown files."""
+    
+    # Order: syllabus -> chapters -> MOC -> Anki
+    files = []
+    
+    # Syllabus
+    syllabus = perm_dir / f"{course_name}_课程大纲.md"
+    if syllabus.exists():
+        files.append(("课程大纲", syllabus))
+    
+    # Chapters
+    for ch_file in sorted(perm_dir.glob("Ch_*.md")):
+        title = ch_file.stem.replace("Ch_", "第").replace("_", " ")
+        files.append((title, ch_file))
+    
+    # MOC
+    moc = perm_dir / f"{course_name}_知识地图_MOC.md"
+    if moc.exists():
+        files.append(("知识地图 MOC", moc))
+    
+    # Anki
+    anki = list(perm_dir.glob("Anki_*.md"))
+    if anki:
+        files.append(("Anki 记忆卡片", anki[0]))
+    
+    # Build HTML
+    md = markdown.Markdown(extensions=['tables', 'fenced_code', 'toc'])
+    
+    parts = []
+    parts.append(f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{course_name}</title>
+<style>
+@page {{
     size: A4;
     margin: 2cm;
-    @bottom-center {
+    @bottom-center {{
         content: counter(page);
-        font-size: 9pt;
-        color: #666;
-    }
-}
-body {
-    font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+        font-size: 10pt;
+    }}
+}}
+body {{
+    font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-size: 11pt;
-    line-height: 1.8;
-    color: #222;
-}
-h1 {
-    font-size: 18pt;
-    font-weight: bold;
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.3em;
-    margin-top: 0;
-    page-break-before: always;
-}
-h1:first-of-type {
-    page-break-before: auto;
-}
-h2 {
-    font-size: 14pt;
-    font-weight: bold;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    line-height: 1.6;
     color: #333;
-}
-h3 {
+}}
+h1 {{
+    font-size: 20pt;
+    color: #1a1a1a;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    page-break-before: always;
+}}
+h1:first-of-type {{
+    page-break-before: avoid;
+}}
+h2 {{
+    font-size: 14pt;
+    color: #2a2a2a;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}}
+h3 {{
     font-size: 12pt;
-    font-weight: bold;
-    margin-top: 1.2em;
-    margin-bottom: 0.4em;
     color: #444;
-}
-p {
-    margin: 0.6em 0;
-    text-align: justify;
-}
-ul, ol {
-    margin: 0.5em 0;
-    padding-left: 2em;
-}
-li {
-    margin: 0.3em 0;
-}
-code {
-    font-family: "Courier New", Consolas, monospace;
-    font-size: 10pt;
+    margin-top: 15px;
+}}
+strong {{
+    color: #000;
+    font-weight: bold;
+}}
+code {{
     background: #f4f4f4;
-    padding: 0.1em 0.3em;
+    padding: 2px 5px;
     border-radius: 3px;
-}
-pre {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 0.8em;
+    font-family: "Courier New", monospace;
+    font-size: 10pt;
+}}
+pre {{
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
     overflow-x: auto;
-    font-size: 10pt;
-    line-height: 1.4;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-blockquote {
-    margin: 1em 0;
-    padding: 0.5em 1em;
-    border-left: 4px solid #ccc;
-    background: #f9f9f9;
+    font-size: 9pt;
+}}
+blockquote {{
+    border-left: 3px solid #666;
+    margin-left: 0;
+    padding-left: 15px;
     color: #555;
-}
-table {
-    width: 100%;
+    font-style: italic;
+}}
+table {{
     border-collapse: collapse;
-    margin: 1em 0;
+    width: 100%;
+    margin: 15px 0;
     font-size: 10pt;
-}
-th, td {
+}}
+th, td {{
     border: 1px solid #ddd;
-    padding: 0.5em;
+    padding: 8px;
     text-align: left;
-}
-th {
+}}
+th {{
     background: #f0f0f0;
     font-weight: bold;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em auto;
-}
-.mermaid, .math {
-    overflow-x: auto;
-}
-"""
-
-
-def md_to_html(md_path: Path) -> str:
-    """Read markdown and convert to HTML body via pandoc."""
-    import subprocess
-    result = subprocess.run(
-        ["pandoc", "-f", "markdown", "-t", "html", "--mathjax", str(md_path)],
-        capture_output=True, text=True, encoding="utf-8"
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"pandoc failed: {result.stderr}")
-    return result.stdout
-
-
-def build_combined_html(md_files: list[Path], title: str) -> str:
-    bodies = []
-    for f in md_files:
-        bodies.append(f"<h1>{f.stem}</h1>")
-        bodies.append(md_to_html(f))
-    html = f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<title>{title}</title>
+}}
+ul, ol {{
+    margin: 10px 0;
+    padding-left: 25px;
+}}
+li {{
+    margin: 5px 0;
+}}
+.page-break {{
+    page-break-after: always;
+}}
+.cover {{
+    text-align: center;
+    padding-top: 200px;
+}}
+.cover h1 {{
+    font-size: 28pt;
+    border: none;
+    page-break-before: avoid;
+}}
+.cover p {{
+    font-size: 14pt;
+    color: #666;
+    margin-top: 30px;
+}}
+</style>
 </head>
 <body>
-{chr(10).join(bodies)}
-</body>
-</html>"""
-    return html
+<div class="cover">
+    <h1>{course_name.replace('_', ' ')}</h1>
+    <p>MIT 14.01 Principles of Microeconomics</p>
+    <p>Generated: 2026-05-15</p>
+    <p style="margin-top: 100px; font-size: 10pt; color: #999;">DALONG ZHANG</p>
+</div>
+""")
+    
+    for title, filepath in files:
+        content = filepath.read_text(encoding="utf-8")
+        html_content = md.convert(content)
+        md.reset()
+        
+        parts.append(f'<h1>{title}</h1>\n')
+        parts.append(html_content)
+        parts.append('\n<div class="page-break"></div>\n')
+    
+    parts.append('</body></html>')
+    
+    return '\n'.join(parts)
 
 
-def sort_md_files(files: list[Path]) -> list[Path]:
-    """
-    Sort files in print order:
-    1. 课程大纲 (syllabus)
-    2. 知识地图_MOC (MOC)
-    3. Ch_XX_... chapters in numeric order
-    4. Anki_... flashcards last
-    """
-    def sort_key(f: Path) -> tuple:
-        name = f.name
-        if "课程大纲" in name:
-            return (0, 0, name)
-        if "知识地图_MOC" in name or "_MOC" in name:
-            return (1, 0, name)
-        if name.startswith("Anki_"):
-            return (3, 0, name)
-        # Ch_XX_... extract chapter number
-        m = re.search(r'Ch_(\d+)', name)
-        if m:
-            return (2, int(m.group(1)), name)
-        return (2, 999, name)
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Export course notes to PDF")
+    parser.add_argument("course", help="Course name")
+    args = parser.parse_args()
 
-    return sorted(files, key=sort_key)
+    perm_dir = Path("01_Permanent") / args.course
+    if not perm_dir.exists():
+        print(f"[ERROR] Directory not found: {perm_dir}")
+        return 1
 
+    print(f"[INFO] Building HTML for {args.course}...")
+    html_content = build_html(args.course, perm_dir)
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: uv run flow/script/export_pdf.py <input_dir> [output_dir]")
-        sys.exit(1)
-
-    input_dir = Path(sys.argv[1]).resolve()
-    output_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else input_dir
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    md_files = sort_md_files(list(input_dir.glob("*.md")))
-    if not md_files:
-        print(f"No .md files found in {input_dir}")
-        sys.exit(1)
-
-    course_name = input_dir.name
-    output_pdf = output_dir / f"{course_name}_打印版.pdf"
-
-    print(f"Found {len(md_files)} markdown files in {input_dir}")
-    print("Print order:")
-    for i, f in enumerate(md_files, 1):
-        print(f"  {i}. {f.name}")
-    print("Converting to HTML via pandoc...")
-
-    html_content = build_combined_html(md_files, course_name)
-
-    print("Rendering PDF with WeasyPrint (A4)...")
-    font_config = FontConfiguration()
-    HTML(string=html_content).write_pdf(
-        str(output_pdf),
-        stylesheets=[CSS(string=A4_CSS, font_config=font_config)],
-        font_config=font_config
-    )
-
-    print(f"Done: {output_pdf}")
-    print(f"File size: {output_pdf.stat().st_size / 1024:.1f} KB")
+    output_path = perm_dir / f"{args.course}_打印版.pdf"
+    
+    print(f"[INFO] Generating PDF...")
+    HTML(string=html_content).write_pdf(str(output_path))
+    
+    size_mb = output_path.stat().st_size / (1024 * 1024)
+    print(f"[OK] PDF saved: {output_path}")
+    print(f"[INFO] Size: {size_mb:.1f} MB")
+    
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
