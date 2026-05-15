@@ -2,9 +2,13 @@
 Domain models for note generation pipeline.
 """
 
+from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+from typing import Optional, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from lib.prompt_engine import PromptTemplate
 
 
 @dataclass
@@ -56,5 +60,5 @@ class PressureTestRound:
     """A single pressure-test round configuration."""
 
     name: str
-    prompt_template: str
+    prompt_template: "PromptTemplate"  # Forward ref to lib.prompt_engine
     focus: str  # "definition", "derivation", "case", "critique", "cross"

@@ -5,6 +5,11 @@ Orchestrates:
   - Phase 1: Syllabus generation via NotebookLM
   - Phase 2: Chapter deep-dive with pressure-test rounds
   - Phase 3: MOC, next-steps, Anki generation
+
+Dependencies:
+  - lib.adapters.base.NotebookLMAdapter (injected, not hardcoded)
+  - lib.prompt_engine (structured prompts, not raw strings)
+  - lib.checkpoint (state persistence)
 """
 
 import time
@@ -16,12 +21,15 @@ from config.note_paths import (
     chapter_note_path,
     moc_path,
     anki_path,
-    raw_note_dir,
-    permanent_note_dir,
 )
-from config import prompts
 from models.note import Chapter, CourseContext, PressureTestRound
-from lib import notebooklm_client
+from lib.adapters.base import NotebookLMAdapter
+from lib.prompt_engine import get_prompt
+from lib.checkpoint import (
+    PipelineCheckpoint,
+    ChapterCheckpoint,
+    save_checkpoint,
+)
 
 
 # ── Pressure test round definitions ──
@@ -29,67 +37,39 @@ from lib import notebooklm_client
 PRESSURE_ROUNDS: list[PressureTestRound] = [
     PressureTestRound(
         name="定义与分类",
-        prompt_template=prompts.PRESSURE_TEST_DEFINITION,
+        prompt_template=get_prompt("pressure_definition"),
         focus="definition",
     ),
     PressureTestRound(
         name="数学推导",
-        prompt_template=prompts.PRESSURE_TEST_DERIVATION,
+        prompt_template=get_prompt("pressure_derivation"),
         focus="derivation",
     ),
     PressureTestRound(
         name="案例对撞",
-        prompt_template=prompts.PRESSURE_TEST_CASE,
+        prompt_template=get_prompt("pressure_case"),
         focus="case",
     ),
     PressureTestRound(
         name="学术批判",
-        prompt_template=prompts.PRESSURE_TEST_CRITIQUE,
+        prompt_template=get_prompt("pressure_critique"),
         focus="critique",
     ),
     PressureTestRound(
         name="跨章关联",
-        prompt_template=prompts.PRESSURE_TEST_CROSS,
+        prompt_template=get_prompt("pressure_cross"),
         focus="cross",
     ),
 ]
 
 
-# ── Phase 1: Syllabus ──
-
-def generate_syllabus(ctx: CourseContext) -> str:
-    """
-    Generate course syllabus via NotebookLM.
-
-    Returns raw markdown text from NotebookLM.
-    """
-    print("\n" + "=" * 60)
-    print("Phase 1: Generating Syllabus")
-    print("=" * 60)
-
-    notebooklm_client.use_notebook(ctx.notebook_id)
-    notebooklm_client.configure_persona(load_config().persona)
-
-    print("[INFO] Asking NotebookLM to generate syllabus...")
-    response = notebooklm_client.ask(prompts.SYLLABUS_PROMPT, timeout=300)
-
-    print(f"[OK] Syllabus received: {len(response)} chars")
-    return response
-
-
-# ── Phase 2: Chapter Deep Dive ──
-
 def _build_chapter_prompt(chapter: Chapter, round_idx: int) -> str:
     """Build the prompt for a specific pressure-test round."""
     if round_idx == 0:
-        # First round: comprehensive deep-dive
-        return prompts.CHAPTER_DEEP_DIVE_PROMPT.format(video_range=chapter.video_range)
+        return get_prompt("chapter_deep_dive").render(video_range=chapter.video_range)
 
-    # Subsequent rounds: pressure tests
     round_cfg = PRESSURE_ROUNDS[(round_idx - 1) % len(PRESSURE_ROUNDS)]
-
-    # Extract concepts from thesis/summary for template filling
-    prompt = round_cfg.prompt_template.format(
+    return round_cfg.prompt_template.render(
         video_range=chapter.video_range,
         concept_a=chapter.thesis[:50] if chapter.thesis else "核心概念",
         concept_b="相关概念A",
@@ -97,12 +77,37 @@ def _build_chapter_prompt(chapter: Chapter, round_idx: int) -> str:
         theorem=chapter.thesis[:50] if chapter.thesis else "核心定理",
         mechanism=chapter.thesis[:50] if chapter.thesis else "核心机制",
     )
-    return prompt
 
+
+# ── Phase 1: Syllabus ──
+
+def generate_syllabus(
+    ctx: CourseContext,
+    adapter: NotebookLMAdapter,
+) -> str:
+    """Generate course syllabus via NotebookLM."""
+    print("\n" + "=" * 60)
+    print("Phase 1: Generating Syllabus")
+    print("=" * 60)
+
+    adapter.use_notebook(ctx.notebook_id)
+    adapter.configure_persona(load_config().persona)
+
+    print("[INFO] Asking NotebookLM to generate syllabus...")
+    prompt = get_prompt("syllabus")
+    response = adapter.ask(prompt.template, timeout=300)
+
+    print(f"[OK] Syllabus received: {len(response)} chars")
+    return response
+
+
+# ── Phase 2: Chapter Deep Dive ──
 
 def generate_chapter_note(
     ctx: CourseContext,
     chapter: Chapter,
+    adapter: NotebookLMAdapter,
+    cp: Optional[PipelineCheckpoint] = None,
     max_rounds: int = 5,
 ) -> Path:
     """
@@ -111,7 +116,9 @@ def generate_chapter_note(
     Args:
         ctx: Course context
         chapter: Chapter to process
-        max_rounds: Number of pressure-test rounds (default 5)
+        adapter: NotebookLM adapter (injected dependency)
+        cp: Optional checkpoint to update
+        max_rounds: Number of pressure-test rounds
 
     Returns:
         Path to saved chapter note file
@@ -122,11 +129,10 @@ def generate_chapter_note(
     print(f"Rounds: {max_rounds}")
     print("=" * 60)
 
-    notebooklm_client.use_notebook(ctx.notebook_id)
+    adapter.use_notebook(ctx.notebook_id)
 
     sections: list[str] = []
 
-    # Build header
     header = f"""# Ch.{chapter.index:02d} {chapter.title}
 
 > **Metadata**
@@ -141,29 +147,54 @@ def generate_chapter_note(
 """
     sections.append(header)
 
-    # Execute rounds
     for r in range(max_rounds):
         round_name = (
             "综合深挖" if r == 0 else PRESSURE_ROUNDS[(r - 1) % len(PRESSURE_ROUNDS)].name
         )
         print(f"\n  [Round {r + 1}/{max_rounds}] {round_name}")
 
+        if cp:
+            ch_cp = next((c for c in cp.chapters if c.index == chapter.index), None)
+            if ch_cp and ch_cp.completed_rounds > r:
+                print(f"  [SKIP] Already completed in prior run")
+                continue
+
         prompt = _build_chapter_prompt(chapter, r)
         try:
-            response = notebooklm_client.ask(prompt, timeout=300)
+            response = adapter.ask(prompt, timeout=300)
             sections.append(f"## 第{r + 1}轮：{round_name}\n\n{response}\n\n---\n\n")
             print(f"  [OK] Response: {len(response)} chars")
+
+            if cp:
+                ch_cp = next((c for c in cp.chapters if c.index == chapter.index), None)
+                if ch_cp:
+                    ch_cp.completed_rounds = r + 1
+                    ch_cp.status = "running"
+                    save_checkpoint(cp)
+
         except Exception as e:
             print(f"  [WARN] Round failed: {e}")
             sections.append(f"## 第{r + 1}轮：{round_name}\n\n[生成失败: {e}]\n\n---\n\n")
+            if cp:
+                ch_cp = next((c for c in cp.chapters if c.index == chapter.index), None)
+                if ch_cp:
+                    ch_cp.status = "failed"
+                    ch_cp.error = str(e)[:200]
+                    save_checkpoint(cp)
 
-        time.sleep(2)  # rate limit between rounds
+        time.sleep(2)
 
-    # Combine and save
     content = "\n".join(sections)
     output_path = chapter_note_path(ctx.course_name, chapter.index, chapter.title)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(content, encoding="utf-8")
+
+    if cp:
+        ch_cp = next((c for c in cp.chapters if c.index == chapter.index), None)
+        if ch_cp:
+            ch_cp.status = "completed"
+            ch_cp.completed_rounds = max_rounds
+            save_checkpoint(cp)
 
     print(f"[OK] Saved: {output_path}")
     return output_path
@@ -171,16 +202,19 @@ def generate_chapter_note(
 
 # ── Phase 3: Capstone Synthesis ──
 
-def generate_moc(ctx: CourseContext) -> Path:
+def generate_moc(
+    ctx: CourseContext,
+    adapter: NotebookLMAdapter,
+) -> Path:
     """Generate Map of Contents (MOC)."""
     print("\n" + "=" * 60)
     print("Phase 3.1: Generating MOC")
     print("=" * 60)
 
-    notebooklm_client.use_notebook(ctx.notebook_id)
+    adapter.use_notebook(ctx.notebook_id)
 
-    prompt = prompts.MOC_PROMPT.format(course_name=ctx.course_name)
-    response = notebooklm_client.ask(prompt, timeout=300)
+    prompt = get_prompt("moc").render(course_name=ctx.course_name)
+    response = adapter.ask(prompt, timeout=300)
 
     output_path = moc_path(ctx.course_name)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -200,18 +234,20 @@ def generate_moc(ctx: CourseContext) -> Path:
     return output_path
 
 
-def generate_next_steps(ctx: CourseContext) -> str:
+def generate_next_steps(
+    ctx: CourseContext,
+    adapter: NotebookLMAdapter,
+) -> str:
     """Generate next steps / advanced learning path."""
     print("\n" + "=" * 60)
     print("Phase 3.2: Generating Next Steps")
     print("=" * 60)
 
-    notebooklm_client.use_notebook(ctx.notebook_id)
+    adapter.use_notebook(ctx.notebook_id)
 
-    prompt = prompts.NEXT_STEPS_PROMPT.format(course_name=ctx.course_name)
-    response = notebooklm_client.ask(prompt, timeout=300)
+    prompt = get_prompt("next_steps").render(course_name=ctx.course_name)
+    response = adapter.ask(prompt, timeout=300)
 
-    # Append to MOC
     moc = moc_path(ctx.course_name)
     if moc.exists():
         existing = moc.read_text(encoding="utf-8")
@@ -219,21 +255,25 @@ def generate_next_steps(ctx: CourseContext) -> str:
             existing + "\n\n---\n\n# 进阶学习路径\n\n" + response,
             encoding="utf-8",
         )
-        print(f"[OK] Next steps appended to MOC")
+        print("[OK] Next steps appended to MOC")
 
     return response
 
 
-def generate_anki(ctx: CourseContext, card_count: int = 20) -> Path:
+def generate_anki(
+    ctx: CourseContext,
+    adapter: NotebookLMAdapter,
+    card_count: int = 20,
+) -> Path:
     """Generate Anki flashcards."""
     print("\n" + "=" * 60)
     print(f"Phase 3.3: Generating Anki Cards ({card_count})")
     print("=" * 60)
 
-    notebooklm_client.use_notebook(ctx.notebook_id)
+    adapter.use_notebook(ctx.notebook_id)
 
-    prompt = prompts.ANKI_PROMPT.format(card_count=card_count)
-    response = notebooklm_client.ask(prompt, timeout=300)
+    prompt = get_prompt("anki").render(card_count=card_count)
+    response = adapter.ask(prompt, timeout=300)
 
     output_path = anki_path(ctx.course_name, card_count)
     output_path.parent.mkdir(parents=True, exist_ok=True)

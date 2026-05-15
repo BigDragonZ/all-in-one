@@ -9,6 +9,23 @@ from typing import Optional
 from models.note import Chapter
 
 
+_CHINESE_NUMERALS = {
+    '一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
+    '六': 6, '七': 7, '八': 8, '九': 9, '十': 10,
+}
+
+
+def _parse_chapter_number(s: str) -> int:
+    """Parse Chinese or Arabic numeral."""
+    if s.isdigit():
+        return int(s)
+    total = 0
+    for c in s:
+        if c in _CHINESE_NUMERALS:
+            total += _CHINESE_NUMERALS[c]
+    return total if total > 0 else 0
+
+
 def parse_syllabus(text: str) -> list[Chapter]:
     """
     Parse NotebookLM syllabus markdown into Chapter objects.
@@ -22,19 +39,14 @@ def parse_syllabus(text: str) -> list[Chapter]:
     """
     chapters: list[Chapter] = []
 
-    # Split by chapter headers
-    chapter_blocks = re.split(r"\n##\s*第\s*(\d+)\s*章\s*[：:]\s*", text)
+    # Match both Chinese numerals (第一章) and Arabic (第1章)
+    pattern = r'##\s*第([一二三四五六七八九十\d]+)章\s*\uff1a\s*(.+?)(?=\n##\s*第|\Z)'
+    matches = re.findall(pattern, text, re.DOTALL)
 
-    # chapter_blocks[0] is preamble, then [1]=index, [2]=content, [3]=index, [4]=content...
-    i = 1
-    while i < len(chapter_blocks):
-        try:
-            idx = int(chapter_blocks[i])
-        except ValueError:
-            i += 2
+    for num_str, content in matches:
+        idx = _parse_chapter_number(num_str)
+        if idx == 0:
             continue
-
-        content = chapter_blocks[i + 1] if i + 1 < len(chapter_blocks) else ""
 
         # Extract title (first line)
         title_match = re.search(r"^(.+?)(?:\n|$)", content.strip())
@@ -69,8 +81,6 @@ def parse_syllabus(text: str) -> list[Chapter]:
                 summary=summary,
             )
         )
-
-        i += 2
 
     return chapters
 
