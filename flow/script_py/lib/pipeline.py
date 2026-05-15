@@ -5,6 +5,7 @@ Orchestrates the full workflow:
   1. Extract playlist from YouTube URL
   2. For each video: subtitle -> audio transcription -> markdown
   3. Refine markdown with Gemini
+  4. Keep only final refined output (delete raw after refinement)
 """
 
 import tempfile
