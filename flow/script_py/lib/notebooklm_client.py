@@ -82,7 +82,12 @@ def list_notebooks() -> list[dict]:
     """List all notebooks."""
     stdout = _retry_run(["list", "--json"], timeout=30)
     try:
-        return json.loads(stdout)
+        data = json.loads(stdout)
+        if isinstance(data, dict) and "notebooks" in data:
+            return data["notebooks"]
+        if isinstance(data, list):
+            return data
+        return []
     except json.JSONDecodeError:
         return []
 
