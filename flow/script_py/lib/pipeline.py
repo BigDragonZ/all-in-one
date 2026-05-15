@@ -103,7 +103,7 @@ def _try_audio_transcription(video: dict, course_name: str, index: int) -> Optio
 
 
 def _save_raw(markdown: str, course_name: str, index: int, title: str) -> Path:
-    """Save raw markdown file."""
+    """Save raw markdown file (temporary, will be deleted after refinement)."""
     out_dir = course_dir(course_name)
     out_dir.mkdir(parents=True, exist_ok=True)
     filename = build_filename(index, title, "md")
@@ -112,21 +112,41 @@ def _save_raw(markdown: str, course_name: str, index: int, title: str) -> Path:
     return path
 
 
-def _save_refined(raw_path: Path, refined: str, course_name: str, index: int) -> Path:
-    """Save refined markdown file."""
+def _save_refined(raw_path: Path, refined: str, course_name: str, index: int, title: str) -> Path:
+    """Save refined markdown file. Replaces raw file."""
     out_dir = course_dir(course_name)
     out_dir.mkdir(parents=True, exist_ok=True)
-    filename = build_filename(index, f"Refined {course_name}", "md")
+    filename = build_filename(index, title, "md")
     path = out_dir / filename
 
-    # Extract header from raw and combine with refined body
-    if "## 转写内容" in raw_path.read_text(encoding="utf-8"):
-        header_parts = raw_path.read_text(encoding="utf-8").split("## 转写内容", 1)
-        header = header_parts[0] + "## 精修内容\n\n"
-    else:
-        header = f"# {course_name}\n\n## 精修内容\n\n"
+    # Build final content with metadata header + refined body
+    from datetime import datetime
+    header = f"""# {title}
 
-    path.write_text(header + refined, encoding="utf-8")
+## 元信息
+
+- **序号**: {index}
+- **课程**: {course_name}
+- **处理时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+- **来源**: 精修版
+
+---
+
+## 精修内容
+
+"""
+
+    # Write to a temp path first, then replace raw
+    temp_path = out_dir / f"_refined_{index}.md"
+    temp_path.write_text(header + refined, encoding="utf-8")
+
+    # Delete raw file, then rename temp to final
+    if raw_path.exists():
+        raw_path.unlink()
+        print(f"  [INFO] Deleted raw file: {raw_path.name}")
+
+    temp_path.rename(path)
+
     return path
 
 
@@ -168,7 +188,7 @@ def process_video(video: dict, course_name: str, index: int) -> tuple[Optional[P
             body = markdown
 
         refined = refine_markdown(body)
-        refined_path = _save_refined(raw_path, refined, course_name, index)
+        refined_path = _save_refined(raw_path, refined, course_name, index, video["title"])
         print(f"  [OK] Refined saved: {refined_path.name}")
         return raw_path, refined_path
 
