@@ -11,14 +11,14 @@
 ## I. Freshman Year — Foundations
 *Objective: Establish mathematical, economic, and accounting literacy.*
 
-| 级别 | 课程名 | 核心知识点 | 推荐教材 | YouTube 列表 URL | 难度 |
-|------|--------|-----------|---------|-----------------|------|
-| 1A | Principles of Microeconomics | 供需模型、弹性、消费者理论、生产者理论、市场结构 | Mankiw, *Principles of Economics* (8th Ed.) | [MIT 14.01 OCW](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV) | 3/10 |
-| 1A | Principles of Macroeconomics | GDP、通货膨胀、货币政策、IS-LM、AD-AS 模型 | Mankiw, *Macroeconomics* (10th Ed.) | [Yale Econ 122](https://www.youtube.com/playlist?list=PL8FB14A2200B87185) | 3/10 |
-| 1B | Calculus I (Single Variable) | 极限、导数、积分、微积分基本定理 | Stewart, *Calculus: Early Transcendentals* (9th Ed.) | [MIT 18.01 OCW](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV) | 4/10 |
-| 1B | Calculus II (Multivariable) | 偏导数、多重积分、向量场、格林/斯托克斯定理 | Stewart, *Calculus: Early Transcendentals* (9th Ed.) | [MIT 18.02 OCW](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV) | 5/10 |
-| 1C | Financial Accounting | 资产负债表、利润表、现金流量表、会计恒等式 | Libby, Libby & Short, *Financial Accounting* (10th Ed.) | [NYU Stern ACCT-UB 1](https://www.youtube.com/@AswathDamodaranonValuation/playlists) | 3/10 |
-| 1C | Introduction to Finance | 货币时间价值、NPV、IRR、风险与回报基础 | Berk & DeMarzo, *Corporate Finance* (6th Ed., Ch. 1-5) | [Damodaran — Corporate Finance](https://www.youtube.com/playlist?list=PLUkh9m2BorqlcEehtd7wT3s3juUc6zCyc) | 4/10 |
+| 级别  | 课程名                          | 核心知识点                        | 推荐教材                                                    | YouTube 列表 URL                                                                                            | 难度   |
+| --- | ---------------------------- | ---------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---- |
+| 1A  | Principles of Microeconomics | 供需模型、弹性、消费者理论、生产者理论、市场结构     | Mankiw, *Principles of Economics* (8th Ed.)             | [MIT 14.01 OCW](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV)                 | 3/10 |
+| 1A  | Principles of Macroeconomics | GDP、通货膨胀、货币政策、IS-LM、AD-AS 模型 | Mankiw, *Macroeconomics* (10th Ed.)                     | [Yale Econ 122](https://www.youtube.com/playlist?list=PL8FB14A2200B87185)                                 | 3/10 |
+| 1B  | Calculus I (Single Variable) | 极限、导数、积分、微积分基本定理             | Stewart, *Calculus: Early Transcendentals* (9th Ed.)    | [MIT 18.01 OCW](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV)                 | 4/10 |
+| 1B  | Calculus II (Multivariable)  | 偏导数、多重积分、向量场、格林/斯托克斯定理       | Stewart, *Calculus: Early Transcendentals* (9th Ed.)    | [MIT 18.02 OCW](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV)                 | 5/10 |
+| 1C  | Financial Accounting         | 资产负债表、利润表、现金流量表、会计恒等式        | Libby, Libby & Short, *Financial Accounting* (10th Ed.) | [NYU Stern ACCT-UB 1](https://www.youtube.com/@AswathDamodaranonValuation/playlists)                      | 3/10 |
+| 1C  | Introduction to Finance      | 货币时间价值、NPV、IRR、风险与回报基础       | Berk & DeMarzo, *Corporate Finance* (6th Ed., Ch. 1-5)  | [Damodaran — Corporate Finance](https://www.youtube.com/playlist?list=PLUkh9m2BorqlcEehtd7wT3s3juUc6zCyc) | 4/10 |
 
 ---
 
