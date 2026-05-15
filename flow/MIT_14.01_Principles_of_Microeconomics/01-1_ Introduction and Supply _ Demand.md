@@ -3,8 +3,8 @@
 ## 元信息
 
 - **序号**: 1
-- **课程**: MIT_6.041_Probabilistic_Systems
-- **处理时间**: 2026-05-15 18:45:18
+- **课程**: MIT_14.01_Principles_of_Microeconomics
+- **处理时间**: 2026-05-15 19:13:47
 - **来源**: 精修版
 
 ---
@@ -16,9 +16,9 @@
 ## 元信息
 
 - **序号**: 1
-- **课程**: MIT 14.01 Principles of Microeconomics
-- **链接**: https://www.youtube.com/watch?v=OkTw766oCs
-- **处理时间**: 2026-05-15 18:43:50
+- **课程**: MIT_14.01_Principles_of_Microeconomics
+- **链接**: https://www.youtube.com/watch?v=_OkTw766oCs
+- **处理时间**: 2026-05-15 19:12:03
 - **来源**: YouTube 自动生成字幕
 - **条目数**: 2158
 
@@ -26,94 +26,107 @@
 
 ## 字幕内容
 
-This is 14.01. I'm Jonathan Gruber, and this is microeconomics. Today, I want to cover three things: I want to talk about the course details, I want to talk about what microeconomics is, and then I'll start the substance of the course by talking about supply and demand.
+### 课程介绍与教学风格
 
-A couple of points about the course. The course will have a distinct policy angle to it. I do economic policy; government policy is my thing. I think it's what makes economics exciting, and it offers an interesting angle to understand why we're learning what we're learning. Sometimes in an intro class, it's hard to understand why the heck you're doing things. However, that's just a slight flavor. If you're really more interested in this, I teach a whole course called 14.41. I'm not teaching it this year, but it'll be taught by a visitor in the spring, Kristin Butcher from Wellesley, and I'll be teaching it next year. That dives much more into these policy issues. So, I'm going to use government policy as an organizing theme, but it won't be the dominant theme of the class.
+这是 14.01 微观经济学原理，我是 Jon Gruber。今天我想讲三件事：首先是课程的详细信息，其次是什么是微观经济学，然后我将开始课程的实质内容，讨论供给与需求。
 
-Finally, three points about my teaching style. I don't write everything on the board; we're not in high school anymore. You're actually responsible for what I say, not what I write. Partly that's because my handwriting is brutal, as you can tell already. So, what that means is please, please do not be afraid to ask me what the hell I just wrote on the board. There's no shame in that. Don't just lean to your neighbor and say, "What the hell is he writing on the board?" Ask me, because if you can't read it, I'm sure someone else can't read it, so feel free to ask.
+关于这门课程有几点说明。这门课会有一个独特的政策视角。我个人研究经济政策和政府政策，我认为这正是经济学的魅力所在，它提供了一个有趣的角度，让我们理解为什么要学习这些内容。有时候在入门课程中，你很难理解自己到底在做什么。不过，这只是课程的一个轻微调味。如果你对此更感兴趣，我有一门专门的课程叫 14.41。今年我不教，但春季学期会由来自韦尔斯利学院 (Wellesley) 的客座教授 Kristin Butcher 讲授，明年我会再教。那门课会更深入地探讨这些政策问题。所以，我会用政府政策作为一个组织性的主题，但它不会是这门课的主导主题。
 
-In general, please feel free to engage with questions in this class. The other point of my teaching style is I talk way too fast. There's a mathematical function which is the longer I go without interruption, the faster I speak until I just spin off. So basically, please ask questions if anything's not clear or you just want to ask questions about some related tangent or whatever. Please feel free to do so. You might think, "How would that work in a class this big?" There are always way too few questions, even in a class this big. So never be afraid that it'll slow me down or whatever. Ask a question; we have plenty of time in the class, and you'll be doing your classmates a favor because it'll slow me down.
+最后，关于我的教学风格有三点。首先，我不会把所有东西都写在黑板上，我们已经不是高中生了。你们需要对我说的内容负责，而不仅仅是我写的内容。部分原因是我写的字非常潦草，正如你们已经看到的。所以，请不要害怕问我黑板上到底写了什么。这没什么好丢脸的，不要只是悄悄问旁边的同学。如果你看不懂，我相信别人也看不懂，所以请随时提问。
 
-Finally, last point, I have this terrible tendency to use the term "guys" in a gender-neutral way. This class looks like it's a fairly healthy representation of both males and females. When I say "guys," I don't mean men, I mean people. So women, don't take it personally. "Guys" means economic agents, it means people, it doesn't mean men. It's just a bad tendency, drives my wife crazy, but I've decided it's better to just apologize up front than try to fix it throughout, which is impossible.
+总的来说，请随时在课堂上提问。我教学风格的另一点是我语速太快。有一个数学函数关系：我讲课不被打断的时间越长，我的语速就越快，直到我完全失控。所以，如果有任何不清楚的地方，或者你只是想问一些相关的题外话，请务善意地提问。你可能会想，在这么大的课堂里怎么提问？但即使在这么大的班级里，问题也总是太少。所以永远不要担心会拖慢我的进度。我们有足够的时间，而且你提问也是在帮同学们的忙，因为这能让我慢下来。
 
----
+最后一点，我有一个坏习惯，就是用“guys”这个词来指代所有人，不分性别。我看这个班男女比例相当健康。当我说“guys”时，我不是指男性，而是指所有人。所以，女士们请不要介意。“Guys”在这里指的是经济行为人，是“人们”的意思，不是特指男性。这只是一个坏习惯，让我妻子很抓狂，但我决定还是在课前道歉，而不是试图在整个学期去改正它，因为那是不可能的。
 
-So, let's talk about what is microeconomics. How many people took AP high school econ? Okay. For how many was it taught really well? Okay, that's about right. That's why I did my high school online class; that's the answer I wanted to hear. So, tell your friends still in high school, if your high school econ teacher isn't great, tell them to go on edX and take the class and help out your friends still in high school.
+### 什么是微观经济学？
 
-So, what is microeconomics? Microeconomics is the study of how individuals and firms make decisions in a world of **scarcity**. Scarcity is what drives microeconomics. Basically, what microeconomics is is a series of **constrained optimization** exercises, where economic agents, be they firms or individuals, try to make themselves as well off as possible given their constraints.
+我们来谈谈什么是微观经济学。有多少人上过 AP 高中经济学？有多少人觉得教得很好？好的，看来不多。这就是我做高中在线课程的原因，我希望听到这个答案。告诉你们还在高中的朋友，如果他们的经济学老师不怎么样，可以去 edX 上我的课。
 
-Essentially, we have another course in the department called 14.13, Behavioral Economics, which gets into that much more. I will sprinkle it throughout, but not as much as I actually believe in it. In other words, the way we think about economics is it's best to get the basics down before you start worrying about the deviations. It's better to climb the tree before you start going out on the branches. Basically, what this course is about is **trade-offs**. It's about how, given that you're constrained, you trade off things to make yourself as well off as possible.
+那么，什么是微观经济学？微观经济学是研究在稀缺的世界里，个人和公司如何做出决策的学科。
 
-Behind this notion of trade-offs is going to be—I'll say about a hundred times this is the most important thing in the course, so just ignore that—but this is one of the most important things I'll say, one of the most important things in the course is the notion of **opportunity cost**. Opportunity cost is a very important concept that we teach. It's the first concept we teach, which is that every action or every inaction has a cost, in that you could have been doing something else instead. So if you buy a shirt, you could have bought pants. If you sit at home and watch TV, you could have been out working. Everything you do has a next best alternative you could have done instead, and that is called the opportunity cost.
+稀缺性是驱动微观经济学的核心。从根本上说，微观经济学是一系列**有约束的最优化 (constrained optimization)** 练习。在这些练习中，经济行为人，无论是公司还是个人，都在其约束条件下，努力使自己的境况变得尽可能好。
 
-That's a critical concept in economics, and that is why, in some sense, we are referred to casually as the **"dismal science."** Economics is referred to as the dismal science. First of all, I'm flattered we're considered a science. We're called the dismal science because our whole point is that nothing is free. There's always a trade-off, there's always an opportunity cost. Anything you do, you could be doing something else instead. Your constrained optimization means you're going to have to pass up one thing to do another. Now, some may call it dismal, but as a former MIT undergraduate, I call it fun.
+这门课程的核心是关于**权衡取舍 (trade-offs)**。在有限的条件下，你如何权衡不同的事物，以使自己达到最佳状态？在权衡取舍这个概念背后，是本课程中最重要的概念之一，我会说上百遍——**机会成本 (opportunity cost)**。
 
-This is why I think MIT is the perfect place to be teaching economics, because MIT engineering is all about constrained optimization. That's what engineering is. And economics is just the principles you learn in engineering applied in different contexts. If we think about the 2.007 contest, that still exists with the robots, right? The 2.007 contest is a contest where you're given a limited set of materials and you have to build a robot that does some task, like pushing ping-pong balls off a table or something like that. That's just constrained optimization. It's got nothing to do with economics, but it's constrained optimization. So just think of microeconomics as like engineering, but actually interesting. Think of microeconomics as engineering, but instead of building something to push a ping-pong ball off a table, you actually build people's lives and businesses and understand the decisions that drive our economy. So it's the same principles that you could think of for engineering classes, but applied to people's lives.
+机会成本是一个非常重要的概念。它的意思是，每一个行动或不行动都有一个成本，那就是你本可以做的下一件最好的事情。比如，你买了一件衬衫，就放弃了买一条裤子；你坐在家里看电视，就放弃了出去工作的机会。你做的任何事情，都有一个可以替代它的次优选择，这就是机会成本。
 
-That's why, in fact, modern economics was born in this room, either this room or 26-100, by Paul Samuelson in the 1940s and 50s. He wrote the fundamental textbook that gave birth to modern economics because he was here and applied the kind of engineering principles of MIT to actually develop the field of modern economics. What we learn today was developed at MIT, so it's a great place to be learning it.
+这在某种程度上也是为什么我们经济学被戏称为“沉闷的科学 (the dismal science)”。首先，我很荣幸我们被认为是一门科学。之所以被称为“沉闷”，是因为我们的核心观点是：天下没有免费的午餐，总有权衡取舍，总有机会成本。你做的任何事，都意味着放弃了做别的事。你的有约束的最优化意味着你必须放弃一件事才能做另一件事。
 
----
+有些人可能觉得这很沉闷，但作为一名前 MIT 的本科生，我觉得这很有趣。这也是为什么我认为 MIT 是教经济学的完美地方，因为 MIT 的工程学就是关于有约束的最优化。经济学只是将你在工程学中学到的原理，应用到不同的情境中。想想 2.007 机器人大赛，你需要在有限的材料下，造一个机器人来完成特定任务，比如把乒乓球推下桌子。这就是有约束的最优化，它和经济学无关，但原理是相通的。所以，你可以把微观经济学想象成工程学，但更有趣。你不是在造一个推乒乓球的机器人，而是在构建人们的生活和商业模式，理解驱动我们经济的决策。
 
-With that as background, let's turn to the first model we'll talk about this semester, which is the **supply and demand model**.
+事实上，现代经济学就诞生在这个房间，或者 26-100 教室。20世纪40到50年代，保罗·萨缪尔森 (Paul Samuelson) 在这里写出了诞生了现代经济学的基础教科书。他运用 MIT 的工程学原理，发展了现代经济学领域。我们今天所学的很多东西都源于 MIT，所以这里是学习它的绝佳之地。
 
-The way we're going to proceed in this course is going to drive you crazy because we're going to proceed by teaching very simplified models. As the very first question pointed out, we're teaching very simplified models. What is a model? A model is technically a description of the relationship between any two or more variables. But unlike the models used in all your other classes, these aren't laws, by and large. They're models. We don't have a relationship between energy and mass which you can write down as a law and we're done. We have models which are never 100% true, but always "pretty" true, with "pretty" being somewhere between 10 and 95 percent true.
+### 经济模型与三个理解层次
 
-The idea is to make a trade-off. We want to write down in our models a set of simplifying assumptions that allow us, with a relatively small set of steps, to capture relatively broad phenomena. There's a trade-off: on the one hand, we'd like a model that captures as well as possible the real world, like E=mc², but we want to do so in the most tractable way possible so that we can teach it from first principles. In economics, we tend to resolve that by erring on the side of tractability. That is why I can teach you the entire field of microeconomics in a semester, because we're going to make a whole huge set of simplifying assumptions to make things tractable. But the key thing is that you will be amazed at what these models will be able to do. With a fairly simple set of models, we'll be able to offer insights and explain a whole huge variety of phenomena, never perfectly, but always pretty well.
+让我们转向本学期要讨论的第一个模型：供给与需求模型。
 
-The line I like is from the statistician George Box, who said that "all models are wrong, but some are useful." Now, obviously, that doesn't apply to models in the hard sciences, but in the social sciences, that's true. I'm going to write down a set of models like that.
+我们在本课程中的学习方式可能会让你们抓狂，因为我们会从非常简化的模型开始。正如第一个问题所指出的，模型是对两个或多个经济变量之间关系的描述。但与你们在其他课程中学到的模型不同，这些大多不是定律。我们没有像能量和质量之间的关系那样可以写成定律的公式。我们的模型永远不会百分之百正确，但通常都“八九不离十”，这里的“八九不离十”可能意味着 10% 到 95% 的正确率。
 
-With every model I write down, my goal is to have you understand it at three levels.
-1.  The first and most important level is the **intuitive level**. The level which you can pass what I call the "mom test": you can go home and explain it to your mom at Thanksgiving. (No offense to dads, we just call it the mom test).
-2.  The second is **graphical**. Most of our models here will be developed in a graphical framework, using XY graphs, which we think delivers a lot of shorthand power.
-3.  And the third is **mathematical**. The mathematical is probably the least important, but it's the easiest to test you on, so we're going to need to know things mathematically as well.
+我们的想法是做出一种权衡：我们希望用一套简化的假设，通过相对较少的步骤，来捕捉广泛的现象。我们希望模型能尽可能好地捕捉现实世界，但同时也要尽可能地易于处理 (tractable)，这样我们才能从第一性原理出发进行教学。在经济学中，我们倾向于在权衡中更偏向于易处理性。正因如此，我才能在一个学期内教完整个微观经济学领域。我们将做出一系列巨大的简化假设，但你会惊讶于这些模型的能力。用一套相当简单的模型，我们将能够提供洞见，并解释各种各样的现象——虽然从不完美，但通常都相当不错。
 
----
+统计学家乔治·博克斯 (George Box) 说过：“所有模型都是错的，但有些是有用的。” 这句话在社会科学中尤其适用。对于我将要介绍的每一个模型，我希望你们能从三个层次来理解它：
 
-Let's start by considering the supply and demand model, using the famous example brought up by Adam Smith. Adam Smith is considered the father of economics, while Paul Samuelson is the father of modern economics. Adam Smith's 1776 book, *The Wealth of Nations*, did an incredible job of laying out the entire core of the economics field with no math, just words, but he just nailed it.
+1.  **直觉层面 (Intuitive Level)**：这是最重要的层次，我称之为“通过妈妈测试 (passing the mom test)”。你能在感恩节回家时，向你的妈妈解释清楚。
+2.  **图形层面 (Graphical Level)**：我们的大部分模型都将通过图形框架来展开，通常是 XY 坐标图。我们认为这种方式能提供强大的简明表达能力。
+3.  **数学层面 (Mathematical Level)**：这可能是最不重要的，但却是最容易用来考试的，所以你们也需要从数学上掌握这些知识。
 
-One of his most famous examples was the **water-diamond paradox**. He said, think about water and diamonds. Start with water: nothing is more important for life than water. It's the building block of all life. Even when we look for life on other planets, we start by looking for water. Now think of diamonds, one of the more frivolous things you can buy, certainly irrelevant to leading a successful, happy, or productive life, or any life. Yet, for most of us, water is free and diamonds are super expensive. How can this be?
+### 供给与需求：水与钻石的悖论
 
-The answer he posed is that what I first described was just **demand**. We demand lots of water; we demand fewer diamonds. But we have to match that with the concept of **supply**. The supply of water is almost infinite, while the supply of diamonds is somewhat limited (maybe not naturally, maybe it's through decisions of various businesses). What he developed is what we call the supply and demand "scissors": you can't just think of supply or demand in isolation; you have to put them together if you want to explain real-world phenomena, like the fact that water's cheap and diamonds are expensive.
+让我们从亚当·斯密 (Adam Smith) 提出的著名例子开始。亚当·斯密被认为是“经济学之父”，而保罗·萨缪尔森是“现代经济学之父”。亚当·斯密 1776 年的著作《国富论》(*The Wealth of Nations*)，用文字而非数学，出色地阐述了经济学领域的整个核心。
 
-Let's talk about an example: the market for roses. On the handout, we have a graph. On the x-axis is the quantity of roses, and on the y-axis is the price of roses. The blue downward-sloping line is the **demand curve**. I'm just giving you an overview now; over the next five or six lectures, we will dive into where this demand curve comes from. We'll go to first principles and build it back up. For now, what we know about a demand curve is it simply represents the relationship between the price of a good and how much people want it. We assume it is downward sloping: at higher prices, people want less of the good. It's pretty intuitive that if the price of roses is higher, people want fewer of them.
+他最著名的例子之一是“水与钻石的悖论”。想想水和钻石。没有什么比水对生命更重要了，它是生命的基础。然而，钻石却是你能买到的最无聊的东西之一，与过上成功、快乐或有意义的生活毫无关系。但对我们大多数人来说，水是免费的，而钻石却极其昂贵。亚当·斯密问，这怎么可能呢？
 
-The yellow curve is the **supply curve**. After we've derived the demand curve, we'll spend about 12 lectures deriving the supply curve. That's a bit harder, but once again, we'll start from first principles and build it up. For now, you just need to know that's how much firms are willing to supply at a given price. As the price goes up, firms want to produce more roses. The higher price means you make more money, so you want to produce more of them. This is slightly less intuitive than demand, but for now, just go with the basic intuition.
+他提出的答案是，我刚才描述的只是**需求 (demand)**。我们对水的需求量很大，对钻石的需求量较小。但我们必须将其与**供给 (supply)** 的概念结合起来。水的供给几乎是无限的，而钻石的供给，也许不是天然稀缺，而是通过各种商业决策被人为限制了。
 
-Where the curves meet is the **market equilibrium**. That is the point where both consumers and producers are happy to make a transaction. In the graph, this is the point at three dollars and 600 roses. Consumers are happy because they are on their demand curve; they are willing to buy 600 roses at three dollars. Producers are happy because on their supply curve is the same point; they are willing to supply 600 roses at three dollars. That is the one point where consumers and producers are both satisfied with the transaction, therefore it's the equilibrium. This raises lots of questions: Where do the curves come from? How does equilibrium get achieved? Why the heck do we give roses? We will come to all these questions over the next set of lectures.
+他由此发展出了我们所说的“供给与需求的剪刀”。你不能孤立地只看供给或需求，必须把它们放在一起，才能解释我们看到的现实世界现象，比如为什么水便宜而钻石昂贵。
 
----
+### 玫瑰市场：供给、需求与均衡
 
-This model also raises another important distinction that we'll focus on this semester: distinguishing between **positive** versus **normative** analysis.
-- **Positive analysis** is the study of the way things *are*.
-- **Normative analysis** is the study of the way things *should be*.
+让我们来看一个例子：玫瑰市场。在你们拿到的图表上，X 轴是玫瑰的数量 (Quantity)，Y 轴是玫瑰的价格 (Price)。
 
-Let me give you a great example: eBay auctions. Auctions are a terrific, textbook example of a competitive market. Demand comes from a bunch of people bidding; people who want it more bid more, so you get a downward-sloping demand curve. Supply is how many units are for sale. You bid until those two meet, and you have a market equilibrium.
+蓝色的向下倾斜的线是**需求曲线 (demand curve)**。它代表了商品价格与人们想要购买数量之间的关系。我们假设它是向下倾斜的，因为价格越高，人们想要购买的数量就越少。在接下来的几节课里，我们会从第一性原理出发推导出它。
 
-A number of years ago, someone offered their kidney for auction on eBay. They said, "Look, I got two kidneys, you only need one to live. There are people out there who need a kidney. I'm putting my kidney on eBay for auction." Bidding went nuts. It started at $25,000 and climbed to $5 million before the auction was shut down and eBay decided they wouldn't allow you to sell your bodily parts on eBay.
+黄色的向上倾斜的线是**供给曲线 (supply curve)**。它代表了在给定价格下，公司愿意供给多少商品。推导它会更难一些，我们会花大约12节课的时间。但现在的基本直觉是，如果你生产某种东西，当市场价格上涨时，你会想生产更多，因为你能赚更多的钱。
 
-This raises two questions. The first is the **positive question**: Why did the price go so high? The answer is low supply and high demand. Demand is incredibly high because you die without it. Supply is low because not a lot of us are willing to sell our kidneys on eBay. Low supply, high demand led to a high price. Adam Smith at work. That's the positive analysis.
+两条曲线相交的点是**市场均衡 (market equilibrium)**。在这个点上，消费者和生产者都乐于进行交易。在图中的例子里，均衡点是价格为3美元，数量为600枝玫瑰。在这个点上，消费者愿意以3美元的价格购买600枝玫瑰，而生产者也愿意以3美元的价格供给600枝玫瑰。这是唯一一个消费者和生产者都感到满意的点。
 
-But then there's the **normative question**: *Should* you be allowed to sell your kidneys on eBay? The standard economics answer to start would be, "Of course, you should." We're in a world where thousands of people die every year because there's a waiting list for a kidney transplant. These are people who would happily pay a lot of money to stay alive. Meanwhile, there are hundreds of millions of people walking around with two kidneys who only need one, and many of these people are poor and their lives could be changed by being paid a million dollars for their kidney. So, economists say, "Look, here's a transaction to make both parties better off." The person who gets the kidney gets to stay alive. The person who sells the kidney, in all probability, is fine and gets a life-changing amount of money.
+### 实证分析与规范分析：肾脏拍卖的例子
 
-So the question is, why not? Why would we want to stop this transaction? What are the counter-arguments?
-1.  **Market Failures**: The first type of problem comes from what we call market failures, which are reasons why the market doesn't work in the wonderful way economists like to think it should. For example, there could be **fraud** (people might not be able to tell if they're getting a legit kidney) or **imperfect information** (do you know the odds of living a full life with only one kidney? We ought to know that before selling one).
-2.  **Equity or Fairness**: A second problem is equity. We would end up with a world where only rich people would get kidneys. Currently, organs are allocated based on a waiting list, not on who is the richest.
-3.  **Behavioral Economics**: A third class of failures is that people don't always make decisions in the perfectly rational, logical way we will model them. People make mistakes. They might not be evaluating the trade-offs correctly, even with perfect information, and could end up selling their kidney when it's not in their own long-term interest.
+这个模型引出了一个重要的区别：**实证分析 (positive analysis)** 与 **规范分析 (normative analysis)**。
 
-You can't get to the normative issues without the positive analysis. You have to be disciplined and start with the fundamental economic framework. Economics at its core is a "right-wing" science; it's all about how the market knows best and that governments only mess things up. That's a lot of what we'll learn, and then we'll talk about what's wrong with that view and how governments can improve things.
+- **实证分析**是研究“世界是什么样”的。
+- **规范分析**是研究“世界应该是什么样”的。
 
----
+一个很好的例子是 eBay 拍卖。几年前，有人在 eBay 上拍卖自己的肾脏。他有两个肾，但只需要一个就能活。起拍价是25,000美元，在被 eBay 叫停之前，价格飙升到了500万美元。
 
-This leads to the last thing I want to talk about: how freely should an economy function? At one extreme, we have a **capitalistic economy**, where firms and individuals decide what to produce and consume, subject to some minimal rules of the road set by the government. This has led to tremendous growth in America, making it the wealthiest nation in the world. On the other hand, it has also led to tremendous inequality; we are by far the most unequal major nation in the world.
+这引发了两个问题。第一个是实证问题：**为什么价格会这么高？** 答案很简单：供给低（很少有人愿意卖肾），而需求极高（没有它就会死）。这是亚当·斯密理论的直接体现。
 
-The other extreme is the **command economy**, like the pre-1989 Soviet Union. In this case, the government makes all production and consumption decisions. In theory, this ensured equity, but in practice, it didn't work well at all and led to the collapse of the Soviet economy. There were too many opportunities for corruption, and it's hard to control human nature.
+第二个是规范问题：**是否应该允许人们在 eBay 上出售肾脏？**
 
-Adam Smith talked about the **"invisible hand"** of the capitalist economy. This is the notion that consumers and firms, serving their own best interests, will do what is best for society. For now, we're going to define "best for society" as the most stuff gets produced and consumed that people value, what we'll call **maximum surplus**.
+- **标准经济学观点**：当然应该。成千上万的人因为等不到肾移植而死亡，他们愿意花大价钱活下去。同时，有数亿人有两个肾，其中许多人很贫穷，卖掉一个肾换来的钱可以改变他们的生活。这是一个能让双方都变得更好的交易。
+- **反对观点**：
+    1.  **市场失灵 (Market Failures)**：比如欺诈（你无法确定买到的是不是真肾）或信息不完全（你真的知道只有一个肾对你余生的影响吗？）。
+    2.  **公平性 (Equity/Fairness)**：这会导致一个只有富人才能得到肾脏的世界。目前，器官分配基于等待名单，而不是财富。我的同事 Nikhil Agarwal 就在用经济模型研究如何优化器官分配。
+    3.  **行为经济学 (Behavioral Economics)**：人们并不总是做出完全理性的决策。他们会犯错。一个极度贫困的人可能会在没有充分评估长期风险的情况下，做出卖肾的决定。
 
-The way we're going to proceed in this course is we're going to start by talking about how Adam Smith's magic works.
-- We'll start with **demand**: how consumers decide what they want given their resources, using the principle of **utility maximization**.
-- Then we'll turn to **supply**: how firms decide what to produce, considering different market structures like perfect competition and monopoly.
-- We'll put it together to get **market equilibrium** and talk about Smith's principles.
-- Then, we'll talk about how it breaks down in reality, discussing market failures, equity, behavioral economics, and other factors.
+要进行规范分析，你必须先有实证分析的基础。你不能直接跳到结论。我们必须有纪律，从基本的经济框架开始。
 
-The lectures are important, but the recitations are as well. Once we're in a steady state, the recitation will be about half new material and half working through problems to prepare you for the problem set. The problem set assigned will cover material taught up to that date. For example, problem set one, assigned next Friday, will cover everything learned through next Wednesday. This Friday, the section is all new material, covering the mathematics of supply and demand. I leave the math for the TAs, who are smarter than I am. Then we'll come back on Monday and start talking about what's underneath the demand curve.
+### 资本主义经济与指令性经济
+
+经济学的核心在某种程度上是一门“右翼”科学，它强调市场是最好的，政府的干预只会把事情搞砸。
+
+- **资本主义经济 (Capitalistic Economy)**：个人和公司决定生产和消费什么，政府只设定一些基本的“交通规则”以避免欺诈等问题。这种模式带来了巨大的经济增长，比如美国成为世界上最富有的国家。但它也带来了巨大的不平等，美国的贫富差距在主要发达国家中是最大的。
+- **指令性经济 (Command Economy)**：政府做出所有的生产和消费决策。政府决定生产多少汽车、多少衬衫，并决定谁能得到它们。1989年之前的苏联就是这种模式。理论上这能确保公平，但实践中效果很差，充满了腐败，最终拖垮了苏联经济。
+
+亚当·斯密提出了“看不见的手 (invisible hand)”的概念。他认为，在资本主义经济中，当消费者和公司追求自身利益时，最终会实现对社会最有利的结果。这里的“对社会最有利”在课程的前三分之二，我们将其定义为**剩余最大化 (maximum surplus)**，即生产和消费了最多人们所珍视的“东西”。
+
+### 课程展望
+
+本学期的课程将这样进行：
+
+1.  我们将首先探讨亚当·斯密的“魔法”是如何运作的。我们会从需求侧开始，研究消费者如何在预算约束下做出决策以实现**效用最大化 (utility maximization)**。
+2.  然后，我们将转向供给侧，探讨公司如何决定生产什么，以及不同市场结构（如完全竞争和垄断）如何影响它们的行为。
+3.  接着，我们会将供给和需求结合起来，分析市场均衡。
+4.  最后，我们将讨论这个理想模型在现实中是如何失效的，探讨市场失灵、公平性、行为经济学等问题。
+
+讲座很重要，但习题课 (recitation) 同样重要。习题课一半是新材料，一半是练习题，帮助你们准备作业。本周五的习题课将全部是新材料，讲解供给与需求的数学知识，因为我数学不好，所以把这部分留给比我聪明的助教 (TAs)。下周一，我们将回来开始深入探讨需求曲线背后的原理。

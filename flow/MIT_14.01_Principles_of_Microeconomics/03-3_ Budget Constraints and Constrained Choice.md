@@ -1,111 +1,177 @@
-#  Budget Constraints and Constrained Choice
+# 3. Budget Constraints and Constrained Choice
 
 ## 元信息
 
 - **序号**: 3
 - **课程**: MIT_14.01_Principles_of_Microeconomics
-- **处理时间**: 2026-05-15 19:08:04
+- **处理时间**: 2026-05-15 19:17:40
 - **来源**: 精修版
 
 ---
 
 ## 精修内容
 
-Today we're going to continue our discussion of **consumer choice**. We're going to talk now about what happens when we take that unconstrained choice we talked about on Monday and impose **budget constraints**. We'll talk about what budget constraints are, then come to talking about how consumers make constrained choices, and we'll end with an example of food stamps.
+# 3. Budget Constraints and Constrained Choice
 
-### The Budget Constraint
+## 元信息
 
-Let's start by talking about the construction of budget constraints. Last time, we talked about the fundamental axiom of consumer choice: that more is better. So what stops people from just binging on everything? It's their budget constraint; it's their limited resources. For most of this course, we're going to make a simplifying assumption that your budget, that is what you spend, equals your income, that is what you earn. There won't be any savings or borrowing. Now, that is a simplifying assumption, and indeed we'll spend a couple of lectures toward the end of the semester talking about what happens when people can save or borrow. That said, this is not a terrible description of most Americans. The median American household has four hundred dollars in the bank, so this is not a terrible description of the way most people live their lives in America, which is what they earn each week is what they spend each week. It also might not be a terrible description of your life. I presume in college you're not doing a lot of savings; you maybe do a little borrowing, but not a lot of savings or borrowing.
+- **序号**: 3
+- **课程**: MIT_14.01_Principles_of_Microeconomics
+- **链接**: https://www.youtube.com/watch?v=jHEPQpSKdbg
+- **处理时间**: 2026-05-15 19:15:51
+- **来源**: YouTube 自动生成字幕
+- **条目数**: 2319
 
-We're going to assume that's true for you as well. We're going to assume your parents have given you some amount of money to spend, we'll call it `Y`, your income. `Y` is the amount of money your parents are giving you to spend for the semester or the month. And once again, let's say all you spend your money on is pizza and cookies. We write the budget constraint as saying that your resources, your income `Y`, can be spent on either pizza or cookies. The constraint is that your budget has to be divided between pizza, where there's the price per slice of pizza times the number of slices of pizza, and cookies, where we have the price per cookie times the number of cookies. So your budget constraint is:
+---
 
+## 字幕内容
+
+### 预算约束的构建
+
+今天，我们将继续讨论消费者选择，我们将探讨当我们在周一讨论的无约束选择上施加预算约束时会发生什么。我们会讨论什么是预算约束，然后讨论消费者如何做出有约束的选择，最后以一个关于食品券的例子结束。
+
+让我们从讨论预算约束及其构建开始。上次我们谈到了消费者选择的基本公理：越多越好。那么，是什么阻止人们无节制地消费所有东西呢？是他们的预算约束，即他们有限的资源。
+
+在本课程的大部分时间里，我们将做一个简化假设：你的预算（即你的支出）等于你的收入（即你的所得）。也就是说，我们不考虑储蓄或借贷。这是一个简化的假设，我们将在学期末花几节课讨论当人们可以储蓄或借贷时的情况。尽管如此，这个假设对于描述大多数美国人来说并非完全不切实际。美国家庭的储蓄中位数只有四百美元。所以，这种“量入为出”的模式，即每周的开销等于每周的收入，在很大程度上描述了许多美国人的生活方式。
+
+这个假设可能也适用于你们的大学生活，我猜你们在大学里储蓄不多，可能会有一些借贷，但大规模的储蓄或借贷行为较少。因此，我们假设你的情况也是如此。假设你的父母给了你一笔钱用于开销，我们称之为你的收入 `Y`。这是你父母给你用于本学期或本月消费的金额。
+
+再次假设，你只把钱花在披萨和饼干上。那么，我们可以这样写出预算约束：你的资源，即收入 `Y`，可以用于购买披萨或饼干。约束条件是，你的总支出必须等于你的收入，即：
 `Y = (P_p * P) + (P_c * C)`
+其中，`P_p` 是每片披萨的价格，`P` 是披萨的数量；`P_c` 是每块饼干的价格，`C` 是饼干的数量。这就是你的预算约束。你必须在披萨和饼干的某种组合中分配你的收入，同时要考虑它们各自的价格。
 
-Where `P_p` is the price per slice of pizza, `P_c` is the price per cookie, `P` is the number of pizzas, and `C` is the number of cookies. You can essentially devote your income to some combination of pizza and cookies, but you have to consider how much they actually cost.
+### 预算约束的图形表示
 
-I find this easiest to see graphically, so let's turn to Figure 3-1. Figure 3-1 shows a budget constraint. The x-axis intercept is your income divided by the price of cookies (`Y / P_c`); that is, if you decide to devote all your income to cookies, that's how many cookies you can have. Likewise, the y-intercept is the income divided by the price of pizza (`Y / P_p`); that's how many pizzas you can have. The slope of the budget constraint is the price ratio, the negative of the price ratio: `- (P_c / P_p)`. For every extra cookie that you buy, holding your income constant, it lowers the amount of pizza you can have.
+通过图形来理解这一点会更容易。让我们来看图 3-1，它展示了一个预算约束。
 
-Let's consider an example. Suppose that your income `Y` is $72. The price of pizza is expensive, $12 a slice, and the price of a cookie is $6. This is like downtown San Francisco or New York. What that means is if you wanted just pizza, you could get six pizzas. If you wanted just cookies, you could get twelve cookies. Generally, the rate at which you can trade off pizza for cookies is minus a half (`-1/2`). Every additional cookie would require giving up half a slice of pizza.
+- **X轴截距**: `Y / P_c`。这表示如果你把所有收入都用来买饼干，你能买到的最大数量。
+- **Y轴截距**: `Y / P_p`。这表示如果你把所有收入都用来买披萨，你能买到的最大数量。
+- **斜率**: 预算约束的斜率是价格比率的负数，即 `-P_c / P_p`。这是一个向下倾斜的直线，意味着在收入固定的情况下，你每多买一块饼干，就必须放弃 `P_c / P_p` 数量的披萨。
 
-### Marginal Rate of Transformation (MRT)
+举个例子：假设你的收入 `Y` 是72美元，一片披萨的价格 `P_p` 是12美元，一块饼干的价格 `P_c` 是6美元。这意味着，如果你只买披萨，最多可以买6片；如果只买饼干，最多可以买12块。你用披萨换取饼干的比率是 -1/2，也就是说，每多买一块饼干，你需要放弃半片披萨。
 
-We're going to call the slope of the budget constraint the **Marginal Rate of Transformation (MRT)**. Last time we had the **MRS**, the Marginal Rate of Substitution. Now we have the **MRT**, the Marginal Rate of Transformation, which is equal to `- (P_c / P_p)`, or the slope of the budget constraint. This class is not alchemy; we are not literally transforming pizza into cookies. But effectively, we're doing the same thing. Given a fixed amount of money and that we're going to spend it all, the more you spend on pizza, the less you can spend on cookies. So you're effectively transforming pizza into cookies and vice versa.
+### 边际转换率 (MRT)
 
-This comes back to the key concept we talked about in the very first lecture: **opportunity cost**. The opportunity cost of a slice of pizza is two cookies. Remember, opportunity cost is the value of the next best alternative. Here, you only have two alternatives: pizza and cookies. So the opportunity cost of a slice of pizza is two cookies, and that's the sense in which you're transforming pizza into cookies.
+我们将预算约束的斜率称为 **边际转换率 (Marginal Rate of Transformation, MRT)**。
+`MRT = -P_c / P_p`
 
-### Application: Weight Watchers
+上节课我们讲了边际替代率 (MRS)，现在我们引入了边际转换率 (MRT)。我们并不是在进行炼金术，把披萨真的变成饼干。但实际上，效果是相似的。因为你的钱是固定的，并且你会花光所有的钱，所以你花在披萨上的钱越多，花在饼干上的钱就越少。通过预算约束，你实际上是在一种商品和另一种商品之间进行“转换”。
 
-Let's think of an organization which is taking this principle to heart to develop one of the most successful methods of weight loss in America: **Weight Watchers**. Dieting is super hard and basically doesn't work. There's a large literature which says that people go on diets, then they stop them and they gain the weight back. A much more successful approach has been established by Weight Watchers.
+这回到了我们在第一堂课就讨论过的关键概念：**机会成本**。一片披萨的机会成本是两块饼干。机会成本是下一个最佳替代品的价值。在这里，你只有两个选择：披萨和饼干。所以，一片披萨的机会成本就是你为了它而放弃的饼干。
 
-Essentially, what does Weight Watchers do? They set up a budget constraint and ask you to follow it. They assign point values to every good you might consume. You go on the website, and everything you might want to eat has a point value. They then ask your current weight, age, gender, and what weight you want to achieve. They say if you want to achieve a weight loss of X over Y days, then you've got to limit yourself to Z points. We're not going to tell you what to eat—that's why it's better than dieting. Because once again, **Adam Smith** was right: people like to have choices. But we are going to tell you your total budget. For example, vegetables are like zero points, Snickers bars are like six points, etc.
+### 实际应用：慧优体 (Weight Watchers)
 
-Suppose your budget is 30 points, which would be pretty typical. Suppose you go to McDonald's for lunch and you get a Number One combo. The Number One at McDonald's is a Big Mac (14 points), fries (10 points), and a Coke (6 points). That's 30 points, and it's only lunch. You've blown your whole budget for the day. Now, you could just get depressed and say, "screw it, I'll just be fat." Or, you could look at the budget constraint and say, "well, what else can I get?" It turns out you can get a ten-piece nugget (12 points), apple slices (1 point), and a Diet Coke (0 points) for only 13 points. Now you have plenty of room for dinner. To be honest, anyone who tells you that second lunch is as good as that first lunch is a liar. I'd much rather have a Big Mac, fries, and a Coke than nuggets, apple slices, and a Diet Coke. But I'd also much rather have dinner. This lets you make the trade-off. By imposing a budget constraint and setting relative prices (the points), it lets you optimize across those various goods.
+让我们看一个将这个原则运用到极致的组织：慧优体 (Weight Watchers)。节食非常困难，而且通常效果不佳。但慧优体建立了一种更成功的方法。他们所做的就是为你设定一个预算约束，并要求你遵守它。
 
-### Shifting the Budget Constraint
+他们为每种食物分配一个“点数”。然后，根据你的当前体重、年龄、性别以及你的减肥目标，他们会告诉你每天的点数预算（比如30点）。这就像你的收入。蔬菜可能是0点，而一个士力架可能是6点。
 
-What happens if we shock the budget constraint? We're going to do a lot in this class of what we call **comparative statics**, which is making changes in one thing or another and seeing what it does to the system.
+例如，假设你的午餐预算是30点。如果你去麦当劳，一个巨无霸套餐（巨无霸14点，薯条10点，可乐6点）正好用完你一天的预算。但你也可以选择一个10块麦乐鸡（12点）、苹果片（1点）和一杯健怡可乐（0点）的组合，总共只需要13点，这样你晚餐就还有充足的预算。
 
-First, let's consider a change in prices. Suppose the price of pizza goes from $12 up to $18. What happens to the budget constraint? Let's look at Figure 3-2. Your original budget constraint was `BC1`. The equation of that line is `12P + 6C = 72`. Now that the price of pizza has gone up, it has pivoted your budget constraint inward to `BC2`. It has flattened the budget constraint because the slope is the ratio of the price of cookies to the price of pizza. That ratio has just fallen; it used to be `1/2`, now it's `6/18` or `1/3`. The slope has fallen from -1/2 to -1/3. You can still have as many cookies as you had before (the y-intercept has not changed), but you can have fewer slices of pizza. That's why it's a pivot.
+当然，没人会说第二种午餐比第一种更好吃。但我也更想吃晚饭。通过设定相对价格（点数）和总预算，慧优体让你在不同的选择之间进行权衡和优化。点数本身就像我们之前说的“效用单位 (utils)”一样，没有绝对意义，只有相对意义。预算约束通过建立这种边际转换率，帮助我们在生活中做出各种决策。
 
-This represents what has happened to what we call your **opportunity set**: the set of choices available to you given your income and market prices. Your opportunity set initially was the area under `BC1`. Now, your opportunity set has shrunk to the area under `BC2`. Even though your parents still send you the same check, you are worse off because you can now buy less pizza with it.
+### 预算约束的变动
 
-Now, what if your income changes? What if prices are back to $12 and $6, but your parents are mad you haven't been paying attention in 14.01 and cut your allowance to $60? What does that do? That's in Figure 3-3. The old budget constraint allowed you to spend $72. Now you can only spend $60. What we see is not a pivot, but an **inward shift** of the budget constraint. The relative price of pizza and cookies has not changed, therefore the slope hasn't changed. The market controls the slope, but you and your family control the level. The level has shrunk, so the line shifts inwards. Once again, your opportunity set has been restricted, but in a different way.
+现在，如果预算约束发生变化会怎样？我们来做一些所谓的 **比较静态分析**，即改变一个变量，观察系统会发生什么变化。
 
-> **Student:** Is it more showing that the change of slope doesn't really invite you to buy more cookies and pizza, but that your actual budget as a whole decreases and it affects you overall?
->
-> **Professor:** That's a great question, and we're going to actually answer that question next lecture very explicitly. We're going to compare explicitly why income changes differ from price changes and what the underlying mechanisms are.
+#### 价格变化
 
-> **Student:** (Asks about using more than two goods)
->
-> **Professor:** Great question. We always start with simplifying assumptions to make life easy. There's no reason this couldn't be written in three dimensions, and you'd have relative marginal rates of transformation. You could just extend the math to N dimensions. It wouldn't add any richness and would just make your head spin. All the basic ideas can come across with two goods, but it would be the same mechanics with more.
+假设披萨的价格从12美元上涨到18美元。这对预算约束有什么影响？请看图 3-2。
 
-### Constrained Consumer Choice
+原来的预算约束是 `BC1`，方程为 `12P + 6C = 72`。当披萨价格上涨后，预算约束向内 **旋转** 到了 `BC2`。它的斜率，即 `-P_c / P_p`，从 -1/2 变为了 -1/3（-6/18），变得更平缓了。
 
-Let's turn to how we use budget constraints and the utility function we learned about last time to describe how consumers make choices. Consumers are going to maximize their utility subject to their budget constraint. We've taught you about utility and budget constraints; let's put them together.
+这意味着：
+- 你仍然可以买到同样多的饼干（Y轴截距不变）。
+- 但你能买到的披萨数量减少了（X轴截距向内移动）。
 
-Graphically, the representation of preferences was our **indifference curves**. Higher indifference curves made people happier. So, the question is: what is the highest indifference curve you can achieve given your budget? We know you want to be on the highest indifference curve possible because more is better.
+这个变化缩小了你的 **机会集 (opportunity set)**，即在给定收入和市场价格下你所有可行的选择集合。你的机会集从原来的黑点加红点区域，缩小到了只有黑点的区域。尽管你父母给你的钱没变，但因为披萨变贵了，你的购买力下降了，你的境况变差了。
 
-Let's consider the same utility from last time, `U = sqrt(P * C)`, and the same budget: $72 income, $12 price of pizza, $6 price of cookies. Let's look at Figure 3-4. You have our budget constraint, which runs from six pizzas to twelve cookies. You also have a series of indifference curves (`I1`, `I2`, `I3`). These curves all come directly from that utility function. What we see is that point D is on the farthest-out indifference curve you can achieve while still meeting your budget. Therefore, we say that the optimum, graphically, is the **tangency** between your indifference curve and your budget constraint. That is the optimal constrained bundle.
+#### 收入变化
 
-Why are other points not better? Consider point A. Why isn't it better? It's on a lower indifference curve. Point D dominates point A. By that logic, why not choose point E? You can't afford it; it's outside your budget constraint. What about point C? It has the same slope as point D, but you wouldn't be spending all your money, and we know more is better. So you can see graphically why the tangency is the best you're going to do.
+如果价格回到12美元和6美元，但你的父母因为你不认真听14.01的课而生气，把你的零用钱从72美元削减到60美元，会发生什么？
 
-### The Mathematics of Constrained Choice
+如图 3-3 所示，这次预算约束不是旋转，而是向内 **平行移动**。因为商品之间的相对价格没有改变，所以预算约束的斜率保持不变。改变的是截距，即你能负担得起的商品总量。你的机会集再次被限制，但方式与价格变化不同。
 
-Let's come to the math. The math of constrained optimization is all about the marginal decision. It's easier to ask, "Should I have the next cookie?" than "How many cookies do I want in total?" We want to compare how you feel about trading off pizzas versus cookies with what the market will let you do. The optimum is going to occur when we set your **Marginal Rate of Substitution (MRS)** equal to your **Marginal Rate of Transformation (MRT)**.
+### 受约束的消费者选择
+
+现在，我们将预算约束和我们上次学到的效用函数结合起来，描述消费者如何做出选择。消费者会最大化其效用，但受限于其预算约束。
+
+图形上，我们用无差异曲线来表示偏好。消费者的目标是在其预算允许的范围内，达到尽可能高的无差异曲线。
+
+假设效用函数是 `U = sqrt(P * C)`，预算与之前相同（收入72美元，披萨12美元，饼干6美元）。如图 3-4 所示，我们有预算约束线和一系列无差异曲线 (I1, I2, I3, I4)。
+
+- **点 A** 和 **点 B** 都在预算线上，是可行的，但它们位于较低的无差异曲线上。
+- **点 E** 位于更高的无差异曲线上，但它超出了预算，是不可行的。
+- **点 D** 是你能达到的最高无差异曲线与预算约束线的 **切点**。这是你的最优选择。
+
+在点 D，你选择消费3片披萨和6块饼干。此时的效用是 `sqrt(3 * 6) = sqrt(18)`。
+
+### 最优选择的数学推导
+
+最优选择的数学原理是，在最优点，你的主观交换意愿必须等于市场的客观交换比率。也就是说，**边际替代率 (MRS) 必须等于边际转换率 (MRT)**。
 
 `MRS = MRT`
-`- (MU_c / MU_p) = - (P_c / P_p)`
+`-MU_c / MU_p = -P_c / P_p`
 
-This is the fundamental equation of consumer choice. If you understand this equation, you can solve virtually every consumer choice problem we'll give you. At the optimum, the ratio of marginal utilities equals the ratio of prices. The rate at which you *want* to trade off pizza for cookies is the rate at which the market *will allow you* to trade off pizza for cookies.
+两边去掉负号，得到：
+`MU_c / MU_p = P_c / P_p`
 
-I find it easier to think of it this way if you rearrange the terms:
-
+我更喜欢把它写成“**每元钱的边际效用 (bang for the buck)**”形式：
 `MU_c / P_c = MU_p / P_p`
 
-I call this the **"bang for the buck"** equation. It's saying your marginal happiness per dollar should be equal across all goods. The happiness per dollar spent on cookies should equal the happiness per dollar spent on pizza. You want to put your next dollar where it's going to make you happiest.
+这个公式的含义是：在最优点，你花在饼干上的最后一美元所带来的边际效用，应该等于你花在披萨上的最后一美元所带来的边际效用。你应该把你的下一美元花在能让你最快乐的地方。
 
-Suppose you were at a position like point A, where the slope of the indifference curve (MRS) is steeper than the slope of the budget constraint (MRT). In absolute value: `(MU_c / MU_p) > (P_c / P_p)`. This means the marginal benefit to you of another cookie relative to another pizza is higher than what the market will charge you to turn pizza into cookies. You are willing to give up more pizza for a cookie than the market requires. Therefore, you should trade in your pizza for cookies, moving from point A towards point D.
+让我们回到图 3-4 中的点 A（5片披萨，2块饼干）。
+- 披萨的边际效用 `MU_p = dU/dP = 0.5 * C / sqrt(P*C) = 0.5 * 2 / sqrt(10) = 1 / sqrt(10)`。
+- 饼干的边际效用 `MU_c = dU/dC = 0.5 * P / sqrt(P*C) = 0.5 * 5 / sqrt(10) = 2.5 / sqrt(10)`。
 
-### Application: Food Stamps (SNAP)
+此时，`MRS = -MU_c / MU_p = -2.5`。这意味着，你愿意用2.5片披萨来换取1块饼干。
+而市场的 `MRT = -P_c / P_p = -6 / 12 = -0.5`。市场只要求你用0.5片披萨来换1块饼干。
 
-Let's apply this by looking at the example of **food stamps**, which are now called **SNAP** (Supplemental Nutrition Assistance Program). This is a government program that provides money for low-income individuals to buy food. In the U.S., we have a poverty line, a measure of the minimum level of resources you need to live. If you're below the poverty line, you can get help buying food through a debit card that can be used for food only.
+既然你愿意付出2.5片披萨，而市场只要0.5片，这笔交易对你来说太划算了。因此，你应该减少披萨的消费，增加饼干的消费，从点 A 向点 D 移动，直到你的主观意愿（MRS）和市场价格（MRT）相等为止。
 
-Here's the question: why go through this rigmarole? Why not just give people cash? Let's graph how we think about this trade-off. Let's go to Figure 3-5a. Imagine people start with an income of $5,000, which is super poor. Let's say all they can spend it on is food or shelter. They have an original budget line running from $5,000 on food to $5,000 on shelter.
+### 应用：食品券 (SNAP)
 
-Now, let's say we give them $500 in cash. All we've done is shift their budget constraint out, from a max of $5,000 to $5,500 on either axis. Consider person Y. They used to spend almost all their income on food. With the extra cash, they spend a little more on food and a lot more on shelter. Now consider person X. They prefer shelter and spend very little on food. With the extra cash, they spend a tiny bit more on food and most of it on more shelter. These are just feasible choices people could make.
+让我们用这个框架来分析一个现实世界的政策：食品券（现在称为“补充营养援助计划”，SNAP）。这是一个政府项目，为低收入人群提供资金用于购买食物。
 
-Now let's consider SNAP. Instead of $500 in cash, we give them a debit card with $500 on it that can only be used for food. How does this affect their budget constraint? The new budget constraint is a **kinked line**. It starts at $5,000 on the shelter (y-axis), goes flat to the point ($500 food, $5,000 shelter), and then slopes down parallel to the original budget constraint. Why? We are forcing you to spend at least $500 on food.
+问题是：为什么政府要发放只能买食物的“券”，而不是直接给现金呢？
 
-What does this do to choices? For person Y, it makes no difference. They were already spending more than $500 on food, so for them, the food stamps are just like cash. They can reallocate the money they would have spent on food to other things. But what about person X? With cash, they chose to spend less than $500 on food. Now, we are forcing them to spend at least $500. They are forced to a point (X2) that is on a lower indifference curve than the one they could have reached with cash. They are made worse off because they had the choice to spend $500 on food before and chose not to.
+让我们通过图形来分析。假设一个人年收入为5000美元，他可以把钱花在食物和住所上。
 
-So why do we do this? Why would we force them to have food if they're better off with cash? The reason is **paternalism**. We think they don't know what's best for them. Let's change the label on the y-axis from "shelter" to "cocaine." In that case, maybe we don't feel so bad about forcing the person to buy food instead of cocaine. This is a program that might make sense if we are paternalistic, if we think people won't make the right decisions for themselves. This makes economists a little nervous, because how do we know what they want better than they do?
+#### 现金补助
 
-### Empirical Evidence
+如图 3-5A 所示，如果政府给他500美元现金，他的预算约束线会从5000美元的水平向外平行移动到5500美元的水平。
+- 对于 **个人 Y**，他本来就倾向于把大部分钱花在食物上。得到现金后，他会增加食物和住所的消费，达到新的最优点 Y2。
+- 对于 **个人 X**，他更偏好住所。得到现金后，他会主要增加住所的消费，食物消费增加得很少，达到新的最优点 X2。
 
-This raises an important question: do food stamps actually increase food purchases? There are two reasons they might not. First, everyone could be like person Y, already spending more on food than the value of the stamps. Second, people could create a black market, selling their food stamps for cash.
+#### 食品券补助
 
-We've actually run experiments on this. In "food stamp cash-out" experiments, we literally take a group of food stamp recipients and, by flipping a coin, give some of them cash instead. Then we watch what happens. What happens is that people spend about 15% less on food when you give them cash instead of food stamps. That is, food stamps are forcing people to spend about 15% more on food than they would like to. The price of our paternalism is 15%.
+现在，如图 3-5B 所示，如果政府给他价值500美元的食品券（只能用于购买食物），预算约束会变成一条 **扭折线 (kinked line)**。
+- 你最多可以拥有5000美元的住所（如果你不花自己的钱买食物）。
+- 你必须至少消费价值500美元的食物（因为食品券不能用于他处）。
+- 在食物消费超过500美元后，你可以用自己的钱在食物和住所之间自由分配，所以预算线斜率与原来相同。
 
-Is it worth it? The evidence is starting to pour in that it might not be. There are a lot of experiments, especially in developing countries, where giving people cash has very positive effects. People use the cash in productive ways. For example, in an experiment in Uganda, a non-profit randomly gave a group of women $150. After 18 months, these women had used that money to start businesses, which effectively doubled their annual earnings. That leads one to think that maybe we should stop being paternalistic and just give cash. Unfortunately, a follow-up nine years later found that the effect had totally gone away. The story isn't simple, but the bottom line is that the evidence is probably in favor of being less paternalistic.
+这对消费者的影响是什么？
+- 对于 **个人 Y**，他本来就计划消费超过500美元的食物。所以，无论是给他现金还是食品券，他的最终选择（Y2）都是一样的。对他来说，食品券和现金是等价的。
+- 对于 **个人 X**，情况就不同了。如果给他现金，他只会花300美元在食物上（点 X2'）。但食品券强迫他至少消费500美元的食物。他无法达到他最偏好的点 X2'，只能选择在扭折点 X2 消费。
 
-Let me stop there. We will come back on Monday and talk about how we actually go from this stuff to the demand curves we started the class with.
+#### 政策含义：家长式作风 (Paternalism)
+
+个人 X 在收到食品券时的情况比收到现金时要差，因为他被阻止做出自己最偏好的选择。既然如此，政府为什么还要这么做？
+
+这背后是一种 **家长式作风 (paternalism)** 的理念。如果我们把 Y 轴的“住所”换成“可卡因”，那么强迫人们把钱花在食物上而不是毒品上，似乎就合理多了。政策制定者可能认为，他们比受助者更清楚什么对他们有好处。
+
+这种想法让经济学家感到不安，因为它假设了政府比个人更了解其自身的需求和偏好。从纯粹的经济效率角度看，如果目标是让穷人更幸福，直接给现金是最好的方式，因为它给了他们最大的选择自由。
+
+#### 经验证据
+
+那么，食品券真的能增加食物消费吗？
+1.  如果所有人都像个人 Y 那样，本来就会花很多钱在食物上，那么食品券就不会起作用。
+2.  人们可能会在黑市上折价出售食品券来换取现金。
+
+研究人员进行了一些“食品券现金兑付”实验，随机地给一些人现金，而不是食品券。结果发现，当人们收到现金时，他们在食物上的花费比收到食品券时减少了约15%。这表明，食品券确实在一定程度上“强迫”人们购买了比他们自愿选择的更多的食物。
+
+这是否值得？最近，尤其是在发展中国家，越来越多的证据表明，直接的现金转移支付效果很好。人们并不会把钱浪费在毒品和酒精上，反而会用它来进行生产性投资，比如创业。例如，在乌干达的一项研究中，向女性提供150美元的现金补助，18个月后，她们的收入翻了一番。
+
+这似乎支持了减少家长式作风、更多地给予现金的观点。然而，政策的辩论仍在继续。
+
+我们周一再见，届时我们将讨论如何从这些分析中推导出我们课程开始时提到的需求曲线。
