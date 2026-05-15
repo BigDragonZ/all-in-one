@@ -10,6 +10,7 @@
 
 ## I. Freshman Year — Foundations
 *Objective: Establish mathematical, economic, and accounting literacy.*
+https://www.youtube.com/playlist?list=PLTjEimbqDkpBL55W6wye1jTcYePjehkT3
 
 | 级别  | 课程名                          | 核心知识点                        | 推荐教材                                                    | YouTube 列表 URL                                                                                            | 难度   |
 | --- | ---------------------------- | ---------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---- |
