@@ -20,7 +20,7 @@ from config.note_paths import (
     permanent_note_dir,
 )
 from config import prompts
-from types.note import Chapter, CourseContext, PressureTestRound
+from models.note import Chapter, CourseContext, PressureTestRound
 from lib import notebooklm_client
 
 

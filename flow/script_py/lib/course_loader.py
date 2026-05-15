@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 from typing import Optional
 
-from types.note import VideoInfo
+from models.note import VideoInfo
 from config.note_paths import raw_note_dir, index_path
 
 

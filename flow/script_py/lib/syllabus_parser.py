@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 from typing import Optional
 
-from types.note import Chapter
+from models.note import Chapter
 
 
 def parse_syllabus(text: str) -> list[Chapter]:
