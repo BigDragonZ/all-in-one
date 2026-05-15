@@ -61,13 +61,28 @@ def parse_syllabus(course: str) -> list[dict]:
     chapters = []
 
     # Match pattern: ## 第X章：标题  or  ## Chapter X: Title
-    pattern = r"##\s*(?:第\s*(\d+)\s*章|Chapter\s+(\d+))\s*[：:]\s*(.+?)(?=\n##|\Z)"
-    matches = re.findall(pattern, content, re.DOTALL)
-
+    # Also match: ## 第一章：标题 (Chinese numerals)
+    chinese_nums = {'一':1, '二':2, '三':3, '四':4, '五':5, '六':6, '七':7, '八':8, '九':9, '十':10}
+    
+    # Pattern 1: ## 第X章：标题 (Arabic or Chinese numerals)
+    pattern1 = r"##\s*第\s*(\d+|[一二三四五六七八九十]+)\s*章\s*[：:]\s*(.+?)(?=\n##|\Z)"
+    # Pattern 2: ## Chapter X: Title
+    pattern2 = r"##\s*Chapter\s+(\d+)\s*[：:]\s*(.+?)(?=\n##|\Z)"
+    
+    matches = re.findall(pattern1, content, re.DOTALL)
+    if not matches:
+        matches = re.findall(pattern2, content, re.DOTALL)
+    
     for m in matches:
-        num = int(m[0] or m[1])
-        title = m[2].strip().split("\n")[0].strip()
-        # Extract video range from content
+        num_str = m[0]
+        if num_str in chinese_nums:
+            num = chinese_nums[num_str]
+        else:
+            num = int(num_str)
+        title = m[1].strip().split("\n")[0].strip()
+        # Remove markdown formatting like ** from title
+        title = re.sub(r'\*\*', '', title)
+        # Extract video range from content near this chapter
         range_match = re.search(r"视频范围[：:]\s*(\d+(?:-\d+)?)", content)
         video_range = range_match.group(1) if range_match else f"{num:02d}"
         chapters.append({
