@@ -12,7 +12,7 @@ def test_load_config_defaults():
     cfg = load_config()
     assert cfg.gcp_project_id == "gen-lang-client-0385617544"
     assert cfg.gcp_location == "us-central1"
-    assert cfg.gcp_model == "gemini-2.5-flash-lite"
+    assert cfg.gcp_model == "gemini-2.5-pro"
     assert cfg.gcs_bucket == "hermes_brain"
     assert cfg.gcs_prefix == "audio_jobs/"
     assert cfg.api_version == "v1"
