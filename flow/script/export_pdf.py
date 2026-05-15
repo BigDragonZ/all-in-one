@@ -147,6 +147,31 @@ def build_combined_html(md_files: list[Path], title: str) -> str:
     return html
 
 
+def sort_md_files(files: list[Path]) -> list[Path]:
+    """
+    Sort files in print order:
+    1. 课程大纲 (syllabus)
+    2. 知识地图_MOC (MOC)
+    3. Ch_XX_... chapters in numeric order
+    4. Anki_... flashcards last
+    """
+    def sort_key(f: Path) -> tuple:
+        name = f.name
+        if "课程大纲" in name:
+            return (0, 0, name)
+        if "知识地图_MOC" in name or "_MOC" in name:
+            return (1, 0, name)
+        if name.startswith("Anki_"):
+            return (3, 0, name)
+        # Ch_XX_... extract chapter number
+        m = re.search(r'Ch_(\d+)', name)
+        if m:
+            return (2, int(m.group(1)), name)
+        return (2, 999, name)
+
+    return sorted(files, key=sort_key)
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: uv run flow/script/export_pdf.py <input_dir> [output_dir]")
@@ -156,7 +181,7 @@ def main():
     output_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else input_dir
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    md_files = sorted(input_dir.glob("*.md"))
+    md_files = sort_md_files(list(input_dir.glob("*.md")))
     if not md_files:
         print(f"No .md files found in {input_dir}")
         sys.exit(1)
@@ -165,6 +190,9 @@ def main():
     output_pdf = output_dir / f"{course_name}_打印版.pdf"
 
     print(f"Found {len(md_files)} markdown files in {input_dir}")
+    print("Print order:")
+    for i, f in enumerate(md_files, 1):
+        print(f"  {i}. {f.name}")
     print("Converting to HTML via pandoc...")
 
     html_content = build_combined_html(md_files, course_name)
