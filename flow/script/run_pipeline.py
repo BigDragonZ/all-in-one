@@ -3,10 +3,10 @@
 Knowledge base automation pipeline.
 
 Usage:
-    python flow/script_py/run_pipeline.py <PLAYLIST_URL> <COURSE_NAME> [MAX_VIDEOS]
+    python flow/script/run_pipeline.py <PLAYLIST_URL> <COURSE_NAME> [MAX_VIDEOS]
 
 Example:
-    python flow/script_py/run_pipeline.py \
+    python flow/script/run_pipeline.py \
         "https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFHhuCevwudurE1N2mV" \
         "Valuation_Undergrad_2022" 3
 """

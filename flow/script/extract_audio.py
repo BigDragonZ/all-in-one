@@ -3,7 +3,7 @@
 Extract audio from video file using ffmpeg.
 
 Usage:
-    python flow/script_py/extract_audio.py <VIDEO_PATH> [OUTPUT_PATH]
+    python flow/script/extract_audio.py <VIDEO_PATH> [OUTPUT_PATH]
 """
 
 import argparse

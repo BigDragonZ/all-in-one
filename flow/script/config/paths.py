@@ -12,7 +12,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
 PATHS = {
     "project_root": PROJECT_ROOT,
-    "script_dir": PROJECT_ROOT / "flow" / "script_py",
+    "script_dir": PROJECT_ROOT / "flow" / "script",
     "venv_bin": PROJECT_ROOT / ".venv" / "bin",
     "flow_dir": PROJECT_ROOT / "flow",
     "download_dir": Path("/tmp/video_audio_downloads"),

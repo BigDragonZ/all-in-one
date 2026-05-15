@@ -3,7 +3,7 @@
 Transcribe audio file using GCP Vertex AI or Gemini.
 
 Usage:
-    python flow/script_py/transcribe_audio.py <AUDIO_PATH> <COURSE_NAME> <INDEX>
+    python flow/script/transcribe_audio.py <AUDIO_PATH> <COURSE_NAME> <INDEX>
 
 Environment:
     gcp-vertex-key    : GCP Vertex AI API key

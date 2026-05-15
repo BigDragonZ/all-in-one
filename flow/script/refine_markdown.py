@@ -3,10 +3,10 @@
 Refine a Markdown file using Gemini.
 
 Usage:
-    python flow/script_py/refine_markdown.py <INPUT_MD> [OUTPUT_MD]
+    python flow/script/refine_markdown.py <INPUT_MD> [OUTPUT_MD]
 
 Example:
-    python flow/script_py/refine_markdown.py \
+    python flow/script/refine_markdown.py \
         "flow/Valuation_Undergrad_2022/01-Transcription Valuation_Undergrad_2022.md" \
         "flow/Valuation_Undergrad_2022/01-Refined.md"
 """

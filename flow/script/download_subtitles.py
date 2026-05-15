@@ -3,10 +3,10 @@
 Download YouTube video subtitles and convert to Markdown.
 
 Usage:
-    python flow/script_py/download_subtitles.py <URL> <COURSE_NAME> <INDEX>
+    python flow/script/download_subtitles.py <URL> <COURSE_NAME> <INDEX>
 
 Example:
-    python flow/script_py/download_subtitles.py \
+    python flow/script/download_subtitles.py \
         "https://www.youtube.com/watch?v=LYGYvN5LUbA" \
         "Valuation_Undergrad_2022" 1
 """

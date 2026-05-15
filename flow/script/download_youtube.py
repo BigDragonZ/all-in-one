@@ -3,7 +3,7 @@
 Download a single YouTube video.
 
 Usage:
-    python flow/script_py/download_youtube.py <URL>
+    python flow/script/download_youtube.py <URL>
 """
 
 import argparse

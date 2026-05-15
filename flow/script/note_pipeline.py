@@ -14,9 +14,9 @@ Features:
   - Structured logging
 
 Usage:
-    uv run flow/script_py/note_pipeline.py --course "CourseName"
-    uv run flow/script_py/note_pipeline.py --course "CourseName" --resume
-    uv run flow/script_py/note_pipeline.py --course "CourseName" --dry-run
+    uv run flow/script/note_pipeline.py --course "CourseName"
+    uv run flow/script/note_pipeline.py --course "CourseName" --resume
+    uv run flow/script/note_pipeline.py --course "CourseName" --dry-run
 """
 
 import argparse

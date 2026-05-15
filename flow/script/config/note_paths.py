@@ -9,7 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
 PATHS = {
     "project_root": PROJECT_ROOT,
-    "script_dir": PROJECT_ROOT / "flow" / "script_py",
+    "script_dir": PROJECT_ROOT / "flow" / "script",
     "flow_dir": PROJECT_ROOT / "flow",
     "permanent_dir": PROJECT_ROOT / "01_Permanent",
     "venv_bin": PROJECT_ROOT / ".venv" / "bin",
