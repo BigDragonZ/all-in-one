@@ -4,7 +4,7 @@
 
 - **序号**: 1
 - **课程**: Principles_of_Microeconomics
-- **处理时间**: 2026-05-15 15:52:28
+- **处理时间**: 2026-05-15 16:02:23
 - **来源**: 精修版
 
 ---
@@ -18,7 +18,7 @@
 - **序号**: 1
 - **课程**: Principles_of_Microeconomics
 - **链接**: https://www.youtube.com/watch?v=N7cQirBto2k
-- **处理时间**: 2026-05-15 15:51:08
+- **处理时间**: 2026-05-15 16:00:33
 - **来源**: YouTube 自动生成字幕
 - **条目数**: 2366
 
@@ -26,60 +26,119 @@
 
 ## 字幕内容
 
-Let's start by thinking about what economics is, a discussion that begins with scarcity. The idea behind scarcity is that society has unlimited wants but limited resources. Therefore, it's impossible for us to produce all the goods and services that people want to consume. Scarcity leads to trade-offs, which we'll discuss in a second, but it is also what gives rise to the field of economics.
+让我们从思考什么是经济学开始。我们将从讨论“稀缺性”入手。稀缺性背后的理念是，社会有无限的欲望，但资源却是有限的。因此，我们不可能生产出人们想要消费的所有商品和服务。稀缺性会导致权衡取舍，我们稍后会谈到这一点。也正是稀缺性催生了经济学这个领域。
 
-So, what do economists do? What is the field of economics? One of the exercises I do with my face-to-face classes helps to illustrate this. When I first started teaching, I would send my students home on the first day with a survey designed to get them thinking about what economics is. I would give them a list of topics and ask them to answer this question: "Which of the following subjects do you think economics can help us understand?" I told them it wasn't a trick question and that economics doesn't help us understand everything.
+那么，经济学家是做什么的？经济学这个领域是关于什么的？我刚开始教书时，在我的面授课上会做一个练习。第一天，在讨论任何实质内容之前，我会给学生们发一份小调查。这份调查旨在让他们思考一些我们将在课堂上讨论的话题，并收集一些关于他们的信息。
 
-Let me read some of these topics to you. The first one is the business cycle. In class, when I ask students to raise their hand if they think this is an economics topic, everyone recognizes it and raises their hand. The second one is what causes unemployment; again, people typically raise their hand. But then I list others: the freezing point of milk, what causes inflation, how the human heart works, how fast people drive on the highway, how to maximize profit, how much people eat at a buffet, how much students study for a test, the cause of earthquakes, how long a homeowner waits to mow their lawn, how long students pay attention during an economics lecture, how the banking system works, why stock prices change, how long parents wait before checking on a crying baby, why criminals sometimes voluntarily confess to the police, why gamblers tend to lose money, when a baserunner decides to steal a base, why fish swim in schools, and why politicians engage in negative campaigns.
+调查中有一个问题，旨在帮助他们理解什么是经济学。我给他们一个主题列表，让他们回答这个问题：“你认为经济学可以帮助我们理解以下哪些主题？”我告诉他们，如果认为某个主题会在经济学课上学到，就在前面打勾。我还说明了这不是一个脑筋急转弯，经济学并不能帮助我们理解所有事情。现在，我通常是在课堂上直接念出这些主题，让学生举手。
 
-Of course, what happens is that students raise their hands for topics like how to maximize profit, how the banking system works, or why stock prices change. But when I mention topics like how long a homeowner waits to mow their lawn, how fast people drive on the highway, or when a baserunner decides to steal a base, hardly any hands go up. The reason I do this is to illustrate that if your hand only went up for topics involving money, like the banking system or the stock market, but not for topics like how long students pay attention in a lecture, then you don't really understand what economics is. People typically think economics is only about dollars—stock prices, the banking system, inflation. They skip over things like how much people eat at a buffet or how long a homeowner waits to mow their lawn. But that's economics, too.
+我列出的一些主题包括：
+- 商业周期
+- 导致失业的原因
+- 牛奶的冰点
+- 导致通货膨胀的原因
+- 人类心脏如何工作
+- 人们在高速公路上开多快
+- 如何实现利润最大化
+- 人们在自助餐上吃多少
+- 学生为一次考试学习多少
+- 地震的成因
+- 房主等多久才修剪草坪
+- 学生在经济学讲座中能保持多久的注意力
+- 银行系统如何运作
+- 为什么股价会变动
+- 父母在查看哭泣的婴儿前会等多久
+- 为什么罪犯有时会主动向警方自首
+- 为什么赌徒往往会输钱
+- 棒球跑垒员何时决定盗垒
+- 为什么鱼会成群游泳
+- 为什么政治家会进行负面竞选
 
-At its most basic level, economics is the **study of human behavior**. Once you understand that, you should raise your hand for everything that involves someone making a decision. How long a homeowner waits to mow their lawn is a human behavior. How long parents wait before checking on a crying baby or when a baserunner decides to steal a base—there's a lot of economics literature devoted to things like that. My goal is to get students to realize that economics is not just about the financial fate of people. We will talk about that, but economics is so much more. If I were to ask a thousand people on the street where on a college campus you should go to study human behavior, a vast majority would say sociology or psychology. While those are places where human behavior is studied, the Economics Department is where it's studied at its most basic level. We often talk about business situations because large amounts of money are on the line, but at its core, it's the study of human behavior.
+当然，无论是学生在调查问卷上打勾，还是在课堂上举手，结果都很有趣。当我说到“商业周期”、“如何实现利润最大化”、“银行系统如何运作”或“为什么股价会变动”时，几乎每个人的手都会举起来。但当我说到“房主等多久才修剪草坪”、“人们在高速公路上开多快”或“跑垒员何时决定盗垒”时，几乎没有人举手。如果我说“为什么鱼会成群游泳”，更是如此。
 
-It turns out, though, that it's actually more general than that. There's some economics literature that studies the behavior of animals. For example, consider a rat in a cage with a lever that dispenses food. If you raise the "price" of food by requiring the rat to press the lever more times for one piece of food, what happens? Most people would say it won't matter, that the rat will eat the same amount. But that's not what happens. Rats respond to prices the same way we do. When the price of something goes up, we want less of it. If you raise the price of food for the rat, it will consume less. So, some economic literature is devoted to the study of behavior, whether it's human or animal. In this class, however, we will focus on the study of human behavior and how people make decisions.
+我做这个练习是为了向人们说明一点：如果你的手只在听到“银行系统”或“股票市场”这类词时举起，而在听到“学生在经济学讲座中能保持多久的注意力”或“人们在高速公路上开多快”时没有举起，那么你并不真正理解什么是经济学。人们通常在话题涉及金钱时才会举手，比如美元、股价、银行系统、通货膨胀等。但他们会忽略“人们在自助餐上吃多少”或“房主等多久才修剪草坪”这类问题。这些也是经济学。你举手的那些话题，比如商业周期，当然是经济学，但很多你没有举手的话题，同样也是经济学。
 
-In this video, we're going to talk about ten basic principles of economics. These are principles that you tend to see in any economics class you might take. The field of economics is very broad, with many sub-disciplines. The biggest distinction is between **microeconomics** (the small picture, focusing on individual behavior and businesses) and **macroeconomics** (the big picture, focusing on how an entire economy functions). Within those, there are many subfields: labor economics, international economics, public choice theory, game theory, econometrics, and even Cliometrics, which is the overlap between history and economics. Regardless of the sub-discipline, there are some basic principles that pop up in all of them.
+经济学最基本的定义是研究人类行为的学科。这就是经济学家所做的事情：他们研究人类行为。一旦你理解了这一点，你就应该在每一个涉及某人做决策的话题上都举手。“房主等多久才修剪草坪”是一种人类行为。“父母在查看哭泣的婴儿前会等多久”也是。关于“跑垒员何时决定盗垒”这类问题，已经有大量的经济学文献进行了研究。
 
-### 1. People Face Trade-offs
+我做这个练习的真正原因，是想让学生们认识到，经济学不仅仅是关于人们的财务命运。虽然经济学家确实研究这些，我们也会花时间讨论，但经济学的范畴远不止于此。经济学是关于人类行为的。如果我在街上随便问一千个人：“在大学校园里，你应该去哪里研究人类行为？”绝大多数人可能会说社会学系或心理学系。这些地方确实在研究人类行为，但如果你想在最基础的层面上研究人类行为，经济学系就是你要去的地方。我们之所以经常讨论商业情境，是因为那里涉及大量的金钱。如果你理解了人类行为，那么在涉及大额交易的背景下讨论人类行为是很自然的。
 
-To get something you want, you always have to give up something else you want. This applies to how you spend your income—if you spend money on a pizza, that's money you can't spend on a textbook or a movie. It also applies to your time. An hour spent studying for a test is an hour you can't spend sleeping or watching TV. Society also faces trade-offs. A classic example is the "guns versus butter" trade-off: resources devoted to national defense cannot be used for consumer goods, new roads, or education. Another societal trade-off is between **efficiency** (the size of the economic pie) and **equity** (how fairly the pie is divided). Unfortunately, policies designed to divide the pie more equally, such as redistributing income, can shrink the size of the overall pie by reducing the incentive to produce.
+但从根本上说，经济学就是研究人类行为。事实证明，它的范畴甚至比这更广泛。有些经济学文献研究动物的行为。比如，观察笼子里的老鼠，假设笼子的一端有一个装置，老鼠按一下杠杆，就会掉出一块食物。如果它再按一下，又会掉出一块。我们观察老鼠一天消耗的食物量，然后改变食物的“价格”。如果我们问大多数人，改变食物价格会发生什么，他们可能会说这无关紧要，老鼠不会有反应，因为它只是一只老鼠，整天在笼子里无所事事，除了按杠杆和吃东西没别的事可做。
 
-### 2. The Cost of Something Is What You Give Up to Get It
+但事实并非如此。老鼠对价格的反应和我们一样。当某个东西的价格上涨时，在其他条件不变的情况下，我们想买的就更少。如果你提高老鼠食物的价格——比如让它必须按多次杠杆才能得到一块食物——它就会减少食物的消耗量。因此，一些经济学文献致力于研究行为本身，无论是人类还是其他动物。当然，在这门课上，我们不会研究老鼠的饮食习惯，而是专注于研究人类行为。但在最基本的层面上，这就是我们在经济学课上所学的：我们研究人们如何做决策。
 
-In economics, we use the word "cost" more generally than just the dollar amount. We use the term **opportunity cost**, which is whatever you must give up to obtain some item. For example, the opportunity cost of going to class isn't a dollar amount; it's the value of the next-best alternative use of your time. If you weren't in class, you might be sleeping, playing video games, or having lunch with your parents. The cost is the most valuable of those alternatives that you forgo. Similarly, the opportunity cost of buying a $10 pizza isn't just the $10; it's the other goods and services you could have bought with that $10. This leads to a basic idea in economics: there's no such thing as a free lunch. Everything has an opportunity cost.
+---
 
-### 3. Rational People Think at the Margin
+### 经济学十大原理
 
-This is a crucial principle. A **marginal change** is a small, incremental adjustment to an existing plan of action. Rational people make decisions by comparing **marginal benefits** and **marginal costs**. You take an action if, and only if, the marginal benefit is greater than the marginal cost. Think about studying. You don't decide to study for exactly 82 minutes and 17 seconds. Instead, you study, and you continually (even subconsciously) weigh the marginal benefit of studying for one more minute (more knowledge) against the marginal cost (giving up something else, like relaxing). If a friend knocks on your door and invites you out, the marginal cost of studying suddenly goes up. Whether you stop studying depends on whether that new marginal cost now exceeds the marginal benefit. It's the comparison at the margin that drives your decision.
+在这个视频中，我们将讨论经济学的十个基本原理。无论你上哪门经济学课，这些原理都会反复出现。经济学是一个非常古老且广泛的学科，有许多子学科。最大的区别是微观经济学和宏观经济学。宏观经济学着眼于大局，研究经济体如何运行；微观经济学则关注小处，研究个体或单个企业如何做决策。
 
-### 4. People Respond to Incentives
+在这两大类之下，还有许多细分领域，如劳动经济学、国际经济学、公共选择理论、博弈论、计量经济学，还有一个叫做“计量史学”（Cliometrics）的交叉学科，它是历史与经济学的结合。无论你学习哪个子学科，总有一些基本原则贯穿其中。接下来我们就来讨论这些基本原则。
 
-Since people make decisions by comparing costs and benefits, their behavior changes when those costs or benefits change. That is, people respond to incentives. These can be **economic incentives** (money, points in a class), **social incentives** (the desire for acceptance, avoidance of ridicule), or **moral incentives** (a sense of right and wrong). Understanding behavior means understanding the incentives at play, even when they are not obvious.
+#### **1. 人们面临权衡取舍 (People Face Trade-offs)**
 
-It's easy to forget this principle. For example, people often look at the world's known oil reserves (e.g., 531 billion barrels) and the annual usage (e.g., 16.5 billion barrels) and conclude we will run out of oil in about 32 years. This is wrong because it ignores incentives. The correct answer to "When will we run out of oil?" is **never**. As oil becomes scarcer, its price will rise. This rising price is an incentive for consumers to use less and for producers to find new sources or develop alternatives. Eventually, the cost of using oil will become so high that we will voluntarily switch to cheaper alternatives, long before the last drop is pumped.
+这个原则听起来似乎不言而喻，但事实并非如此。它的核心思想是：为了得到你想要的东西，你总是不得不放弃另一样你想要的东西。这可以体现在你如何支配家庭收入上：你赚了钱，必须决定是花在披萨上、课本上，还是去看电影。你花在一件事上的钱，就不能再花在别的事情上。
 
-### 5. Trade Can Make Everyone Better Off
+时间也是如此。如果你花一个小时学习备考，那这一个小时就不能用来睡觉、和朋友出去玩或看电视。你在收入、时间等许多方面都面临权衡取舍。
 
-Trade is not a zero-sum game where one person's gain is another's loss. Instead, it is a **positive-sum game**. Voluntary trade allows individuals and countries to specialize in what they do best and to enjoy a greater variety of goods and services at a lower cost. If you tried to be completely self-sufficient—growing your own food, making your own clothes, building your own house—your standard of living would plummet. Trade allows for greater prosperity for everyone involved.
+社会同样面临权衡取舍。一个经典的例子是“大炮与黄油”的权衡，即在国防和消费品生产之间的选择。我们既想要国防安全，也想要消费品和服务，但我们不能拥有一切。任何用于国防的资源，都不能再用于修建新路或提供教育奖学金。
 
-### 6. Markets Are Usually a Good Way to Organize Economic Activity
+社会还面临着**效率**与**公平**之间的权衡。效率关乎经济蛋糕的大小，而公平关乎蛋糕如何被公平地分配。不幸的是，这两者之间存在取舍。如果我们过分强调公平，试图确保每个人都得到相同大小的一块蛋糕，那么整个经济蛋糕就会变小。因为这意味着我们要从那些挣得更多的人那里拿走资源，分配给那些挣得少的人。每个经济体都会这样做，我们不是说完全不应该这样做，但我们必须认识到，我们做得越多，可供分配的总量就越少。
 
-In a **market economy**, the decisions of millions of firms and households guide the allocation of resources. This decentralized system, guided by prices and self-interest, has proven remarkably successful at organizing economic activity to promote overall economic well-being. This is a core principle of capitalism. The alternative, a **planned economy** (like communism or socialism) where a central government makes all the decisions, has consistently failed because it lacks the information and incentives that make markets work.
+#### **2. 某物的成本是为了得到它所放弃的东西 (The Cost of Something Is What You Give Up to Get It)**
 
-### 7. Governments Can Sometimes Improve Market Outcomes
+在经济学中，“成本”这个词的用法比日常生活中更广泛。通常我们说成本是指为得到某物而付出的金钱。比如，一杯咖啡花了两美元，你会说它的成本是两美元。
 
-While markets are powerful, they aren't perfect. Sometimes, government intervention can improve market outcomes. This is necessary in cases of **market failure**, a situation where the market on its own fails to produce an efficient allocation of resources. One cause of market failure is an **externality**, which is the impact of one person's actions on the well-being of a bystander (e.g., pollution). In such cases, the government can implement policies to correct the failure and improve economic efficiency.
+但经济学家使用“机会成本”这个词来提醒我们，成本不仅仅是金钱。它是你为了得到某物而放弃的一切。例如，去上课的机会成本是什么？走进教室并不需要直接付钱。它的成本是你去上课、坐在那里听讲、然后返回住所所花费的时间。但更准确地说，成本不是时间的分钟数，而是你在那些时间里本可以做的“次优选择”。如果你不去上课，你可能会去睡觉，那么睡觉就是上课的机会成本。或者，你可能会玩电子游戏。又或者，你的父母正好在城里，想带你吃午饭，但因为要上课你拒绝了，那么与父母共进午餐就是这次上课更高的机会成本。
 
-### 8. A Country's Standard of Living Depends on Its Ability to Produce Goods and Services
+同样，购买一个10美元的比萨，它的机会成本不仅仅是10美元，更是你本可以用那10美元购买的其他商品和服务。成本是你为了得到某物而放弃的“次优选择”。这引出了一个经济学基本观点：天下没有免费的午餐。任何事物都有成本，即使它不涉及金钱交易。
 
-The vast differences in living standards around the world are almost entirely explained by differences in countries' **productivity**—the amount of goods and services produced from each unit of labor input. A nation's standard of living is determined by its ability to produce things that other people want. The same is true for an individual; your future standard of living depends on your ability to produce goods or services that others are willing to pay for.
+#### **3. 理性人考虑边际量 (Rational People Think at the Margin)**
 
-### 9. Prices Rise When the Government Prints Too Much Money
+人们通过比较**边际收益（Marginal Benefit, MB）**和**边际成本（Marginal Cost, MC）**来做决策。一个“边际变动”指的是对现有行动计划的微小增量调整。你可以把“边际”理解为决策的边缘。
 
-When a government creates large quantities of the nation's money, the value of the money falls. This leads to **inflation**, an increase in the overall level of prices in the economy. Keeping inflation low is a major goal of economic policymakers around the world.
+理性决策者只有在行动的边际收益大于边际成本时，才会采取行动。这个原则非常非常重要。
 
-### 10. Society Faces a Short-Run Trade-off Between Inflation and Unemployment
+以学习为例。你如何决定学习多长时间？你不会精确地计划学习82分17秒。相反，你开始学习，并不断地进行边际决策。假设你开始学习时，机会成本很低（朋友们都没空），而学习的边际收益很高（你正在理解新知识）。此时，MB > MC，所以你继续学习。突然，一个你很喜欢的朋友来敲门，约你出去玩。这时，学习的边际成本（放弃和朋友出去玩）上升了。你是否停止学习？这取决于新的边际成本是否超过了边际收益。如果超过了，你可能会合上书本出去玩；如果没有，你会告诉朋友你得继续学习。决策的关键不在于总收益或总成本，而在于边际上的比较。
 
-In the short run, there is an inverse relationship between inflation and unemployment. Policies that aim to reduce inflation may lead to a temporary rise in unemployment, and policies that aim to lower unemployment may lead to higher inflation. This short-run trade-off plays a key role in the analysis of the business cycle.
+#### **4. 人们会对激励做出反应 (People Respond to Incentives)**
 
-These are the ten fundamental principles of economics. In our next videos, we will explore what economists do and delve deeper into the principle that trade can make everyone better off.
+所有行为的根源都是激励。激励可以是经济上的（金钱、分数），也可以是社会性的（渴望被接纳、避免被嘲笑），或者是道德上的（基于对与错的感觉）。经济激励通常最容易识别，但社会和道德激励往往驱动了我们更多的行为。
+
+理解这一点至关重要，因为它能帮助我们预测行为。一个经典的例子是关于石油储量的争论。有人会用总储量除以年使用量，得出我们还有多少年石油可用的结论。例如，假设全球已探明石油储量为5310亿桶，年消耗量为165亿桶，计算得出大约32年后石油将耗尽。
+
+这种计算方式完全错误，因为它忽略了激励。经济学家会告诉你，我们永远不会“用完”石油。为什么？让我们用一个“花生屋”的比喻来解释。假设我送你一个装满5310亿颗花生的房间，你可以随意吃。第一天，吃花生的成本（付出的努力）几乎为零。但随着你不断吃，花生壳越堆越多，覆盖了未吃的花生。这时，找到一颗好花生的成本就上升了。当从这个房间里找花生吃的成本，高过去超市花2.5美元买一包花生的成本时，你就会自愿选择去超市买。你永远不会吃掉房间里的最后一颗花生。
+
+石油也是同理。随着石油越来越稀少，开采成本会越来越高，价格也会随之上涨。最终，石油的价格会高到让我们自愿转向更便宜的替代能源。我们转向替代能源，不是因为说教或环保意识，而是因为经济激励。
+
+#### **5. 贸易能使人人受益 (Trade Can Make Everyone Better Off)**
+
+贸易不是一场零和游戏（一方的胜利意味着另一方的失败），而是一场正和游戏，参与方可以实现共赢。无论是个人之间还是国家之间，自愿的贸易都能让双方的状况变得更好。
+
+想想看，如果你不与他人交易，会发生什么？如果你决定只买“美国制造”，你的选择会减少。如果更进一步，只买“密苏里州制造”，甚至只买“沃伦斯堡制造”，你的生活将变得极其不便，因为你必须自己生产所有你需要的东西。贸易让个人和国家可以专注于自己最擅长做的事情（专业化），然后用其产出交换其他所需，从而以更低的成本享受到更多种类、更高质量的商品和服务。
+
+#### **6. 市场通常是组织经济活动的好方法 (Markets Are Usually a Good Way to Organize Economic Activity)**
+
+这里指的是“自由市场”。自由市场并不意味着完全没有监管，而是指在法律框架内，生产者可以自由决定生产什么，消费者可以自由决定购买什么。这种由无数企业和家庭分散决策，并通过价格和自身利益引导的经济模式，被证明比中央计划经济（如共产主义或社会主义）更有效地配置资源。亚当·斯密在《国富论》中提出的“看不见的手”理论，描述了市场如何通过价格信号，引导个人追求自身利益的行为，最终促进了整个社会的福祉。
+
+#### **7. 政府有时可以改善市场结果 (Governments Can Sometimes Improve Market Outcomes)**
+
+尽管市场很有效，但它并非完美。当市场自身无法有效配置资源时，就会出现“市场失灵”。这时，政府的干预有时可以改善市场结果。市场失灵的两个主要原因是：
+- **外部性（Externality）**: 指一个人的行为对旁观者的福祉造成了影响，而这种影响没有在市场价格中得到补偿（如污染）。
+- **市场势力（Market Power）**: 指单个经济主体（或一小撮主体）对市场价格有显著影响的能力（如垄断）。
+在这些情况下，精心设计的公共政策可以提高经济效率。
+
+#### **8. 一国的生活水平取决于其生产商品与服务的能力 (A Country's Standard of Living Depends on Its Ability to Produce Goods and Services)**
+
+几乎所有国家之间以及同一国家不同时期的生活水平差异，都可以归因于各国生产率（productivity）的差异——即每个工人每小时生产的商品与服务的数量。生产率高的国家，其大部分公民都能享受高水平的生活。同样，一个国家的生产率增长率决定了其平均收入的增长率。这对个人同样适用：你的生活水平将取决于你提供他人愿意购买的商品或服务的能力。
+
+#### **9. 当政府发行过多货币时，物价上涨 (Prices Rise When the Government Prints Too Much Money)**
+
+当一个政府创造了大量本国货币时，货币的价值就下降了。这导致通货膨胀（inflation），即经济中物价总水平的上涨。因为过多的货币追逐数量相对固定的商品，所以商品的价格必然会被推高。
+
+#### **10. 社会面临通货膨胀与失业之间的短期权衡取舍 (Society Faces a Short-Run Trade-off Between Inflation and Unemployment)**
+
+在短期内，降低通货膨胀的政策往往会导致失业率暂时上升，反之亦然。这种权衡关系被称为菲利普斯曲线。政策制定者在试图影响经济时，必须在这两个目标之间做出选择。例如，政府可以通过增加支出、减少税收或增加货币供给来刺激总需求，从而在短期内降低失业率，但这可能会以更高的通货膨胀为代价。
+
+---
+
+在接下来的视频中，我们将更深入地探讨经济学家是如何工作的，并详细阐述“贸易能使人人受益”这一原则。
