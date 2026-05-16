@@ -1,0 +1,56 @@
+{
+  "course_name": "Strategic_Analysis",
+  "notebook_id": "1b8aece4-f4e3-46c5-86df-eb34e47b4c7a",
+  "phase": 3,
+  "phase1_done": true,
+  "phase2_done": true,
+  "phase3_done": true,
+  "chapters": [
+    {
+      "index": 1,
+      "title": "Foundations of Strategic Management",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 2,
+      "title": "The Three Levels of Strategy",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 3,
+      "title": "External Environment Analysis",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 4,
+      "title": "Internal Environment Analysis",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 5,
+      "title": "Integrating Analysis with SWOT",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 6,
+      "title": "The Four Pillars of Strategic Management",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    }
+  ],
+  "created_at": "2026-05-16 16:00:00",
+  "updated_at": "2026-05-16 16:20:43",
+  "total_rounds": 5,
+  "anki_count": 20
+}
