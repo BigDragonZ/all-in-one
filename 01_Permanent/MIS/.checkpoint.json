@@ -1,0 +1,21 @@
+{
+  "course_name": "MIS",
+  "notebook_id": "6dae0578-c355-4115-951e-5f6451f8c59a",
+  "phase": 4,
+  "phase1_done": true,
+  "phase2_done": true,
+  "phase3_done": true,
+  "chapters": [
+    {"index": 1, "title": "Ontological Foundations and Strategic Sourcing of Information Systems", "status": "completed"},
+    {"index": 2, "title": "Distributed Architectures and Cloud-Native Infrastructures", "status": "completed"},
+    {"index": 3, "title": "Data Engineering - Relational Modeling and Big Data Paradigm", "status": "completed"},
+    {"index": 4, "title": "Enterprise Resource Planning (ERP) and Process Orchestration", "status": "completed"},
+    {"index": 5, "title": "Implementation Dynamics - Socio-Technical Alignment and Governance", "status": "completed"},
+    {"index": 6, "title": "Decision Support Systems (DSS) and Business Intelligence", "status": "completed"},
+    {"index": 7, "title": "Big Data Analytics and Strategic Horizons", "status": "completed"}
+  ],
+  "created_at": "2026-05-16 12:19:09",
+  "updated_at": "2026-05-16 13:15:00",
+  "total_rounds": 5,
+  "anki_count": 20
+}
