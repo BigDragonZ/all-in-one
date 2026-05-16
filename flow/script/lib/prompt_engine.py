@@ -36,9 +36,9 @@ class PromptTemplate:
 
 SYLLABUS = PromptTemplate(
     name="syllabus",
-    version="1.1",
-    description="Generate graduate-level course syllabus from transcripts",
-    template="""基于全部转录文本，生成研究生级别的课程逻辑大纲：
+    version="1.2",
+    description="Generate graduate-level course syllabus from transcripts (Chinese output enforced)",
+    template="""基于全部转录文本，生成研究生级别的课程逻辑大纲，输出必须为中文：
 
 要求：
 1. 根据实际课程内容拆分章节，不预设章数，以知识模块的自然边界为准
@@ -46,6 +46,7 @@ SYLLABUS = PromptTemplate(
 3. 标注每章对应的原始视频编号范围
 4. 体现从基础到高阶的完整逻辑链条
 5. 使用学术语言，密度达到研究生水平
+6. 所有内容用中文输出，专业术语保留英文原文
 
 输出格式（严格遵循）：
 
@@ -66,9 +67,9 @@ SYLLABUS = PromptTemplate(
 
 CHAPTER_DEEP_DIVE = PromptTemplate(
     name="chapter_deep_dive",
-    version="1.0",
-    description="Comprehensive chapter analysis",
-    template="""基于视频{video_range}的内容，请深入分析本章：
+    version="1.1",
+    description="Comprehensive chapter analysis (Chinese output enforced)",
+    template="""基于视频{video_range}的内容，请深入分析本章，输出必须为中文：
 
 分析维度（按优先级）：
 1. **数学推导** — 核心公式的完整推导、边界条件、假设过强之处
@@ -80,6 +81,7 @@ CHAPTER_DEEP_DIVE = PromptTemplate(
 - 研究生水平，严禁口语化
 - 优先使用LaTeX渲染公式
 - 必须包含「逻辑推导」和「跨笔记链接」
+- 所有内容用中文输出，专业术语保留英文原文
 - 署名：DALONG ZHANG
 
 输出格式（严格遵循）：
@@ -115,78 +117,79 @@ $$[LaTeX公式]$$
 
 PRESSURE_DEFINITION = PromptTemplate(
     name="pressure_definition",
-    version="1.0",
-    template="""基于视频{video_range}的内容，请回答：
+    version="1.1",
+    template="""基于视频{video_range}的内容，请回答，输出必须为中文：
 1) [{concept_a}]的数学定义是什么？
 2) [{concept_b}]与[{concept_c}]的根本区别？
 3) 给出[{concept_a}]的严格数学表达（LaTeX）
 4) 该定义的边界条件是什么？
 
-要求：研究生水平，LaTeX公式，署名DALONG ZHANG。""",
+要求：研究生水平，LaTeX公式，所有内容用中文输出（专业术语保留英文），署名DALONG ZHANG。"""
 )
 
 PRESSURE_DERIVATION = PromptTemplate(
     name="pressure_derivation",
-    version="1.0",
-    template="""基于视频{video_range}的内容，请完成：
+    version="1.1",
+    template="""基于视频{video_range}的内容，请完成，输出必须为中文：
 1) [{theorem}]的完整数学推导
 2) 每一步的假设条件
 3) 假设过强之处的批判性分析
 4) 推导中的潜在漏洞
 
-要求：研究生水平，LaTeX公式，署名DALONG ZHANG。""",
+要求：研究生水平，LaTeX公式，所有内容用中文输出（专业术语保留英文），署名DALONG ZHANG。"""
 )
 
 PRESSURE_CASE = PromptTemplate(
     name="pressure_case",
-    version="1.0",
-    template="""基于视频{video_range}的内容，请分析：
+    version="1.1",
+    template="""基于视频{video_range}的内容，请分析，输出必须为中文：
 1) 用具体案例说明[{mechanism}]如何在现实中体现？
 2) 该案例与理论预测的偏差
 3) 偏差产生的原因（制度/行为/信息因素）
 4) 对理论框架的修正建议
 
-要求：研究生水平，引用真实历史案例，署名DALONG ZHANG。""",
+要求：研究生水平，引用真实历史案例，所有内容用中文输出（专业术语保留英文），署名DALONG ZHANG。"""
 )
 
 PRESSURE_CRITIQUE = PromptTemplate(
     name="pressure_critique",
-    version="1.0",
-    template="""基于视频{video_range}的内容，请批判：
+    version="1.1",
+    template="""基于视频{video_range}的内容，请批判，输出必须为中文：
 1) 为什么[{mechanism}]会导致系统性风险？
 2) 风险传导的完整链条
 3) 历史上类似的危机事件
 4) 监管框架的缺陷与改进方向
 
-要求：研究生水平，引用历史案例，署名DALONG ZHANG。""",
+要求：研究生水平，引用历史案例，所有内容用中文输出（专业术语保留英文），署名DALONG ZHANG。"""
 )
 
 PRESSURE_CROSS = PromptTemplate(
     name="pressure_cross",
-    version="1.0",
-    template="""基于视频{video_range}及已学内容，请关联：
+    version="1.1",
+    template="""基于视频{video_range}及已学内容，请关联，输出必须为中文：
 1) 本章内容与[[Ch_XX_...]]的内在逻辑联系
 2) 不同章节方法论的比较
 3) 知识网络中的关键节点
 4) 后续深入研究的方向
 
-要求：研究生水平，跨章节链接，署名DALONG ZHANG。""",
+要求：研究生水平，跨章节链接，所有内容用中文输出（专业术语保留英文），署名DALONG ZHANG。"""
 )
 
 # ── Phase 3: Synthesis ──
 
 MOC = PromptTemplate(
     name="moc",
-    version="1.0",
-    description="Generate Map of Contents",
-    template="""所有章节已完成。请生成《{course_name}》知识地图：
+    version="1.1",
+    description="Generate Map of Contents (Chinese output enforced)",
+    template="""所有章节已完成。请生成《{course_name}》知识地图，输出必须为中文：
 
 要求：
 1. 总结全课核心矛盾与底层逻辑
 2. 梳理各章之间的逻辑依赖关系（用箭头图或表格）
 3. 标注关键公式和定理的交叉引用
 4. 给出从基础到高阶的学习路径建议
-5. 署名：DALONG ZHANG
+5. 所有内容用中文输出，专业术语保留英文原文
+6. 署名：DALONG ZHANG
 
 输出格式：
 - 使用Obsidian [[wikilink]]语法链接各章节
@@ -197,27 +200,29 @@ MOC = PromptTemplate(
 
 NEXT_STEPS = PromptTemplate(
     name="next_steps",
-    version="1.0",
-    template="""分析本课程《{course_name}》未解决的深度问题，给出后续进阶学习路径建议：
+    version="1.1",
+    template="""分析本课程《{course_name}》未解决的深度问题，给出后续进阶学习路径建议，输出必须为中文：
 
 要求：
 1. 列出3-5个课程未覆盖但密切相关的前沿问题
 2. 每个问题给出2-3篇关键文献或课程推荐
 3. 按难度分级（基础→进阶→前沿）
-4. 署名：DALONG ZHANG
+4. 所有内容用中文输出，专业术语保留英文原文
+5. 署名：DALONG ZHANG
 """,
 )
 
 ANKI = PromptTemplate(
     name="anki",
-    version="1.0",
-    template="""从全课笔记中提取{card_count}条高难度真题级Anki卡片：
+    version="1.1",
+    template="""从全课笔记中提取{card_count}条高难度真题级Anki卡片，输出必须为中文：
 
 要求：
 - 正面：问题/情境（具体、有深度）
 - 背面：多步骤推导 + 公式 + 案例引用
 - 避免简单概念记忆，每张覆盖一个完整推理链条
 - 难度达到研究生入学考试或CFA三级水平
+- 所有内容用中文输出，专业术语保留英文原文
 - 署名：DALONG ZHANG
 
 输出格式（严格遵循）：

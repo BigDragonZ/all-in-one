@@ -15,15 +15,16 @@ from google.genai.types import GenerateContentConfig
 
 from lib.gemini_client import generate_content
 
-REFINE_PROMPT = """这是一段音频转录文本，请进行以下优化：
+REFINE_PROMPT = """这是一段音频转录文本，请进行以下优化，输出必须为中文：
 
 1. 补全标点符号（句号、逗号等）
 2. 修正识别错误的术语、人名、地名
 3. 去除口语噪音（"嗯"、"啊"、"那个"等填充词）
 4. 按语义分段（每段一个主题）
 5. Obsidian 格式化（Markdown 标准格式）
+6. 所有内容翻译成中文，保留专业术语的英文原文（如首次出现可标注英文）
 
-请直接输出优化后的文本，不要添加额外说明。"""
+请直接输出优化后的中文文本，不要添加额外说明。"""
 
 
 def refine_markdown(content: str) -> str:
