@@ -3,6 +3,9 @@
 Merge course Markdown files into a single printable document.
 User exports to PDF manually via Obsidian (ensures perfect MathJax rendering).
 
+Files are sorted by video range (extracted from content metadata), not by filename.
+This handles duplicate chapter numbers correctly.
+
 Usage:
     uv run flow/script/merge_course_md.py <course_dir> [output.md]
     uv run flow/script/merge_course_md.py 01_Permanent/Principles_of_Microeconomics
@@ -20,12 +23,29 @@ class ChapterFile:
     path: Path
     chapter_num: int
     title: str
+    video_start: int  # Sort key: first video number from "视频范围: XX-YY"
 
 
 def extract_chapter_num(filename: str) -> int:
     """Extract chapter number from filename like Ch_01_Title.md -> 1"""
     match = re.search(r'Ch_(\d+)', filename)
     return int(match.group(1)) if match else 999
+
+
+def get_video_start(content: str) -> int:
+    """Extract starting video number from content metadata.
+
+    Matches patterns like:
+      - 视频范围：01
+      - 视频范围：06-09
+      - 视频范围：14（涵盖原教材Ch10-11）
+    """
+    # Look for 视频范围 in metadata block
+    m = re.search(r'视频范围\s*[:：]\s*(\d+)', content)
+    if m:
+        return int(m.group(1))
+    # Fallback: use chapter number from filename * 100 to preserve rough ordering
+    return 99999
 
 
 def get_title_from_content(content: str) -> str:
@@ -74,13 +94,15 @@ def merge_course(course_dir: str, output_path: str | None = None) -> str:
 
     # Collect chapter files
     chapters: list[ChapterFile] = []
-    for md_file in sorted(course_path.glob('Ch_*.md')):
+    for md_file in course_path.glob('Ch_*.md'):
         num = extract_chapter_num(md_file.name)
         content = md_file.read_text(encoding='utf-8')
         title = get_title_from_content(content)
-        chapters.append(ChapterFile(md_file, num, title))
+        video_start = get_video_start(content)
+        chapters.append(ChapterFile(md_file, num, title, video_start))
 
-    chapters.sort(key=lambda c: c.chapter_num)
+    # Sort by video range start (not by filename chapter number)
+    chapters.sort(key=lambda c: c.video_start)
 
     if not chapters:
         raise ValueError(f"No Ch_XX.md files found in {course_path}")
@@ -135,7 +157,7 @@ def merge_course(course_dir: str, output_path: str | None = None) -> str:
     Path(output_path).write_text(merged, encoding='utf-8')
 
     print(f"Merged {len(chapters)} chapters into: {output_path}")
-    print(f"Chapters: {', '.join(f'Ch.{c.chapter_num:02d}' for c in chapters)}")
+    print(f"Order (by video range): {', '.join(f'Ch.{c.chapter_num:02d}(v{c.video_start})' for c in chapters)}")
     return output_path
 
 
