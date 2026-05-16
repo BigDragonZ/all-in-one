@@ -1,19 +1,84 @@
 {
   "course_name": "Principles_of_Management",
-  "notebook_id": "24befb9e-83ea-4504-8d05-e83c0c0c0c0c",
-  "phase": 4,
+  "notebook_id": "24befb9e-83ea-4504-8d05-e83cba600ab1",
+  "phase": 3,
   "phase1_done": true,
   "phase2_done": true,
   "phase3_done": true,
   "chapters": [
-    {"index": 1, "title": "Introduction to Management", "status": "completed"},
-    {"index": 2, "title": "Classical Management Theories", "status": "completed"},
-    {"index": 3, "title": "Planning", "status": "completed"},
-    {"index": 4, "title": "Management by Objectives (MBO)", "status": "completed"},
-    {"index": 5, "title": "Organizing", "status": "completed"}
+    {
+      "index": 1,
+      "title": "Introduction to the Fundamentals of Management",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 2,
+      "title": "Management Perspectives - Fayol and Taylor",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 3,
+      "title": "The Managerial Profile - Roles, Qualities, and Levels",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 4,
+      "title": "Functional Areas and Core Management Functions",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 5,
+      "title": "Planning - Strategy and Decision Making",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 6,
+      "title": "Management by Objectives (MBO) and Budgetary Planning",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 7,
+      "title": "Organizing - Structure and Design",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 8,
+      "title": "Functional and Committee Forms of Organization",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 9,
+      "title": "The Dynamics of Supervision - Span of Management",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 10,
+      "title": "Empowerment through Delegation of Authority",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    }
   ],
   "created_at": "2026-05-16 14:00:00",
-  "updated_at": "2026-05-16 14:20:00",
+  "updated_at": "2026-05-16 15:53:21",
   "total_rounds": 5,
   "anki_count": 20
 }
