@@ -1,0 +1,77 @@
+{
+  "course_name": "Operations_Management",
+  "notebook_id": "b399259e-8016-40ae-8abc-bd8f6f722629",
+  "phase": 3,
+  "phase1_done": true,
+  "phase2_done": true,
+  "phase3_done": true,
+  "chapters": [
+    {
+      "index": 1,
+      "title": "Introduction to Operations Management and Strategy",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 2,
+      "title": "Forecasting and Demand Planning",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 3,
+      "title": "Capacity Planning and Location Strategy",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 4,
+      "title": "Process Selection and Facility Layout",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 5,
+      "title": "Quality Management and Standards",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 6,
+      "title": "Continuous Improvement and Statistical Tools",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 7,
+      "title": "Inventory Management Systems",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 8,
+      "title": "Operational Planning, Scheduling, and Lean Systems",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "index": 9,
+      "title": "Supply Chain, Logistics, and Operational Economics",
+      "completed_rounds": 5,
+      "status": "completed",
+      "error": null
+    }
+  ],
+  "created_at": "2026-05-16 09:19:38",
+  "updated_at": "2026-05-16 10:16:17",
+  "total_rounds": 5,
+  "anki_count": 20
+}
