@@ -1,4 +1,4 @@
-# Chapter 4: Supply and Demand  - Part 1
+# Chapter 4: 供给与需求 —— 第一部分
 
 ## 元信息
 
@@ -11,111 +11,113 @@
 
 ## 精修内容
 
-# Chapter 4: Supply and Demand - Part 1
+# 第四章：供给与需求 —— 第一部分
 
-In this video, we're going to talk about the most basic model in all of economics: the model of demand and supply. If you study economics, you'll find that this is really at the root of a good chunk of what we do. A lot of the explanations for why things work the way they do out there in the world really boils down to understanding the demand for something, the supply for something, and how those two things interact.
+本章将系统阐述经济学中最基础的模型——**需求-供给模型（Demand-Supply Model）**。该模型构成了现代微观经济学的理论基石，大量经济现象的解释均可归结为对特定商品或服务的需求、供给及其交互机制的理解。
 
-Usually, in a face-to-face class, the way I would start this chapter is I would ask a hypothetical question of the class. I would ask them to consider the answer to this question: Who determines the price of the gas that you buy when you go to the gas station? When you buy some gas, there's going to be a price up there on a sign, and I want you to think about who determines that. I used to have my students fill out answers to that and give them to me, and the answers were always things like, "Well, it's the gas station owner, they get to pick the price," or "It's big oil companies," or "It's Congress," "It's the president," or a variety of different people or institutions.
+### 一、价格的决定机制：一个思想实验
 
-It turns out that the real answer to the question, "Who determines the price of the gas that you buy?" is nobody. Nobody's picking that. This leaves people with a weird feeling that it just can't be true. But if you really understand how demand and supply work, you start to realize real quickly that that has to be the right answer. That's not always the case; there are lots of different types of markets in which one side or the other—the buyers or the sellers—do have some control over the price. But in the gasoline market and the types of markets we're going to talk about in this chapter, it turns out that nobody has any control over the price.
+在正式引入模型之前，首先考察一个核心问题：**汽油价格由谁决定？**
 
-We have to understand what's going on there, because if you go out and you drive through a town, what you're going to see is that the price of gas for different gas stations is all going to be very close to each other, maybe exactly the same in lots of different gas stations. What that leads people to believe is that there's something behind that, that there's somehow maybe collusion—the firms are getting together and colluding and picking that price. So the fact that the price is the same, or at least very similar across different gas stations, creates the illusion that somebody's doing it. When I tell a class, "No, nobody's doing that," it leaves them with this weird feeling. So we need to talk about what's going on with the demand and supply model.
+常见的直觉性回答包括：加油站经营者、大型石油公司、国会或总统等政治主体。然而，在竞争性市场中，正确答案实际上是——**无人决定**。这一结论看似反直觉，但正是需求-供给模型的核心洞见。当然，在某些市场结构中（如垄断或寡头），买方或卖方确实具备价格影响力；但在汽油市场及本章所讨论的竞争性市场中，价格并非由任何单一主体设定。
 
-Let's start by thinking about the word **market**. I'm going to use that word a lot, so we need to be very clear about what I mean when I use it. The definition that we're going to be using is that a market is just a group of buyers and sellers of a particular good or service. There are different markets that function differently; it can depend upon the number of buyers and the number of sellers. But at the most basic level, anytime you've got buyers and sellers, you've got a market. It could be something very formal, like a store where buyers and a seller come together and things are bought in a very structured environment. Or it could be something very unstructured, like somebody standing on the street corner selling drugs. As long as you've got a seller and you've got buyers, you've got a market.
+观察现象可佐证上述论断：同一城镇内各加油站的价格高度趋同，甚至完全一致。这种价格一致性常被误解为厂商串谋（collusion）的结果，但实际上，它是市场力量自发均衡的外在表现。理解需求与供给的交互机制，是揭示这一价格形成逻辑的关键。
 
-In this chapter, we're going to think about what we call **perfectly competitive markets**. Sometimes I will just call them competitive markets. Usually, when I'm teaching this to a class, I try to initially use the phrase "perfect competition" or "perfectly competitive markets" until they get comfortable understanding that I mean something very particular with that, and then I'll kind of switch to just calling them competitive markets. If I were to ask a class what they think I mean by a "competitive market," most people would say, "Well, this is just a market where the firms are competing against each other." I mean something more particular than just that.
+---
 
-There are some specific characteristics of a perfectly competitive market.
+### 二、市场与完全竞争
 
-1.  **There are lots and lots of buyers and sellers, and each is "small" compared to the size of the market.**
-    You are "small" in a particular market if the amount that you buy or sell is small compared to the total amount bought and sold. All of us are small in the gasoline market. You can go out and buy gasoline; let's say you've got 10 cars at home. You can take all 10 of those cars to the gas station one day, fill all of them up, and that's still going to be a tiny fraction of the total amount of gas bought and sold. Your behavior is not going to drive the price up or down. This is true for the sellers also. In this type of market, there are a lot of sellers, and each of them is selling a small share of the total amount of gasoline sold.
+#### 2.1 市场的定义
 
-2.  **The goods are identical.**
-    What matters here is not whether the goods are literally identical, but the **consumer perception** of the goods. The two examples typically used by economists are aspirin versus gasoline. If you go to a store like Walmart, you'll see a whole variety of name-brand aspirin, and then there's the generic brand. The name-brand aspirin will sell for two or three times as much as the generic aspirin. It turns out that what's in the two bottles is identical (assuming we're talking about pure aspirin, not mixed with caffeine or ibuprofen). The two goods have no difference; one will have the same effect on your body as the other. And yet, many consumers do not believe that; they believe the name-brand aspirin is somehow better, which results in a price difference. That would not be a perfectly competitive market because consumers do not perceive the goods as identical.
+**市场（Market）** 被定义为一组特定商品或服务的买方与卖方的集合。市场的存在不依赖于正式的交易场所或制度结构——无论是规范化的零售商店，还是非结构化的街头交易，只要存在买方与卖方，即构成市场。市场的运行特征取决于参与者数量、商品同质性等因素。
 
-    Now, think about gasoline. The gasoline sold by different companies is literally different; there may be different additives. But consumers perceive it as if it's identical. A consumer who needs gas pays attention to the price; they don't care so much where they get it. They're going to buy gas at whichever station has the cheapest price. This is an example where the good is not literally identical, but consumers treat it as if it is. So, what matters here is consumer perception.
+#### 2.2 完全竞争市场的特征
 
-These two characteristics are what I mean when I say **perfect competition** or a **competitive market**. Most markets don't fit into this category. Some examples that do are commodity markets, like the corn market or the soybean market. You have lots of buyers and sellers, and consumers treat the goods as identical. You don't go to Walmart and ask if the corn is from North Missouri or Southern Iowa; you just buy the corn. Another good example is the New York Stock Exchange. There are lots of buyers and sellers of a stock, and a share of Walmart stock is just like any other share of Walmart stock. The gasoline market is also a good example, but we have to be careful. It fits if we're talking about a fairly big town or city with lots of gas stations. If it's a small town with only one or two, we would see something very different.
+本章聚焦于**完全竞争市场（Perfectly Competitive Markets）**，其需满足以下两个核心条件：
 
-You can see that perfectly competitive markets are not really that common, so you might wonder why we're talking about them. It's a good place to start, and a lot of markets behave very close to what we'll see in this chapter. You need to understand this before you can think about how things work in other types of markets.
+**条件一：大量的小型买者与卖者**
 
-Now, let's start with the demand side of the market, which focuses on the buyers. First, we need to define **quantity demanded** (which I'll abbreviate as **Qd**). This is the number of units that buyers are **willing and able** to buy. The quantity demanded is dependent upon the price that consumers have to pay for it, and there's an inverse relationship between the two.
+每个市场参与者的交易量相对于市场总规模而言微不足道，因而无法单独影响市场价格。以汽油市场为例：即便个体消费者一次性为10辆汽车加满燃油，其购买量占市场总交易量的比例仍可忽略不计，不足以推动价格发生任何可观测的变动。同理，单个加油站的销售份额亦极为有限。
 
-We know that an increase in price is going to result in a decrease in the number of units you want to buy. As something gets more expensive, all other things equal, you want to buy fewer units. You don't need an economics class to know that. The opposite is also true: a decrease in price will lead to an increase in quantity demanded. As things become cheaper, you want to buy more of them.
+**条件二：商品的同质性（消费者感知层面）**\n
+关键不在于商品是否在物理意义上完全相同，而在于**消费者是否将其视为无差异的替代品**。
 
-This relationship is called the **Law of Demand**. The Law of Demand simply says, all other things equal, when the price of a good or service goes up, the quantity demanded for that good or service goes down, and vice versa. Graphically, this means that demand curves are downward sloping; more specifically, demand curves never slope upward.
+- **反例：阿司匹林市场**。品牌药与仿制药的化学成分完全一致，但部分消费者因品牌认知而赋予其更高价值，导致价格分化。此类市场不满足完全竞争条件。
+- **正例：汽油市场**。不同公司的汽油在添加剂配方上存在物理差异，但消费者将其视为同质商品，仅依据价格进行购买决策。
 
-Why does this happen? There are two effects at work here: the **income effect** and the **substitution effect**.
+其他符合完全竞争特征的市场包括：农产品期货市场（如玉米、大豆）、证券交易所（如NYSE，同一家公司的股票被视为完全同质）。
 
-1.  **The Income Effect**: If the price of something you buy goes up, that has a negative impact on your purchasing power. Because your purchasing power has gone down, you tend to buy less. If the price of gas doubled, you'd have less money in your pocket to spend on other things, so you would buy a little less gas. Conversely, when the price of something goes down, it leaves more dollars in your pocket, increasing your purchasing power. It's like you got a little raise, so you'll buy a little bit more of whatever it is that got cheaper.
+尽管完全竞争市场在现实中并非普遍形态，但以此为分析起点具有重要的方法论意义：一方面，大量现实市场近似满足上述条件；另一方面，该模型为后续分析垄断、寡头等非竞争市场提供了基准参照系。
 
-2.  **The Substitution Effect**: When the price of something you buy goes up, other things become cheaper in comparison. You tend to substitute away from the good whose price went up and towards the goods that have become relatively cheaper. On the other hand, if the price of something you buy goes down, other things become relatively more expensive, and you tend to substitute towards the thing whose price has gone down.
+---
 
-For most goods, both the income and substitution effects reinforce the Law of Demand. When the price of something goes up, you want to buy less of it because it has a negative impact on your income and because you substitute away from it.
+### 三、需求（Demand）
 
-Now, let's think about what a demand curve looks like. We'll start with a **demand schedule**, which is a table that shows the relationship between the price of a good and how much somebody wants to buy. Let's think about a person named Bill and his demand schedule for pizzas per month.
+#### 3.1 需求量的定义
 
-| Price of Pizza | Quantity Demanded (Pizzas per month) |
-| :------------- | :----------------------------------- |
-| $12            | 0                                    |
-| $8             | 10                                   |
-| $4             | 20                                   |
-| $0             | 30                                   |
+**需求量（Quantity Demanded, $Q_d$）** 指消费者在特定价格水平下**愿意且能够**购买的商品数量。需求量与价格之间存在**反向关系**：价格上升导致需求量下降，价格下降导致需求量上升——此即**需求定律（Law of Demand）**。需求曲线在 $(P, Q)$ 平面上始终呈**向右下方倾斜**的形态。
 
-We can see the inverse relationship: as the price decreases, the quantity Bill wants to buy increases. Now, we can graph this relationship. We put price on the vertical axis and quantity on the horizontal axis.
-- At a price of $12, Bill wants 0 pizzas.
-- At $8, he wants 10.
-- At $4, he wants 20.
-- At $0, he wants 30.
-If we connect those points, we get Bill's demand curve for pizzas. The downward slope of the demand curve represents the Law of Demand.
+#### 3.2 需求定律的微观基础
 
-We are ultimately interested in the **market demand curve**, which represents all buyers in the market. To understand this, let's add another person, Mary, to our market. We'll pretend there are only two people. Here is Mary's demand schedule:
+需求定律的成立依赖于两种效应的共同作用：
 
-| Price of Pizza | Quantity Demanded (Pizzas per month) |
-| :------------- | :----------------------------------- |
-| $12            | 5                                    |
-| $8             | 10                                   |
-| $4             | 15                                   |
-| $0             | 20                                   |
+**收入效应（Income Effect）**
 
-Mary has different preferences than Bill. At low prices, Bill wants more pizza than Mary, but at high prices, Mary wants more than Bill. We can also graph Mary's demand curve, which will also be downward sloping.
+商品价格上升等价于消费者实际购买力下降，从而压缩其消费预算集，导致对该商品及所有正常商品的需求减少；反之，价格下降等效于实际收入提升，消费扩张。
 
-To find the market demand curve, we need to find the total quantity demanded at each price. We do this by adding the individual quantities demanded. This is called **horizontal summation**.
+**替代效应（Substitution Effect）**
 
-| Price of Pizza | Bill's Qd | Mary's Qd | Market Qd (Total) |
-| :------------- | :-------- | :-------- | :---------------- |
-| $12            | 0         | 5         | 5                 |
-| $8             | 10        | 10        | 20                |
-| $4             | 20        | 15        | 35                |
-| $0             | 30        | 20        | 50                |
+当某商品价格上升时，其他商品的相对价格下降，消费者倾向于用相对便宜的替代品替代该商品；反之，当某商品价格下降时，其相对吸引力增强，消费向该商品转移。
 
-Now we can graph the market demand schedule to get the market demand curve.
-- At a price of $12, the market quantity demanded is 5.
-- At $8, it's 20.
-- At $4, it's 35.
-- At $0, it's 50.
-Connecting these points gives us the market demand curve, which represents the preferences of both Bill and Mary. In a real competitive market, we would be summing the quantities for lots and lots of individuals. The market demand curve is the **horizontal summation of the individual demand curves**.
+对于绝大多数商品，收入效应与替代效应同向作用，共同强化需求定律。
 
-Now we need to talk about the things that cause a demand curve to shift. These are called the **determinants of demand**, or **demand shifters**. There are five of them we will discuss.
+#### 3.3 个人需求曲线与市场需求曲线
 
-### 1. Income
+**个人需求表（Demand Schedule）** 以表格形式刻画特定消费者在不同价格下的需求量。例如，Bill 对披萨的月度需求如下：
 
-Your demand for different goods and services can change when your income changes. How it changes depends on whether the good is a **normal good** or an **inferior good**.
+| 披萨价格 | 需求量（个/月） |
+| :------- | :-------------- |
+| \$12     | 0               |
+| \$8      | 10              |
+| \$4      | 20              |
+| \$0      | 30              |
 
--   A **normal good** is a good for which an increase in income causes an increase in demand (and a decrease in income causes a decrease in demand). Most goods are normal goods. For example, if your income goes up, you might go to the movies more often or eat out at restaurants more frequently.
+将上述数据在 $(P, Q)$ 坐标系中描点并连线，即得 Bill 的个人需求曲线，其斜率为负，直观反映需求定律。
 
--   An **inferior good** is a good for which an increase in income causes a decrease in demand (and a decrease in income causes an increase in demand). The classic example is ramen noodles. Many college students buy a lot of ramen noodles, but as their income increases after graduation, they tend to buy less. Other examples might include public transportation or used clothing.
+**市场需求曲线（Market Demand Curve）** 通过**水平加总（Horizontal Summation）** 所有个人需求曲线得到，即在每一价格水平下将各消费者的需求量加总。假设市场中仅有 Bill 与 Mary 两位消费者：
 
-It's important to remember that being a normal or inferior good is not a characteristic of the good itself, but a characteristic of your preferences. For me, pot pies were a staple as a poor undergraduate and graduate student. When I got my first real job and my income increased, I actually ate even more of them because I think they're great. So for me, pot pies are a normal good. What is an inferior good for you might be a normal good for someone else.
+| 披萨价格 | Bill 的需求量 | Mary 的需求量 | 市场需求量 |
+| :------- | :------------ | :------------ | :--------- |
+| \$12     | 0             | 5             | 5          |
+| \$8      | 10            | 10            | 20         |
+| \$4      | 20            | 15            | 35         |
+| \$0      | 30            | 20            | 50         |
 
-### 2. Prices of Related Goods
+市场需求曲线同样向右下方倾斜，代表了市场中所有买方的集体偏好。在完全竞争市场中，市场需求曲线即为所有个体需求曲线的水平加总。
 
-The demand for a good can be affected by the prices of other related goods. Goods can be related in two ways: they can be substitutes or complements.
+---
 
--   **Substitutes** are goods that are used in place of one another, like Coke and Pepsi.
-    - An **increase** in the price of one good (e.g., Pepsi) causes an **increase** in the demand for the other good (Coke). If the price of Pepsi suddenly triples, you're more likely to buy a Coke, even though the price of Coke didn't change.
-    - A **decrease** in the price of one good causes a **decrease** in the demand for the other.
+### 四、需求曲线的移动：需求决定因素（Demand Shifters）
 
--   **Complements** are goods that are used together, like hot dogs and hot dog buns (or peanut butter and jelly).
-    - An **increase** in the price of one good (e.g., hot dog buns) causes a **decrease** in the demand for the other good (hot dogs). If you're at the store and see that a pack of hot dog buns costs $20, you're probably not going to buy the buns, and you'll likely put the hot dogs back too.
-    - A **decrease** in the price of one good causes an **increase** in the demand for the other.
+需求曲线的位置受以下五类外生变量影响：
+
+#### 4.1 收入（Income）
+
+收入变动对需求的影响取决于商品的类型：
+
+- **正常商品（Normal Good）**：收入增加导致需求增加（需求曲线右移），收入减少导致需求减少（需求曲线左移）。大多数商品属于此类，如电影、餐饮服务等。
+- **劣等商品（Inferior Good）**：收入增加导致需求减少（需求曲线左移），收入减少导致需求增加（需求曲线右移）。典型案例包括方便面、公共交通、二手衣物等。
+
+**注意**：商品的"正常"或"劣等"属性并非商品本身的物理特征，而是消费者偏好的函数。同一商品对不同消费者可能具有不同的分类属性。
+
+#### 4.2 相关商品价格（Prices of Related Goods）
+
+相关商品的价格变动通过替代关系或互补关系影响需求：
+
+**替代品（Substitutes）**
+
+替代品指可在消费中相互替代的商品（如可口可乐与百事可乐）。替代品价格上升导致本商品需求增加（需求曲线右移）；替代品价格下降导致本商品需求减少（需求曲线左移）。
+
+**互补品（Complements）**
+
+互补品指需搭配使用的商品（如热狗与热狗面包、花生酱与果酱）。互补品价格上升导致本商品需求减少（需求曲线左移）；互补品价格下降导致本商品需求增加（需求曲线右移）。
