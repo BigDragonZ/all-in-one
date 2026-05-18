@@ -1,0 +1,55 @@
+# Cursor Rules for all-in-one Project
+
+## Project Identity
+
+This is a **knowledge-base automation pipeline** that transforms YouTube course playlists into structured, graduate-level academic notes. It is a Git-backed Obsidian vault located at `~/Documents/all-in-one`.
+
+## Architecture
+
+Two independent pipelines:
+
+1. **Transcription Pipeline** (`flow/script/run_pipeline.py`): YouTube playlist → subtitle extraction → audio transcription → Gemini refinement → raw markdown in `flow/<CourseName>/`.
+2. **Note Generation Pipeline** (`flow/script/note_pipeline.py`): Raw transcripts → NotebookLM → syllabus → chapter deep-dive notes → MOC / Anki cards in `01_Permanent/<CourseName>/`.
+
+## Code Organization
+
+```
+flow/script/
+  config/          # Path configs, credentials, prompts
+  models/          # Domain dataclasses (VideoMeta, Chapter, CourseContext)
+  lib/             # Core logic modules
+    adapters/      # NotebookLM adapter interface + implementations
+  tests/           # Unit tests (plain Python, no pytest)
+flow/<CourseName>/              # Pipeline 1 output: raw refined transcripts
+01_Permanent/<CourseName>/      # Pipeline 2 output: syllabus, chapters, MOC, Anki
+```
+
+## Development Standards
+
+- **Python**: 3.12+, managed with `uv`. Virtual env at `.venv/` (do not commit).
+- **Run commands**: `uv run flow/script/<script>.py` (never system Python).
+- **Architecture**: separate concerns into `config/`, `models/`, `lib/`, and entry scripts. No monolithic scripts. Use absolute paths via centralized config.
+- **Tests**: plain Python files with `if __name__ == "__main__"` blocks in `flow/script/tests/`. No pytest.
+- **Git**: run `git status` before any write operation. Commit after each completed step. For major updates, create a pre-update branch or auto-commit on main with a descriptive message.
+
+## Key Technical Rules
+
+- **Google Gemini APIs**: ALWAYS use `google-genai` SDK (`google.genai.Client`), NEVER hand-craft REST calls. Vertex AI init: `Client(vertexai=True, api_key=..., http_options=HttpOptions(api_version="v1"))`.
+- **yt-dlp**: MUST use `.venv/bin/yt-dlp` with `--cookies-from-browser chrome`. System yt-dlp is broken for YouTube.
+- **NotebookLM**: all interactions go through `lib/adapters/base.py` (`NotebookLMAdapter` ABC). Inject adapter into `note_generator.py`; never instantiate concrete adapters inside library code.
+- **Checkpoint system**: `lib/checkpoint.py` persists state as JSON (`01_Permanent/<course>/.checkpoint.json`). Supports resume after interruption.
+- **Prompt engine**: `lib/prompt_engine.py` defines versioned `PromptTemplate` dataclasses with `.render(**kwargs)`.
+- **Path conventions**:
+  - Raw transcripts: `flow/<course_name>/01-Title.md`
+  - Chapter notes: `01_Permanent/<course_name>/Ch_XX_Title.md`
+  - Syllabus: `01_Permanent/<course_name>/<course_name>_课程大纲.md`
+  - MOC: `01_Permanent/<course_name>/<course_name>_知识地图_MOC.md`
+  - Anki: `01_Permanent/<course_name>/Anki_<course_name>_<count>张真题卡.md`
+
+## Content Standards
+
+- **User identity**: DALONG ZHANG. All formal documents signed as DALONG ZHANG.
+- **Note density**: graduate-level technical density, no colloquial language.
+- **Formulas**: prioritize LaTeX for all mathematical expressions.
+- **PDF export**: best approach is script merges MD files → user manually exports PDF via Obsidian (MathJax renders perfectly). Do NOT recommend MacTeX/xelatex or automated Chrome/Playwright export unless explicitly requested.
+- **Pre-work rule**: before starting new course processing work, ALWAYS commit current directory state to GitHub first.
